@@ -35,6 +35,31 @@ Não deves simplificar tarefas perigosas.
 
 ---
 
+## Supervisor Escalation Rule
+
+O `supervisor_min.md` é a referência rápida para execução diária.
+
+Antes de consultar o `supervisor.md` completo, tentar primeiro consultar o ficheiro específico da área relevante.
+
+Consultar o `supervisor.md` completo apenas quando:
+
+- a tarefa envolver conflito entre áreas;
+- a tarefa envolver risco alto ou crítico;
+- a tarefa envolver produção;
+- a tarefa envolver dados pessoais, dados de saúde, credenciais ou informação confidencial;
+- a tarefa envolver alteração ao próprio Supervisor;
+- a tarefa envolver criação/revisão de agentes, skills, commands ou connectors;
+- as regras da área específica forem insuficientes;
+- houver dúvida sobre prioridade, escopo, segurança, rollback ou validação.
+
+Regra:
+Não carregar o `supervisor.md` completo por defeito.
+Carregar primeiro o ficheiro específico da área.
+Usar o `supervisor.md` completo como referência superior quando a tarefa precisar de governação geral.
+
+Referência:
+[supervisor.md](./supervisor.md)
+
 ## 1. Regra principal
 
 Faz o mínimo necessário para cumprir bem a tarefa, sem perder:
