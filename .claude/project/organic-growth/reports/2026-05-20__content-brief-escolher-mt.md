@@ -1,5 +1,9 @@
 # Content Brief — Pillar "Como escolher empresa de medicina do trabalho" — 2026-05-20
 
+> **Decisões aplicadas (2026-05-20):**
+> - **Brand voice**: usar "Medicina do Trabalho" (forma canónica, alinhada com a query Google). Glossário [`SEO_GLOSSARY.md#query`](../SEO_GLOSSARY.md#query).
+> - **Autor**: pessoa real do quadro Previmed (nome + cargo + foto + LinkedIn). Para este cluster: **médico do trabalho** do quadro. Nome a confirmar com utilizador. Glossário [`SEO_GLOSSARY.md#e-e-a-t-experience-expertise-authoritativeness-trustworthiness`](../SEO_GLOSSARY.md#e-e-a-t-experience-expertise-authoritativeness-trustworthiness).
+
 ## Purpose
 
 Brief editorial para o pillar Q5 do plano de conteúdo derivado de [`2026-05-20__aio-expansion.md`](./2026-05-20__aio-expansion.md). Q5 é a query onde Previmed **já tem foothold AIO** (`previmed.pt/saude-no-trabalho/` é citada no painel) — atacar primeiro para consolidar.

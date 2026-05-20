@@ -1,5 +1,9 @@
 # Content Brief — Pillar "Segurança no Trabalho" (Q2) — 2026-05-20
 
+> **Decisões aplicadas (2026-05-20):**
+> - **Brand voice**: "Segurança no Trabalho" (canónica). Mesma regra do cluster Medicina do Trabalho. Ver [`SEO_GLOSSARY.md#brand-voice`](../SEO_GLOSSARY.md#brand-voice).
+> - **Autor**: pessoa real do quadro — para este cluster, **técnico superior de segurança no trabalho**. Nome a confirmar.
+
 > Padrões comuns no brief de referência [`2026-05-20__content-brief-escolher-mt.md`](./2026-05-20__content-brief-escolher-mt.md). Aqui apenas o específico do cluster Q2.
 
 ## Target

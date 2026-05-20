@@ -34,6 +34,32 @@
 
 ## Decisões
 
+### 2026-05-20 — Brand voice: "Medicina do Trabalho" (forma canónica)
+
+- **Contexto**: as páginas Previmed atuais usam "Medicina **No** Trabalho" (N maiúsculo, sem preposição "do"). A query que as pessoas escrevem no Google é "medicina **do** trabalho" (forma idiomática PT). Divergência detectada em `reports/2026-05-20__competitor-deep-dive.md` §C2.
+- **Decisão**: usar **"Medicina do Trabalho"** (forma canónica) em todo o conteúdo novo (5 pillars + spin-offs + futuras peças). Implica corrigir as páginas existentes (`/saude-no-trabalho/`, `/seguranca-no-trabalho/`, etc.) quando o template for refeito.
+- **Porquê**: alinhar com a [query](./SEO_GLOSSARY.md#query) que aparece nas pesquisas Google e na [AIO](./SEO_GLOSSARY.md#aio-ai-overview-modo-ia). A AIO Q1 do Google.pt fala em "medicina do trabalho" — divergência da Previmed reduz match semântico e probabilidade de citação AIO.
+- **Alternativas consideradas**: (a) manter "Medicina No Trabalho" como brand voice — rejeitado, perde alinhamento Google. (b) Híbrido (title/H1 canónico, body com brand) — rejeitado, incoerência editorial.
+- **Origem**: discussão com utilizador 2026-05-20 sobre brand voice (ver `reports/2026-05-20__competitor-deep-dive.md` §Decisions Needed #1).
+- **Revisão**: reavaliar se a marca tiver branding work que decida o contrário; nesse caso, ponderar criar 2 layers (marca interna vs SEO público).
+- **Decisor**: utilizador.
+
+### 2026-05-20 — Autoria dos pillars: pessoa real do quadro
+
+- **Contexto**: os pillars P1 vão ser publicados com schema [Article](./SEO_GLOSSARY.md#schema-markup). O campo `author` pode ser pessoa real, organização ou ausente. Saúde ocupacional cai em [YMYL](./SEO_GLOSSARY.md#ymyl-your-money-or-your-life) — Google aplica filtro [E-E-A-T](./SEO_GLOSSARY.md#e-e-a-t-experience-expertise-authoritativeness-trustworthiness) mais rigoroso.
+- **Decisão**: autor identificado é **pessoa real do quadro Previmed**, com nome + cargo + foto + LinkedIn. SEPRI (concorrente que domina AIO Q1) usa este padrão.
+- **Sub-decisão pendente**: **quem por cluster**. Sugestão por afinidade temática:
+  - Q1 (Medicina do Trabalho) + Q5 (Como escolher MT) → médico do trabalho do quadro.
+  - Q2 (Segurança no Trabalho) → técnico superior de segurança no trabalho.
+  - Q3 (HACCP) → técnico especialista em segurança alimentar.
+  - Q4 (Formação 40h) → responsável de formação / pedagógico DGERT.
+  - **Nomes concretos a confirmar com o utilizador.**
+- **Porquê**: [E-E-A-T](./SEO_GLOSSARY.md#e-e-a-t-experience-expertise-authoritativeness-trustworthiness) é forte para YMYL. Autor real e identificável é o sinal mais barato e mais potente para Previmed entrar em AIO. Schema `Person` permite ao Google ligar o autor a credenciais (LinkedIn `sameAs`).
+- **Alternativas consideradas**: (a) "Equipa Editorial Previmed" como Organization — rejeitado, perde sinal individual. (b) Sem autor declarado — rejeitado, fraco em YMYL.
+- **Origem**: discussão com utilizador 2026-05-20 + análise em `reports/2026-05-20__competitor-deep-dive.md` §M2.
+- **Revisão**: se Previmed contratar editor externo (freelancer), reavaliar se faz sentido manter autor interno ou rotacionar.
+- **Decisor**: utilizador (decisão conceptual fechada; nomes por confirmar).
+
 ### 2026-05-20 — Tool keyword data: orçamento zero (Cenário Z)
 
 - **Contexto**: 6 cenários avaliados em [`DECISION_KEYWORD_DATA_TOOL.md`](./DECISION_KEYWORD_DATA_TOOL.md) (A=DataForSEO ~$300/ano, B=SerpAPI ~$300, C=Ahrefs Lite ~$1 548, D=Semrush ~$1 668, E=SE Ranking ~$660, F=Híbrido ~$650). Recomendação interna era Cenário A.

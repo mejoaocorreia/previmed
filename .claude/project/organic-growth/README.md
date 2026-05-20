@@ -30,6 +30,7 @@ The name **organic-growth** is intentional: this is broader than a narrow SEO ch
 - [`SEO_BACKLOG.md`](./SEO_BACKLOG.md) — tarefas acionáveis priorizadas.
 - [`SEO_OPPORTUNITIES.md`](./SEO_OPPORTUNITIES.md) — hipóteses/ideias antes de virarem tarefas.
 - [`SEO_DECISION_LOG.md`](./SEO_DECISION_LOG.md) — decisões SEO duradouras.
+- [`SEO_GLOSSARY.md`](./SEO_GLOSSARY.md) — glossário plain-language (AIO, E-E-A-T, cluster, etc.). Consultar sempre que aparecer um termo técnico.
 
 ### 3. Reports (snapshots datados, históricos)
 

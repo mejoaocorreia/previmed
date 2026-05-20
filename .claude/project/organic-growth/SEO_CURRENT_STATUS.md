@@ -23,7 +23,8 @@ Fase 1 (estratégia) fechada. Fase 2 a recolher dados antes de iniciar Fase 3 (p
 | Setup GSC/GA4/PSI | ⏳ execução pendente | Checklist em `SETUP_GSC_GA4.md`. Lado utilizador. |
 | AIO expansion (5 queries) | ✅ concluída | Ver `reports/2026-05-20__aio-expansion.md`. |
 | Baseline metrics | ⛔ bloqueado | Precisa de 28d de GSC após ligação. |
-| Briefs P1 (5 pillars) | 🟡 a iniciar | Decorrente da AIO expansion. Ver backlog. |
+| Briefs P1 (5 pillars) | ✅ todos escritos | 5 briefs em `reports/2026-05-20__content-brief-*.md`. Brand voice + autoria decididas 2026-05-20. **Pendente**: confirmar nomes concretos dos autores por cluster. |
+| Glossário plain-language | ✅ criado | `SEO_GLOSSARY.md` — explicação de todo o jargão (AIO, E-E-A-T, cluster, etc.). Vivo. |
 
 ## Último relatório
 
@@ -54,16 +55,17 @@ Fase 1 (estratégia) fechada. Fase 2 a recolher dados antes de iniciar Fase 3 (p
 
 ## Próximos passos
 
-1. Utilizador executa checklist em `SETUP_GSC_GA4.md` (ligar GSC/GA4/Site Kit + API PSI) + garantir conta Google Ads ativa (mesmo sem spend) para Keyword Planner.
-2. Decidir ordem de produção dos 5 briefs P1 + brand voice + autoria (ver `reports/2026-05-20__competitor-deep-dive.md` §Decisions Needed).
-3. Atualizar `STRATEGY_KEYWORDS.md` cluster Formação para 35→40h.
-4. Após 28d de coleta GSC: produzir baseline metrics (novo relatório datado).
-5. Atualizar `SEO_TOOLING_MCP_STACK.md` para refletir stack zero-cost (já decidido).
+1. **Utilizador**: indicar **nomes concretos dos autores** por cluster (médico MT, técnico HST, especialista alimentar, responsável formação). Decisão conceptual fechada — só faltam nomes.
+2. **Utilizador**: executar checklist em `SETUP_GSC_GA4.md` (ligar GSC/GA4/Site Kit + API PSI) + garantir conta Google Ads ativa.
+3. Quando #1 estiver feito: começar **copy final** dos 5 pillars (não bloqueado por mais nada).
+4. **Refactor templates WP** — title duplicado + H2 ausentes + schema (ver `reports/2026-05-20__previmed-pages-audit.md`). Decisão de quando.
+5. Após 28d de coleta GSC: produzir baseline metrics (novo relatório datado).
 
 ## Bloqueios atuais
 
-- **Decisão keyword data tool** — bloqueia depth analysis de volumes/concorrência.
 - **Setup GSC/GA4** — bloqueia baseline metrics e validação de hipóteses do `STRATEGY.md`.
+- **Nomes concretos dos autores por cluster** — bloqueia copy final dos pillars (estrutura editorial já está pronta).
+- **Decisão "quando aplicar refactor WP"** — bloqueia quick wins documentados em `reports/2026-05-20__previmed-pages-audit.md`.
 
 ## Como atualizar este ficheiro
 

@@ -1,5 +1,9 @@
 # Content Brief — Pillar "HACCP" (Q3) — 2026-05-20
 
+> **Decisões aplicadas (2026-05-20):**
+> - **Brand voice**: "HACCP" (já é acrónimo internacional, sem variação). Ver [`SEO_GLOSSARY.md#haccp`](../SEO_GLOSSARY.md#haccp).
+> - **Autor**: pessoa real do quadro — para este cluster, **técnico especialista em segurança alimentar**. Nome a confirmar.
+
 > Padrões comuns no brief de referência [`2026-05-20__content-brief-escolher-mt.md`](./2026-05-20__content-brief-escolher-mt.md). Aqui apenas o específico do cluster Q3.
 
 ## Target

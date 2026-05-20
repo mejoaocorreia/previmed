@@ -1,5 +1,9 @@
 # Content Brief — Pillar "Medicina do Trabalho" (Q1) — 2026-05-20
 
+> **Decisões aplicadas (2026-05-20):**
+> - **Brand voice**: "Medicina do Trabalho" (canónica). Ver [`SEO_GLOSSARY.md#query`](../SEO_GLOSSARY.md#query).
+> - **Autor**: pessoa real do quadro Previmed — para este cluster, **médico do trabalho**. Nome a confirmar. Ver [`SEO_GLOSSARY.md#e-e-a-t-experience-expertise-authoritativeness-trustworthiness`](../SEO_GLOSSARY.md#e-e-a-t-experience-expertise-authoritativeness-trustworthiness).
+
 > **Padrões comuns** (estrutura geral, regras editoriais, métricas de sucesso, decisões pendentes) estão no brief de referência [`2026-05-20__content-brief-escolher-mt.md`](./2026-05-20__content-brief-escolher-mt.md). Aqui apenas o que é **específico do cluster Q1**.
 
 ## Target

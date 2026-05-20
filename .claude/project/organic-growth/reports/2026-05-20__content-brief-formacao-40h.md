@@ -1,5 +1,9 @@
 # Content Brief — Pillar "Formação obrigatória 40h" (Q4) — 2026-05-20
 
+> **Decisões aplicadas (2026-05-20):**
+> - **Brand voice**: "Formação Contínua Obrigatória" / "40 horas" (canónica, alinhada com Lei 93/2019). Ver [`SEO_GLOSSARY.md#lei-93-2019`](../SEO_GLOSSARY.md#lei-93-2019).
+> - **Autor**: pessoa real do quadro — para este cluster, **responsável de formação / pedagógico DGERT**. Nome a confirmar. Ver [`SEO_GLOSSARY.md#dgert`](../SEO_GLOSSARY.md#acrónimos-de-entidades-portuguesas).
+
 > Padrões comuns no brief de referência [`2026-05-20__content-brief-escolher-mt.md`](./2026-05-20__content-brief-escolher-mt.md). Aqui apenas o específico do cluster Q4.
 >
 > ⚠️ **Cluster com achado crítico:** a Lei 93/2019 alterou o mínimo legal de **35 → 40 horas anuais**. AIO já corrige automaticamente. Conteúdo PT existente continua maioritariamente em "35h" — janela de oportunidade. Política do cluster registada em `SEO_DECISION_LOG.md` 2026-05-20 e `STRATEGY_KEYWORDS.md` §9.
