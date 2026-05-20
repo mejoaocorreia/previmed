@@ -28,6 +28,8 @@ Fase 1 (estratégia) fechada. Fase 2 a recolher dados antes de iniciar Fase 3 (p
 
 ## Último relatório
 
+- **2026-05-20** — [`reports/2026-05-20__architecture-map.md`](./reports/2026-05-20__architecture-map.md) — **mapa de arquitetura completa** do sistema Supervisor + Organic Growth. 4 camadas funcionais (Supervisor / SEO Lead / Specialists / Skills + Commands) com diagramas Mermaid + ASCII. Diagnóstico de problemas atuais (23 ficheiros planos na raiz, `reports/` mistura 4 tipos). **Proposta concreta** de reorganização por pastas funcionais (`_system/`, `_living/`, `strategy/`, `setup/`, `reports/`, `clusters/`). Tabela de mapeamento origem→destino completa para 41 ficheiros. Aguarda aprovação para migrar.
+
 - **2026-05-20** — [`reports/2026-05-20__copy-spinoff-avenca-vs-ato.md`](./reports/2026-05-20__copy-spinoff-avenca-vs-ato.md) — **copy final do spin-off SO-1** (Avença vs ato médico). Query comercial BOT funnel. Tabela 3 cenários (PME 10/30/100 trabalhadores). 8 FAQs + schema Article+FAQPage+isPartOf (apontando para pillar Q5). Métricas focadas em **conversões** (não só citações AIO). Bloqueado pelos mesmos placeholders dos outros copies.
 
 - **2026-05-20** — [`reports/2026-05-20__spin-offs-briefs.md`](./reports/2026-05-20__spin-offs-briefs.md) — **15 spin-offs documentados** num único ficheiro consolidado (não 15 separados). Priorizados em 4 ondas (P1-A / P1-B / P2 / P3). P1-A são 3 spin-offs alto valor/baixo esforço para arrancar em paralelo aos pillars: Avença vs ato (Q5), Lei 93/2019 (Q4), Ficha de Aptidão (Q1). Recomendação: arrancar P1-A em paralelo aos pillars; P1-B e P2 só depois de recaptura AIO t+30d para priorizar pelos clusters que estão a entrar em AIO.
