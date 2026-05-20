@@ -1,38 +1,64 @@
-# Connector Security Rules
+# Data Retention and Minimization
 
-Esta pasta organiza ferramentas externas, integrações e MCPs.
+## Objetivo
 
-“Connector” é o nome organizacional.
-“MCP” é o nome técnico quando a ferramenta usa Model Context Protocol.
+Evitar que agentes, skills, commands e reports guardem mais dados do que necessário.
 
-## Princípios
+## Minimização
 
-1. Read-only por defeito.
-2. Menor privilégio possível.
-3. Escopo explícito.
-4. Sem acesso global por conveniência.
-5. Sem dados pessoais sem gate.
-6. Sem credenciais expostas.
-7. Sem produção sem autorização.
-8. Sem comandos locais desconhecidos.
-9. Logs para elevação de permissão.
-10. Revogar/limitar quando terminar.
+Antes de usar dados, tentar nesta ordem:
 
-## Riscos
+1. Sem dados pessoais.
+2. Dados fictícios.
+3. Metadados.
+4. Contagens.
+5. IDs internos.
+6. Dados mascarados.
+7. Dados pseudonimizados.
+8. Dados reais limitados, só se necessário e autorizado.
 
-- prompt injection;
-- tool poisoning;
-- excessive agency;
-- execução de código local;
-- exfiltração;
-- alteração de ficheiros;
-- acesso a secrets;
-- confiança excessiva em outputs.
+## Retenção
 
-## Regra
+Não guardar em `.claude/records/`:
 
-Connector deve ser tratado como ferramenta poderosa.
-Ferramenta poderosa precisa de limite.
+- dados de saúde;
+- fichas de aptidão;
+- exames;
+- relatórios médicos;
+- anexos;
+- emails completos;
+- passwords;
+- tokens;
+- credenciais;
+- dados pessoais desnecessários.
+
+Guardar apenas:
+
+- decisão;
+- tipo de dado;
+- finalidade;
+- ferramenta usada;
+- risco;
+- autorização;
+- limites;
+- resultado sem conteúdo sensível.
+
+## Mascaramento
+
+Exemplos:
+
+- `joao.silva@empresa.pt` → `j***@empresa.pt`
+- `SMTP_PASS=valor` → `SMTP_PASS=********`
+- `123456789` → `***6789`
+- nome de trabalhador → `Trabalhador A`
+
+## Anonimização vs pseudonimização
+
+- Dados anonimizados não devem permitir reidentificação.
+- Dados pseudonimizados continuam a ser dados pessoais se for possível reidentificar.
+
+Regra:
+Pseudonimização reduz risco, mas não remove RGPD.
 
 
 ## Referências externas base

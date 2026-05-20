@@ -1,38 +1,54 @@
-# Connector Security Rules
+# AIPD / DPIA Rules
 
-Esta pasta organiza ferramentas externas, integrações e MCPs.
+AIPD significa Avaliação de Impacto sobre a Proteção de Dados.
+DPIA é o termo inglês equivalente.
 
-“Connector” é o nome organizacional.
-“MCP” é o nome técnico quando a ferramenta usa Model Context Protocol.
+## Quando considerar AIPD
 
-## Princípios
+Considerar AIPD quando a tarefa envolver:
 
-1. Read-only por defeito.
-2. Menor privilégio possível.
-3. Escopo explícito.
-4. Sem acesso global por conveniência.
-5. Sem dados pessoais sem gate.
-6. Sem credenciais expostas.
-7. Sem produção sem autorização.
-8. Sem comandos locais desconhecidos.
-9. Logs para elevação de permissão.
-10. Revogar/limitar quando terminar.
+- dados de saúde;
+- categorias especiais de dados;
+- dados de trabalhadores em escala relevante;
+- profiling;
+- decisões automatizadas com impacto;
+- monitorização sistemática;
+- videovigilância em larga escala;
+- uso novo de tecnologia;
+- cruzamento de bases de dados;
+- AI/LLM com dados pessoais reais;
+- tratamento que possa gerar risco elevado.
 
-## Riscos
+## O que o agente deve fazer
 
-- prompt injection;
-- tool poisoning;
-- excessive agency;
-- execução de código local;
-- exfiltração;
-- alteração de ficheiros;
-- acesso a secrets;
-- confiança excessiva em outputs.
+O agente não decide juridicamente se a AIPD é obrigatória.
+
+Deve:
+
+1. identificar sinais de risco elevado;
+2. parar antes de tratar dados;
+3. explicar porque pode exigir AIPD;
+4. sugerir revisão por DPO/jurista/direção;
+5. não executar processamento até decisão humana se o risco for alto/crítico.
+
+## Mini-checklist
+
+- Que tratamento é proposto?
+- Que dados são usados?
+- Quem são os titulares?
+- Qual a finalidade?
+- Há categorias especiais?
+- Há grande escala?
+- Há decisão automatizada?
+- Há nova tecnologia?
+- Há alternativa menos intrusiva?
+- Quais os riscos?
+- Que medidas mitigam?
 
 ## Regra
 
-Connector deve ser tratado como ferramenta poderosa.
-Ferramenta poderosa precisa de limite.
+Se envolver dados de saúde/trabalhadores + automação/IA + escala relevante,
+tratar como possível AIPD até avaliação humana.
 
 
 ## Referências externas base
