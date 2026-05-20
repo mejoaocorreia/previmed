@@ -27,6 +27,12 @@ Fase 1 (estratégia) fechada. Fase 2 a recolher dados antes de iniciar Fase 3 (p
 
 ## Último relatório
 
+- **2026-05-20** — [`reports/2026-05-20__previmed-pages-audit.md`](./reports/2026-05-20__previmed-pages-audit.md) — auditoria sistémica de 5 URLs core Previmed. Achados:
+  - **Problemas estruturais são sistémicos (template-level), não pontuais.** Title duplicado em 4/4 páginas de serviço. H1→H3 sem H2 em 4/4. Schema genérico em 4/4. 0 ext links institucionais em 4/4. WC médio 359w (range 165–732).
+  - `/consultoria-formacao/` tem **3 ocorrências de "35h" e 0 de "40h"** — compliance issue face à Lei 93/2019.
+  - Home `/` tem H1 "Notícias Previmed" (está como blog, não como homepage SEO).
+  - **Implicação:** fixes têm de ir a nível de template/plugin WP, não página a página.
+
 - **2026-05-20** — [`reports/2026-05-20__competitor-deep-dive.md`](./reports/2026-05-20__competitor-deep-dive.md) — auditoria competitiva de 7 URLs (Forprev, SEPRI ×3, Centralmed ×3) + Previmed `/saude-no-trabalho/`. Achados-chave:
   - **Centralmed = padrão ouro** em citação outbound institucional (6–8 links externos a ACT/DGS/pgdlisboa/FAO/EUR-Lex por artigo). Sem schema JSON-LD detectável — o link graph é a alavanca AIO.
   - **SEPRI = padrão "árvore"** (1 pillar + spin-offs geográficos/tópicos cruzados). 3 URLs em AIO Q1.

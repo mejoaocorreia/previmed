@@ -22,14 +22,17 @@
 
 ## Quick wins
 
-- `todo` `P1` Corrigir title duplicado `/saude-no-trabalho/` ("Previmed - PrevimedPrevimed" → "Medicina do Trabalho — Previmed"). Origem: `reports/2026-05-20__competitor-deep-dive.md` §F1.
-- `todo` `P2` Adicionar H2 à página `/saude-no-trabalho/` (atualmente salta H1→H3). Origem: §F3.
+- `todo` `P1` **Fix title duplicado a nível de template** (afeta 4/4 páginas de serviço, não só `/saude-no-trabalho/`). Origem: `reports/2026-05-20__previmed-pages-audit.md` §F1.
+- `todo` `P1` **`/consultoria-formacao/`**: atualizar "35h" (3 ocorrências) → "40h (Lei 93/2019)" — compliance editorial. Origem: §C1.
+- `todo` `P2` Home `/`: substituir H1 "Notícias Previmed" por H1 SEO. Origem: §H1.
 - `todo` `P2` Proteger URL `/saude-no-trabalho/` — já citada por AIO. Não mexer sem plano de redirect. Origem: `reports/2026-05-20__aio-expansion.md` §Q5.
 
 ## Technical blockers
 
-- `todo` `P2` Atualizar `STRATEGY_KEYWORDS.md` cluster "Formação 35h" → 40h. Origem: `reports/2026-05-20__aio-expansion.md` §C1+§Q4.
-- `todo` `P2` Auditoria rápida páginas core Previmed (`/seguranca-trabalho/`, HACCP, formação) — repetição de problemas (title duplicado, H2 ausentes, schema genérico, 0 ext links)? Origem: `reports/2026-05-20__competitor-deep-dive.md` §T1.
+- `done` `P2` Atualizar `STRATEGY_KEYWORDS.md` cluster "Formação 35h" → 40h. Origem: `reports/2026-05-20__aio-expansion.md` §C1+§Q4. Commit `70b8c95`.
+- `done` `P2` Auditoria rápida páginas core Previmed — confirmou padrão sistémico. Ver `reports/2026-05-20__previmed-pages-audit.md`.
+- `todo` `P1` **Refatorar template páginas de serviço** — H1→H2 (não H3). Afeta 4/4 páginas. Origem: `reports/2026-05-20__previmed-pages-audit.md` §F2.
+- `todo` `P1` Adicionar schema Service + FAQPage por template — afeta 4 páginas em batch. Origem: §S1+§S2.
 
 ## Content opportunities
 
