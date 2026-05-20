@@ -40,7 +40,9 @@
 - `todo` `P1` Brief Pillar "Segurança no Trabalho" — `/servicos/seguranca-trabalho/`. Origem: §Q2.
 - `todo` `P1` Brief Pillar "HACCP" — `/servicos/higiene-seguranca-alimentar/`. Origem: §Q3.
 - `todo` `P1` Brief Pillar "Formação 40h obrigatória" — pillar formação (correção legal 35→40). Origem: §Q4.
-- `todo` `P1` Guia "Como escolher empresa de medicina do trabalho" — `/recursos/guias/escolher-medicina-do-trabalho/`. Origem: §Q5.
+- `wip` `P1` Guia "Como escolher empresa de medicina do trabalho" — `/recursos/guias/escolher-medicina-do-trabalho/`. **Brief escrito** em `reports/2026-05-20__content-brief-escolher-mt.md`. Bloqueado por decisões pendentes (brand voice + autoria). Origem: §Q5.
+- `todo` `P2` Spin-offs Q5: `relatorio-unico-anexo-d-medicina-trabalho`, `medicina-trabalho-avenca-ou-ato-medico`, geo Norte/Lisboa. Origem: `reports/2026-05-20__content-brief-escolher-mt.md` §Spin-offs.
+- `todo` `P1` Criar CPT/template para hub `/recursos/guias/` antes da publicação do pillar Q5. Origem: §Riscos.
 
 ## Competitor gaps
 

@@ -27,6 +27,8 @@ Fase 1 (estratégia) fechada. Fase 2 a recolher dados antes de iniciar Fase 3 (p
 
 ## Último relatório
 
+- **2026-05-20** — [`reports/2026-05-20__content-brief-escolher-mt.md`](./reports/2026-05-20__content-brief-escolher-mt.md) — brief P1 do pillar Q5 "Como escolher empresa de medicina do trabalho". Aplica padrão Centralmed+SEPRI+Forprev: 1500–2000w, 4+ citações institucionais, schema Article+FAQPage+HowTo, 12 FAQs, 6º critério defensável vs Forprev (indicadores de qualidade mensuráveis). 3 spin-offs planeados (geo + Relatório Único + Avença vs ato). Bloqueado por 2 decisões pendentes (brand voice + autoria).
+
 - **2026-05-20** — [`reports/2026-05-20__previmed-pages-audit.md`](./reports/2026-05-20__previmed-pages-audit.md) — auditoria sistémica de 5 URLs core Previmed. Achados:
   - **Problemas estruturais são sistémicos (template-level), não pontuais.** Title duplicado em 4/4 páginas de serviço. H1→H3 sem H2 em 4/4. Schema genérico em 4/4. 0 ext links institucionais em 4/4. WC médio 359w (range 165–732).
   - `/consultoria-formacao/` tem **3 ocorrências de "35h" e 0 de "40h"** — compliance issue face à Lei 93/2019.
