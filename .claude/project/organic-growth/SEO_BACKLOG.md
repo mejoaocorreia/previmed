@@ -39,7 +39,7 @@
 - `wip` `P1` Pillar Q1 "Medicina do Trabalho" — brief escrito `reports/2026-05-20__content-brief-medicina-trabalho.md`. Brand voice + autoria conceptual decididas. **Aguarda nome do médico do trabalho** que assina. Origem: `reports/2026-05-20__aio-expansion.md` §Q1.
 - `wip` `P1` Pillar Q2 "Segurança no Trabalho" — brief escrito `reports/2026-05-20__content-brief-seguranca-trabalho.md`. **Aguarda nome do técnico HST** que assina. Origem: §Q2.
 - `wip` `P1` Pillar Q3 "HACCP" — brief escrito `reports/2026-05-20__content-brief-haccp.md`. **Aguarda nome do técnico alimentar** que assina. Origem: §Q3.
-- `wip` `P1` Pillar Q4 "Formação 40h obrigatória" — brief escrito `reports/2026-05-20__content-brief-formacao-40h.md`. **Aguarda nome do responsável formação** que assina. Origem: §Q4.
+- `wip` `P1` Pillar Q4 "Formação 40h obrigatória" — **copy final escrito** `reports/2026-05-20__copy-pillar-q4-formacao-40h.md`. Aguarda: (1) substituir placeholder Dra. Inês Carvalho, (2) hub `/recursos/guias/`, (3) atualização sincronizada de `/consultoria-formacao/` (atualmente diz "35h"), (4) deploy. Origem: §Q4.
 - `wip` `P1` Pillar Q5 "Como escolher empresa MT" — **copy final escrito** `reports/2026-05-20__copy-pillar-q5-escolher-mt.md`. Aguarda: (1) substituir placeholders Dr. Miguel Henriques + `<<…>>` por dados reais, (2) criar hub `/recursos/guias/`, (3) deploy WP. Origem: §Q5.
 - `todo` `P2` Spin-offs Q5: `relatorio-unico-anexo-d-medicina-trabalho`, `medicina-trabalho-avenca-ou-ato-medico`, geo Norte/Lisboa. Origem: `reports/2026-05-20__content-brief-escolher-mt.md` §Spin-offs.
 - `todo` `P1` Criar CPT/template para hub `/recursos/guias/` antes da publicação do pillar Q5. Origem: §Riscos.

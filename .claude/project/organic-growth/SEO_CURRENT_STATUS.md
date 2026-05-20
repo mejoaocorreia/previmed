@@ -28,6 +28,8 @@ Fase 1 (estratégia) fechada. Fase 2 a recolher dados antes de iniciar Fase 3 (p
 
 ## Último relatório
 
+- **2026-05-20** — [`reports/2026-05-20__copy-pillar-q4-formacao-40h.md`](./reports/2026-05-20__copy-pillar-q4-formacao-40h.md) — **copy final do pillar Q4 (Formação 40h)** pronto para revisão editorial e implementação. Abertura explícita com correção 35→40h + Lei 93/2019. 12 FAQs + schema Article+FAQPage+HowTo. Autor placeholder Dra. Inês Carvalho. Diferenciador: primeira referência PT atualizada. **Crítico**: deploy deve coincidir com atualização de `/consultoria-formacao/` (que ainda diz "35h" — `reports/2026-05-20__previmed-pages-audit.md` §C1).
+
 - **2026-05-20** — [`reports/2026-05-20__copy-pillar-q5-escolher-mt.md`](./reports/2026-05-20__copy-pillar-q5-escolher-mt.md) — **copy final do pillar Q5** pronto para revisão editorial e implementação WordPress. Aplica o brief Q5: 6 critérios + secção legal Lei 102/2009 + 12 FAQs + schema JSON-LD pronto a colar (Article + HowTo + FAQPage + BreadcrumbList) + checklist pré-publicação + métricas de tracking. Autor placeholder Dr. Miguel Henriques (substituir antes de publicar). Inclui `<<…>>` para dados Previmed concretos a preencher.
 
 - **2026-05-20** — **5 briefs P1 completos** em `reports/`:
