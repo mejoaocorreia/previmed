@@ -1,0 +1,201 @@
+Quero que atues como Supervisor / Change Manager do projeto.
+
+Já existe uma estrutura nova para SEO/Organic Growth em:
+
+.claude/agents/organic-growth/
+.claude/project/organic-growth/
+.claude/skills/organic-growth/
+.claude/commands/organic-growth/
+
+Quero que faças uma análise completa desta estrutura antes de qualquer implementação.
+
+Objetivo:
+Preparar o projeto para ter uma equipa SEO/Organic Growth muito forte, capaz de analisar concorrência, keywords, SEO técnico, conteúdo, Core Web Vitals, schema, local SEO, AI Search/GEO, WordPress SEO e reporting.
+
+Não instales nada ainda.
+Não alteres ficheiros ainda.
+Não mexas em produção.
+Não alteres WordPress.
+Não instales MCPs sem plano e aprovação.
+
+Primeiro quero análise e plano.
+
+Tarefas:
+
+1. Ler toda a estrutura organic-growth
+
+Analisa:
+
+- agentes disponíveis;
+- project docs;
+- skills;
+- commands;
+- dependências implícitas;
+- ferramentas/MCPs mencionados;
+- responsabilidades de cada agente;
+- como isto encaixa com o Supervisor principal.
+
+2. Verificar integração com o Supervisor
+
+Confirma:
+
+- como o Supervisor deve chamar o SEO Lead / Organic Growth Lead;
+- que tarefas devem ir para a equipa organic-growth;
+- quando envolver SEO Lead;
+- quando envolver Technical SEO;
+- quando envolver Content/Brief;
+- quando envolver Local SEO;
+- quando envolver Schema/Entity;
+- quando envolver Performance/Core Web Vitals;
+- quando envolver AI Search/GEO;
+- quando envolver WordPress SEO Implementation;
+- quando envolver SEO QA.
+
+3. Auditar MCPs/ferramentas necessárias
+
+Com base nos ficheiros organic-growth, identifica que MCPs ou ferramentas seriam úteis.
+
+Considera, se aplicável:
+
+- Browser/Search;
+- Playwright;
+- Chrome DevTools;
+- Lighthouse/PageSpeed;
+- Google Search Console;
+- GA4;
+- WordPress/WP-CLI;
+- sitemap/crawler;
+- schema validator;
+- SERP/keyword tools;
+- Ahrefs/Semrush/DataForSEO, se houver acesso;
+- Figma/design tokens, se for útil;
+- filesystem/git para leitura e alteração segura.
+
+Para cada ferramenta/MCP, indica:
+
+- nome;
+- função;
+- prioridade: essencial / recomendado / futuro;
+- risco;
+- permissões necessárias;
+- se deve ser read-only inicialmente;
+- alternativa caso não exista;
+- se precisa de credenciais;
+- se pode afetar produção;
+- se deve ser instalado agora ou mais tarde.
+
+4. Não instalar tudo de uma vez
+
+Quero uma proposta por fases.
+
+Exemplo de fases:
+
+Fase 1 — Read-only e auditoria segura
+- ferramentas apenas de leitura;
+- análise de ficheiros;
+- auditoria SEO básica;
+- leitura de sitemap;
+- análise de páginas;
+- PageSpeed/Lighthouse se disponível.
+
+Fase 2 — Dados reais
+- Search Console;
+- GA4;
+- dados de performance;
+- queries reais;
+- páginas com impressões/clicks.
+
+Fase 3 — Concorrência e SERP
+- browser/search;
+- SERP research;
+- concorrentes;
+- keyword gaps;
+- content gaps.
+
+Fase 4 — WordPress implementation
+- alterações em templates/meta/schema;
+- SEO on-page;
+- internal linking;
+- performance;
+- validação em preview.
+
+Fase 5 — Reporting
+- dashboards;
+- backlog SEO;
+- KPIs;
+- plano mensal.
+
+Adapta as fases ao projeto real.
+
+5. Criar plano de instalação/configuração
+
+Quero que proponhas:
+
+- o que instalar primeiro;
+- o que deixar para depois;
+- que credenciais seriam necessárias;
+- que riscos existem;
+- que ficheiros serão alterados;
+- que comandos serão usados;
+- que permissões são necessárias;
+- que validação será feita depois.
+
+Não executes instalações sem eu aprovar.
+
+6. Criar plano operacional SEO
+
+Depois de analisar organic-growth, propõe como usar isto no dia-a-dia.
+
+Exemplos:
+
+- comando para análise de concorrência;
+- comando para auditoria técnica;
+- comando para revisão de uma página;
+- comando para criar content brief;
+- comando para análise GSC;
+- comando para schema;
+- comando para SEO go-live.
+
+Quero saber como vou pedir trabalho ao Supervisor e como ele vai distribuir para os agentes organic-growth.
+
+7. Regras de segurança
+
+Aplicar estas regras:
+
+- não mexer em produção sem aprovação;
+- não alterar URLs/slugs sem aprovação;
+- não alterar redirects sem aprovação;
+- não instalar plugins sem aprovação;
+- não alterar wp-config.php;
+- não mexer na base de dados sem aprovação;
+- não enviar dados sensíveis para ferramentas externas sem aprovação;
+- começar por read-only sempre que possível;
+- usar preview/staging antes de go-live;
+- manter rollback/checkpoint para alterações médias/grandes.
+
+8. Output esperado
+
+Responde com:
+
+1. resumo do que encontraste na estrutura organic-growth;
+2. agentes organic-growth existentes e função de cada um;
+3. skills organic-growth existentes e quando usar;
+4. commands existentes e como usar;
+5. MCPs/ferramentas recomendadas;
+6. prioridade de instalação/configuração;
+7. riscos e permissões;
+8. plano por fases;
+9. primeiro passo recomendado;
+10. o que precisa da minha aprovação;
+11. o que não deve ser feito ainda.
+
+Depois de eu aprovar, começamos apenas pela Fase 1.
+
+Não avances para instalação/configuração sem aprovação explícita.
+
+
+!!!!!!!!!!! SEO PROMPT INSTALL !!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+
