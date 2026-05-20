@@ -27,6 +27,15 @@ Fase 1 (estratégia) fechada. Fase 2 a recolher dados antes de iniciar Fase 3 (p
 
 ## Último relatório
 
+- **2026-05-20** — **5 briefs P1 completos** em `reports/`:
+  - [`content-brief-escolher-mt.md`](./reports/2026-05-20__content-brief-escolher-mt.md) — Q5 (brief de referência, foothold AIO).
+  - [`content-brief-medicina-trabalho.md`](./reports/2026-05-20__content-brief-medicina-trabalho.md) — Q1 (head term core MT).
+  - [`content-brief-seguranca-trabalho.md`](./reports/2026-05-20__content-brief-seguranca-trabalho.md) — Q2 (head term ST + 4 modalidades).
+  - [`content-brief-haccp.md`](./reports/2026-05-20__content-brief-haccp.md) — Q3 (HACCP + 7 princípios HowTo).
+  - [`content-brief-formacao-40h.md`](./reports/2026-05-20__content-brief-formacao-40h.md) — Q4 (Formação 40h, correção legal 35→40).
+  - Todos seguem o template comum: 1400–1700w body + 400–700w FAQ; 5–7 citações institucionais obrigatórias; schema Article + FAQPage + (HowTo onde aplicável); 3 spin-offs planeados por pillar.
+  - Bloqueados pela mesma decisão (brand voice + autoria).
+
 - **2026-05-20** — [`reports/2026-05-20__content-brief-escolher-mt.md`](./reports/2026-05-20__content-brief-escolher-mt.md) — brief P1 do pillar Q5 "Como escolher empresa de medicina do trabalho". Aplica padrão Centralmed+SEPRI+Forprev: 1500–2000w, 4+ citações institucionais, schema Article+FAQPage+HowTo, 12 FAQs, 6º critério defensável vs Forprev (indicadores de qualidade mensuráveis). 3 spin-offs planeados (geo + Relatório Único + Avença vs ato). Bloqueado por 2 decisões pendentes (brand voice + autoria).
 
 - **2026-05-20** — [`reports/2026-05-20__previmed-pages-audit.md`](./reports/2026-05-20__previmed-pages-audit.md) — auditoria sistémica de 5 URLs core Previmed. Achados:
