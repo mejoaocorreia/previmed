@@ -28,6 +28,8 @@ Fase 1 (estratégia) fechada. Fase 2 a recolher dados antes de iniciar Fase 3 (p
 
 ## Último relatório
 
+- **2026-05-20** — [`reports/2026-05-20__execution-plan-90d.md`](./reports/2026-05-20__execution-plan-90d.md) — **plano consolidado 90 dias** para fechar Fase 2 e arrancar Fase 3. 5 fases (A→E) com esforço estimado (~10.5 pd ativos), responsável e dependências. Cobre desde substituir placeholders até medir KPIs t+90/180d. **Ponto de entrada único** para quem pegar no trabalho.
+
 - **2026-05-20** — **5 copies finais completos** em `reports/`:
   - [`copy-pillar-q1-medicina-trabalho.md`](./reports/2026-05-20__copy-pillar-q1-medicina-trabalho.md) — head term Medicina do Trabalho.
   - [`copy-pillar-q2-seguranca-trabalho.md`](./reports/2026-05-20__copy-pillar-q2-seguranca-trabalho.md) — head term Segurança no Trabalho + 4 modalidades + checklist por setor.
