@@ -2,6 +2,43 @@
 
 Este ficheiro lista ferramentas e MCPs úteis para um SEO Lead de alto nível.
 
+## Política orçamental — orçamento zero
+
+> **Decisão 2026-05-20** (ver [`SEO_DECISION_LOG.md`](./SEO_DECISION_LOG.md)): toda a stack SEO opera com ferramentas **gratuitas**. Sem subscrições pagas. Sem APIs com top-up.
+>
+> As 6 opções pagas avaliadas (DataForSEO, SerpAPI, Ahrefs, Semrush, SE Ranking, híbrido) foram rejeitadas. Detalhe completo em [`DECISION_KEYWORD_DATA_TOOL.md`](./DECISION_KEYWORD_DATA_TOOL.md).
+>
+> **Trade-offs aceites**: sem volumes finos (Keyword Planner em buckets), sem competitor ranked keywords automatizadas, sem rank tracking automatizado, sem backlinks data profunda, sem dashboard SaaS.
+>
+> Qualquer proposta de uso de ferramenta paga **requer reavaliação explícita** desta decisão.
+
+## Stack atual (todas grátis)
+
+| Ferramenta | Função | Estado |
+|---|---|---|
+| Google Search Console | Queries reais com cliques/impressões — fonte de verdade | ⏳ a ligar (Lote 2.4) |
+| GA4 | Comportamento pós-clique | ⏳ a ligar (Lote 2.4) |
+| Google Site Kit (WP) | Bridge GSC/GA4 no admin WordPress | ⏳ a ligar (Lote 2.4) |
+| Google Keyword Planner | Volumes em buckets (requer conta Ads ativa) | ⏳ a ligar (Lote 2.4) |
+| Playwright MCP | SERPs ad-hoc + Modo IA + auditoria competitiva | ✅ ativo (já usado em 2 relatórios) |
+| Chrome DevTools MCP | Performance, network, debug | ✅ ativo |
+| PageSpeed Insights API | Lighthouse, Core Web Vitals, CrUX | ⏳ API key por criar (Lote 2.4) |
+| Rich Results Test | Validação de schema (UI Google) | ✅ disponível (UI manual) |
+| Schema.org Validator | Validação de schema (UI) | ✅ disponível (UI manual) |
+| URL Inspection API | Estado de indexação | ⏳ ligada via GSC |
+| Bing Webmaster Tools | Cobertura Bing/ChatGPT | ⏳ por avaliar |
+
+## Stack rejeitada (paga)
+
+Não usar sem reabrir a decisão de 2026-05-20:
+
+- DataForSEO (~$300/ano)
+- SerpAPI (~$300/ano)
+- Ahrefs Lite/Standard (~$1 548–$2 988/ano)
+- Semrush Pro (~$1 668/ano)
+- SE Ranking (~$660/ano)
+- Screaming Frog paid licence (~£200/ano)
+
 ## Essenciais
 
 ### Browser/Search MCP
@@ -85,16 +122,17 @@ Uso:
 - snapshots de acessibilidade;
 - crawling leve.
 
-## Muito úteis
+## Muito úteis (avaliar individualmente — preferir versão grátis)
 
-- Sitemap crawler
-- Broken link checker
-- Rich Results Test / Schema validator
-- Screaming Frog / Sitebulb, se disponível
-- Ahrefs/Semrush/DataForSEO/SerpAPI, se autorizado
-- Google Business Profile API, se aplicável
-- Bing Webmaster Tools
-- Figma MCP, se design/tokens forem relevantes
+- Sitemap crawler (UI grátis ou Screaming Frog free tier — 500 URLs)
+- Broken link checker (ferramenta browser grátis)
+- Rich Results Test / Schema validator (Google UI, grátis)
+- Screaming Frog **free tier** (até 500 URLs — suficiente para Previmed greenfield)
+- Google Business Profile API (gratuita, se aplicável)
+- Bing Webmaster Tools (gratuita)
+- Figma MCP (uso indireto — design/tokens)
+
+**Bloqueado por decisão 2026-05-20** (não usar sem reabrir decisão): Ahrefs, Semrush, DataForSEO, SerpAPI, Screaming Frog paid.
 
 ## Segurança
 

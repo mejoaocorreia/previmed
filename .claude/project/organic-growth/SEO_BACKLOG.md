@@ -63,7 +63,7 @@
 ## Measurement
 
 - `done` `P1` Decidir keyword data tool — **decisão: orçamento zero (Cenário Z)**. Registado em `SEO_DECISION_LOG.md` 2026-05-20.
-- `todo` `P2` Atualizar `SEO_TOOLING_MCP_STACK.md` para refletir stack zero-cost. Origem: `DECISION_KEYWORD_DATA_TOOL.md` §Plano #3.
+- `done` `P2` Atualizar `SEO_TOOLING_MCP_STACK.md` para refletir stack zero-cost. Origem: `DECISION_KEYWORD_DATA_TOOL.md` §Plano #3.
 - `todo` `P2` Garantir conta Google Ads ativa (mesmo sem spend) para destravar buckets finos do Keyword Planner. Origem: `DECISION_KEYWORD_DATA_TOOL.md` §Plano #2.
 - `todo` `P1` Ligar GSC, GA4, Site Kit, criar API key PSI — origem: `SETUP_GSC_GA4.md`.
 - `blocked` `P1` Produzir baseline metrics — bloqueado por 28d de coleta GSC.
