@@ -3,7 +3,7 @@
 > Lote 1.3 da Fase 1.
 > Última atualização: 2026-05-19.
 > Autor: SEO Lead + Keyword & Intent agent.
-> Base: `STRATEGY_AUDIENCES.md` + `STRATEGY_INFORMATION_ARCHITECTURE.md`.
+> Base: `strategy/AUDIENCES.md` + `strategy/INFORMATION_ARCHITECTURE.md`.
 
 ## Limitações desta análise
 
@@ -208,13 +208,13 @@
 
 **Target hub:** `/formacao/` + `/recursos/guias/formacao-obrigatoria-40-horas/`
 
-> ⚠️ **Nota legal — atualização 2026-05-20.** A Lei 93/2019 alterou o Art.º 131.º do Código do Trabalho: o mínimo de formação contínua obrigatória passou de **35 para 40 horas anuais** por trabalhador. A AIO do Google já corrige automaticamente a query "35 horas" para "40 horas". Decisão registada em `SEO_DECISION_LOG.md` 2026-05-20.
+> ⚠️ **Nota legal — atualização 2026-05-20.** A Lei 93/2019 alterou o Art.º 131.º do Código do Trabalho: o mínimo de formação contínua obrigatória passou de **35 para 40 horas anuais** por trabalhador. A AIO do Google já corrige automaticamente a query "35 horas" para "40 horas". Decisão registada em `_living/DECISION_LOG.md` 2026-05-20.
 >
 > **Política para este cluster:**
 > 1. Manter slug/título da pillar com "40 horas" como referencial atual.
 > 2. Manter a query "35 horas" trackeada por volume residual e por ser a forma popular.
 > 3. Cada peça de conteúdo deste cluster abre com correção 35→40 explícita + citação Lei 93/2019 + Nota Técnica 9 da ACT.
-> 4. Conteúdo "35 horas" antigo deve ser auditado (404, 301 ou refresh) — ver `SEO_BACKLOG.md` cluster `[Technical blocker]`.
+> 4. Conteúdo "35 horas" antigo deve ser auditado (404, 301 ou refresh) — ver `_living/BACKLOG.md` cluster `[Technical blocker]`.
 
 | Query | Intenção | Funil | Vol. est. | Difi. | Prio | Target | Notas |
 |---|---|---|---|---|---|---|---|

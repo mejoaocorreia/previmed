@@ -25,7 +25,7 @@ URLs a auditar (todas existentes confirmadas via sitemap/navegação):
 | Fonte | Estado |
 |---|---|
 | Playwright MCP (navegação + JS evaluation) | em uso |
-| `AUDIT_PREVIMED_BASELINE.md` (auditoria Fase 2.1) | reviewed |
+| `setup/BASELINE_AUDIT.md` (auditoria Fase 2.1) | reviewed |
 | `reports/2026-05-20__competitor-deep-dive.md` (baseline `/saude-no-trabalho/`) | reviewed |
 
 ## Confidence Level
@@ -49,7 +49,7 @@ URLs a auditar (todas existentes confirmadas via sitemap/navegação):
 - `/consultoria-formacao/` cita **"35 horas" 3 vezes** e **"40 horas" 0 vezes**. Conteúdo desatualizado face à Lei 93/2019. Risco editorial.
 
 **Achado adicional sobre home**:
-- `/` (home) tem **H1 "Notícias Previmed"** — a home está como blog feed, não como homepage SEO-otimizada. Achado já flagged em `AUDIT_PREVIMED_BASELINE.md`, confirmado aqui.
+- `/` (home) tem **H1 "Notícias Previmed"** — a home está como blog feed, não como homepage SEO-otimizada. Achado já flagged em `setup/BASELINE_AUDIT.md`, confirmado aqui.
 
 **Conclusão:** os fixes têm de ser feitos **em batch ao template WordPress**, não página a página. Provavelmente um único template `page-servico.php` (ou equivalente) gera as 4 páginas de serviço com o mesmo defeito (title + estrutura).
 
@@ -120,7 +120,7 @@ Aplicar a cada página de serviço o **template editorial Previmed** (a derivar 
 
 ### Phase 4 — Compliance fix urgente
 
-- [ ] **C1.** `/consultoria-formacao/` — atualizar todas as ocorrências de "35 horas" para "40 horas (anteriormente 35h, alteração pela Lei 93/2019)". Aplicar política do cluster Formação registada em `STRATEGY_KEYWORDS.md` §9.
+- [ ] **C1.** `/consultoria-formacao/` — atualizar todas as ocorrências de "35 horas" para "40 horas (anteriormente 35h, alteração pela Lei 93/2019)". Aplicar política do cluster Formação registada em `strategy/KEYWORDS.md` §9.
 
 ### Phase 5 — Home
 
@@ -128,7 +128,7 @@ Aplicar a cada página de serviço o **template editorial Previmed** (a derivar 
 
 ## Backlog Items To Add
 
-A copiar para `../SEO_BACKLOG.md`:
+A copiar para `../_living/BACKLOG.md`:
 
 - `[Quick win] P1` Fix title duplicado a nível de template (afeta todas as páginas core). Origem: `reports/2026-05-20__previmed-pages-audit.md` §F1.
 - `[Quick win] P1` `/consultoria-formacao/`: atualizar "35h" → "40h (Lei 93/2019)" — compliance editorial. Origem: §C1.

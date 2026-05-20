@@ -1,14 +1,14 @@
 # Content Brief — Pillar "Formação obrigatória 40h" (Q4) — 2026-05-20
 
 > **Decisões aplicadas (2026-05-20):**
-> - **Brand voice**: "Formação Contínua Obrigatória" / "40 horas" (Lei 93/2019). [`SEO_GLOSSARY.md#lei-93-2019`](../SEO_GLOSSARY.md#lei-93-2019).
+> - **Brand voice**: "Formação Contínua Obrigatória" / "40 horas" (Lei 93/2019). [`_system/GLOSSARY.md#lei-93-2019`](../_system/GLOSSARY.md#lei-93-2019).
 > - **Autor (PLACEHOLDER — substituir antes de publicar)**: **Dra. Inês Carvalho** — Diretora Pedagógica (DGERT).
 >
-> ⚠️ **Nome fictício para arrancar fluxo editorial.** Substituir por responsável de formação real do quadro (com foto + LinkedIn) antes de publicar. [YMYL](../SEO_GLOSSARY.md#ymyl-your-money-or-your-life) + [E-E-A-T](../SEO_GLOSSARY.md#e-e-a-t-experience-expertise-authoritativeness-trustworthiness) — autor falso tem risco de penalização Google.
+> ⚠️ **Nome fictício para arrancar fluxo editorial.** Substituir por responsável de formação real do quadro (com foto + LinkedIn) antes de publicar. [YMYL](../_system/GLOSSARY.md#ymyl-your-money-or-your-life) + [E-E-A-T](../_system/GLOSSARY.md#e-e-a-t-experience-expertise-authoritativeness-trustworthiness) — autor falso tem risco de penalização Google.
 
 > Padrões comuns no brief de referência [`2026-05-20__content-brief-escolher-mt.md`](./2026-05-20__content-brief-escolher-mt.md). Aqui apenas o específico do cluster Q4.
 >
-> ⚠️ **Cluster com achado crítico:** a Lei 93/2019 alterou o mínimo legal de **35 → 40 horas anuais**. AIO já corrige automaticamente. Conteúdo PT existente continua maioritariamente em "35h" — janela de oportunidade. Política do cluster registada em `SEO_DECISION_LOG.md` 2026-05-20 e `STRATEGY_KEYWORDS.md` §9.
+> ⚠️ **Cluster com achado crítico:** a Lei 93/2019 alterou o mínimo legal de **35 → 40 horas anuais**. AIO já corrige automaticamente. Conteúdo PT existente continua maioritariamente em "35h" — janela de oportunidade. Política do cluster registada em `_living/DECISION_LOG.md` 2026-05-20 e `strategy/KEYWORDS.md` §9.
 
 ## Target
 

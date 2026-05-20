@@ -35,9 +35,9 @@ flowchart TD
     LEAD -->|"consulta estado"| LIVING
     LEAD -->|"delega"| SPEC
 
-    RULES[("📋 REGRAS<br/>project/organic-growth/<br/>SEO_OPERATING_SYSTEM.md<br/>SEO_QUALITY_BAR.md<br/>etc.")]
+    RULES[("📋 REGRAS<br/>project/organic-growth/<br/>_system/OPERATING_SYSTEM.md<br/>_system/QUALITY_BAR.md<br/>etc.")]
 
-    LIVING[("📊 ESTADO VIVO<br/>project/organic-growth/<br/>SEO_CURRENT_STATUS.md<br/>SEO_BACKLOG.md<br/>SEO_DECISION_LOG.md<br/>SEO_OPPORTUNITIES.md")]
+    LIVING[("📊 ESTADO VIVO<br/>project/organic-growth/<br/>_living/CURRENT_STATUS.md<br/>_living/BACKLOG.md<br/>_living/DECISION_LOG.md<br/>_living/OPPORTUNITIES.md")]
 
     SPEC["⚙️ SPECIALISTS<br/>14 agents/organic-growth/*.md<br/>technical-seo, schema-entity,<br/>content-brief, etc."]
     SPEC -->|"invoca"| SKILLS
@@ -217,36 +217,36 @@ Aqui é onde o sistema **falha em organização** atualmente.
 ├── _TEMPLATE_seo-report.md (dentro de reports/)
 │
 ├── 🟦 REGRAS (5 ficheiros mas misturadas)
-│   ├── SEO_OPERATING_SYSTEM.md
-│   ├── SEO_QUALITY_BAR.md
-│   ├── SEO_GLOSSARY.md
-│   ├── SEO_TOOLING_MCP_STACK.md
-│   └── SEO_KPI_MODEL.md
+│   ├── _system/OPERATING_SYSTEM.md
+│   ├── _system/QUALITY_BAR.md
+│   ├── _system/GLOSSARY.md
+│   ├── _system/TOOLING_MCP_STACK.md
+│   └── _system/KPI_MODEL.md
 │
 ├── 🟩 ESTADO VIVO (4 ficheiros)
-│   ├── SEO_CURRENT_STATUS.md
-│   ├── SEO_BACKLOG.md
-│   ├── SEO_DECISION_LOG.md
-│   └── SEO_OPPORTUNITIES.md
+│   ├── _living/CURRENT_STATUS.md
+│   ├── _living/BACKLOG.md
+│   ├── _living/DECISION_LOG.md
+│   └── _living/OPPORTUNITIES.md
 │
 ├── 🟨 PLAYBOOKS (5 ficheiros)
-│   ├── SEO_COMPETITOR_RESEARCH_PROTOCOL.md
-│   ├── SEO_CONTENT_SYSTEM.md
-│   ├── SEO_TECHNICAL_AUDIT.md
-│   ├── SEO_SCHEMA_ENTITY_MODEL.md
-│   └── SEO_LOCAL_PLAYBOOK.md
+│   ├── _system/playbooks/COMPETITOR_RESEARCH.md
+│   ├── _system/playbooks/CONTENT_SYSTEM.md
+│   ├── _system/playbooks/TECHNICAL_AUDIT.md
+│   ├── _system/playbooks/SCHEMA_ENTITY_MODEL.md
+│   └── _system/playbooks/LOCAL_PLAYBOOK.md
 │
 ├── 🟧 ESTRATÉGIA Fase 1 (5 ficheiros)
 │   ├── STRATEGY.md
-│   ├── STRATEGY_AUDIENCES.md
-│   ├── STRATEGY_INFORMATION_ARCHITECTURE.md
-│   ├── STRATEGY_KEYWORDS.md
-│   └── STRATEGY_COMPETITORS.md
+│   ├── strategy/AUDIENCES.md
+│   ├── strategy/INFORMATION_ARCHITECTURE.md
+│   ├── strategy/KEYWORDS.md
+│   └── strategy/COMPETITORS.md
 │
 ├── 🟥 SETUP/DECISÕES Fase 2 (3 ficheiros)
-│   ├── AUDIT_PREVIMED_BASELINE.md
-│   ├── DECISION_KEYWORD_DATA_TOOL.md
-│   └── SETUP_GSC_GA4.md
+│   ├── setup/BASELINE_AUDIT.md
+│   ├── setup/KEYWORD_DATA_DECISION.md
+│   └── setup/GSC_GA4_SETUP.md
 │
 ├── reports/ (18 ficheiros datados — MISTURADOS)
 │   ├── 🔍 Análises (4)
@@ -304,9 +304,9 @@ sequenceDiagram
     S->>S: confirma é tarefa SEO grande
     S->>L: delega ao SEO Lead
 
-    L->>P: lê SEO_OPERATING_SYSTEM.md
-    L->>P: lê SEO_CURRENT_STATUS.md
-    L->>P: lê STRATEGY_KEYWORDS.md (cluster Q1)
+    L->>P: lê _system/OPERATING_SYSTEM.md
+    L->>P: lê _living/CURRENT_STATUS.md
+    L->>P: lê strategy/KEYWORDS.md (cluster Q1)
     L->>P: lê reports/aio-expansion §Q1
     L->>P: lê reports/competitor-deep-dive §SEPRI
 
@@ -456,31 +456,31 @@ sequenceDiagram
 
 | Origem (atual) | Destino (proposto) |
 |---|---|
-| `SEO_OPERATING_SYSTEM.md` | `_system/OPERATING_SYSTEM.md` |
-| `SEO_QUALITY_BAR.md` | `_system/QUALITY_BAR.md` |
-| `SEO_KPI_MODEL.md` | `_system/KPI_MODEL.md` |
-| `SEO_GLOSSARY.md` | `_system/GLOSSARY.md` |
-| `SEO_TOOLING_MCP_STACK.md` | `_system/TOOLING_MCP_STACK.md` |
-| `SEO_COMPETITOR_RESEARCH_PROTOCOL.md` | `_system/playbooks/COMPETITOR_RESEARCH.md` |
-| `SEO_CONTENT_SYSTEM.md` | `_system/playbooks/CONTENT_SYSTEM.md` |
-| `SEO_TECHNICAL_AUDIT.md` | `_system/playbooks/TECHNICAL_AUDIT.md` |
-| `SEO_SCHEMA_ENTITY_MODEL.md` | `_system/playbooks/SCHEMA_ENTITY_MODEL.md` |
-| `SEO_LOCAL_PLAYBOOK.md` | `_system/playbooks/LOCAL_PLAYBOOK.md` |
-| `SEO_CURRENT_STATUS.md` | `_living/CURRENT_STATUS.md` |
-| `SEO_BACKLOG.md` | `_living/BACKLOG.md` |
-| `SEO_DECISION_LOG.md` | `_living/DECISION_LOG.md` |
-| `SEO_OPPORTUNITIES.md` | `_living/OPPORTUNITIES.md` |
+| `_system/OPERATING_SYSTEM.md` | `_system/OPERATING_SYSTEM.md` |
+| `_system/QUALITY_BAR.md` | `_system/QUALITY_BAR.md` |
+| `_system/KPI_MODEL.md` | `_system/KPI_MODEL.md` |
+| `_system/GLOSSARY.md` | `_system/GLOSSARY.md` |
+| `_system/TOOLING_MCP_STACK.md` | `_system/TOOLING_MCP_STACK.md` |
+| `_system/playbooks/COMPETITOR_RESEARCH.md` | `_system/playbooks/COMPETITOR_RESEARCH.md` |
+| `_system/playbooks/CONTENT_SYSTEM.md` | `_system/playbooks/CONTENT_SYSTEM.md` |
+| `_system/playbooks/TECHNICAL_AUDIT.md` | `_system/playbooks/TECHNICAL_AUDIT.md` |
+| `_system/playbooks/SCHEMA_ENTITY_MODEL.md` | `_system/playbooks/SCHEMA_ENTITY_MODEL.md` |
+| `_system/playbooks/LOCAL_PLAYBOOK.md` | `_system/playbooks/LOCAL_PLAYBOOK.md` |
+| `_living/CURRENT_STATUS.md` | `_living/CURRENT_STATUS.md` |
+| `_living/BACKLOG.md` | `_living/BACKLOG.md` |
+| `_living/DECISION_LOG.md` | `_living/DECISION_LOG.md` |
+| `_living/OPPORTUNITIES.md` | `_living/OPPORTUNITIES.md` |
 | `STRATEGY.md` | `strategy/STRATEGY.md` |
-| `STRATEGY_AUDIENCES.md` | `strategy/AUDIENCES.md` |
-| `STRATEGY_INFORMATION_ARCHITECTURE.md` | `strategy/INFORMATION_ARCHITECTURE.md` |
-| `STRATEGY_KEYWORDS.md` | `strategy/KEYWORDS.md` |
-| `STRATEGY_COMPETITORS.md` | `strategy/COMPETITORS.md` |
-| `AUDIT_PREVIMED_BASELINE.md` | `setup/BASELINE_AUDIT.md` |
-| `DECISION_KEYWORD_DATA_TOOL.md` | `setup/KEYWORD_DATA_DECISION.md` |
-| `SETUP_GSC_GA4.md` | `setup/GSC_GA4_SETUP.md` |
+| `strategy/AUDIENCES.md` | `strategy/AUDIENCES.md` |
+| `strategy/INFORMATION_ARCHITECTURE.md` | `strategy/INFORMATION_ARCHITECTURE.md` |
+| `strategy/KEYWORDS.md` | `strategy/KEYWORDS.md` |
+| `strategy/COMPETITORS.md` | `strategy/COMPETITORS.md` |
+| `setup/BASELINE_AUDIT.md` | `setup/BASELINE_AUDIT.md` |
+| `setup/KEYWORD_DATA_DECISION.md` | `setup/KEYWORD_DATA_DECISION.md` |
+| `setup/GSC_GA4_SETUP.md` | `setup/GSC_GA4_SETUP.md` |
 | `reports/...__content-brief-medicina-trabalho.md` | `clusters/q1-medicina-trabalho/BRIEF.md` |
 | `reports/...__copy-pillar-q1-*.md` | `clusters/q1-medicina-trabalho/COPY.md` |
-| `aio-captures/aio-q1-*.yml` | `clusters/q1-medicina-trabalho/aio-capture.yml` |
+| `clusters/aio-q1-*.yml` | `clusters/q1-medicina-trabalho/aio-capture.yml` |
 | (idem Q2, Q3, Q4, Q5) | (clusters/q2…/q5…) |
 | `reports/...__copy-spinoff-avenca-vs-ato.md` | `clusters/q5-escolher-mt/spin-offs/avenca-vs-ato/COPY.md` |
 | `reports/...__aio-expansion.md` | `reports/2026-05-20__aio-expansion.md` (fica) |

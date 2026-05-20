@@ -1,10 +1,10 @@
 # Content Brief — Pillar "Como escolher empresa de medicina do trabalho" — 2026-05-20
 
 > **Decisões aplicadas (2026-05-20):**
-> - **Brand voice**: "Medicina do Trabalho" (canónica). [`SEO_GLOSSARY.md#query`](../SEO_GLOSSARY.md#query).
+> - **Brand voice**: "Medicina do Trabalho" (canónica). [`_system/GLOSSARY.md#query`](../_system/GLOSSARY.md#query).
 > - **Autor (PLACEHOLDER — substituir antes de publicar)**: **Dr. Miguel Henriques** — Diretor Clínico, Medicina do Trabalho.
 >
-> ⚠️ **Nome fictício para arrancar fluxo editorial.** Substituir por médico do trabalho real do quadro Previmed (com foto + LinkedIn) antes de publicar. Saúde ocupacional cai em [YMYL](../SEO_GLOSSARY.md#ymyl-your-money-or-your-life) — publicar com autor falso viola [E-E-A-T](../SEO_GLOSSARY.md#e-e-a-t-experience-expertise-authoritativeness-trustworthiness) e tem risco de penalização Google.
+> ⚠️ **Nome fictício para arrancar fluxo editorial.** Substituir por médico do trabalho real do quadro Previmed (com foto + LinkedIn) antes de publicar. Saúde ocupacional cai em [YMYL](../_system/GLOSSARY.md#ymyl-your-money-or-your-life) — publicar com autor falso viola [E-E-A-T](../_system/GLOSSARY.md#e-e-a-t-experience-expertise-authoritativeness-trustworthiness) e tem risco de penalização Google.
 
 ## Purpose
 
@@ -21,7 +21,7 @@ Este brief aplica as regras técnicas e editoriais derivadas de [`2026-05-20__co
 | **Query principal** | `como escolher empresa medicina do trabalho` |
 | **Intenção** | INFO + COMM (comparativa, fase consideração) |
 | **Funil** | MID (decisor B2B a avaliar opções, ainda não pediu proposta) |
-| **Persona dominante** | RH/Office Manager de PME (ver `STRATEGY_AUDIENCES.md` persona 1) |
+| **Persona dominante** | RH/Office Manager de PME (ver `strategy/AUDIENCES.md` persona 1) |
 | **Vol. estimado** | a confirmar via Keyword Planner (cluster P1) |
 | **URL alvo** | `/recursos/guias/escolher-medicina-do-trabalho/` |
 | **Status AIO** | Previmed citado (#5 do painel em captura 2026-05-20) |
@@ -259,9 +259,9 @@ Isto:
 
 ## Backlog Items To Add
 
-A copiar para `../SEO_BACKLOG.md`:
+A copiar para `../_living/BACKLOG.md`:
 
-- `[Content opportunity] P1` Produzir copy do pillar Q5 (1500–2000w) seguindo este brief — bloqueado pelas Decisions Needed #1+#2. Origem: `reports/2026-05-20__content-brief-escolher-mt.md`.
+- `[Content opportunity] P1` Produzir copy do pillar Q5 (1500–2000w) seguindo este brief — bloqueado pelas Decisions Needed #1+#2. Origem: `clusters/q5-escolher-mt/BRIEF.md`.
 - `[Content opportunity] P2` Spin-offs Q5: `relatorio-unico-anexo-d-medicina-trabalho`, `medicina-trabalho-avenca-ou-ato-medico`, geo Norte/Lisboa. Origem: §Spin-offs.
 - `[Technical blocker] P1` Criar CPT/template para hub `/recursos/guias/` antes da publicação. Origem: §Riscos.
 

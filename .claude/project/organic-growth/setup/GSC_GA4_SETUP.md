@@ -127,7 +127,7 @@ GA4 admin → **Search Console links** → **Link** → escolher a property GSC 
 - `audience` (string) — `empresa` | `formando` | `trabalhador` — populado via dataLayer push baseado em hub visitado.
 - `service_area` (string) — `medicina-trabalho` | `seguranca` | `alimentar` | `ambiental` | `formacao`.
 
-Isto desbloqueia análise por audiência (alinhado com 3 personas do `STRATEGY_AUDIENCES.md`).
+Isto desbloqueia análise por audiência (alinhado com 3 personas do `strategy/AUDIENCES.md`).
 
 ### 2.6 Acessos
 

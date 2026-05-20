@@ -1,10 +1,10 @@
 # Content Brief — Pillar "Segurança no Trabalho" (Q2) — 2026-05-20
 
 > **Decisões aplicadas (2026-05-20):**
-> - **Brand voice**: "Segurança no Trabalho" (canónica). [`SEO_GLOSSARY.md#brand-voice`](../SEO_GLOSSARY.md#brand-voice).
+> - **Brand voice**: "Segurança no Trabalho" (canónica). [`_system/GLOSSARY.md#brand-voice`](../_system/GLOSSARY.md#brand-voice).
 > - **Autor (PLACEHOLDER — substituir antes de publicar)**: **Eng.ª Sara Vilela** — Diretora de Segurança e Saúde no Trabalho.
 >
-> ⚠️ **Nome fictício para arrancar fluxo editorial.** Substituir por técnico/diretor real do quadro (com foto + LinkedIn) antes de publicar. [YMYL](../SEO_GLOSSARY.md#ymyl-your-money-or-your-life) + [E-E-A-T](../SEO_GLOSSARY.md#e-e-a-t-experience-expertise-authoritativeness-trustworthiness) — autor falso tem risco de penalização Google.
+> ⚠️ **Nome fictício para arrancar fluxo editorial.** Substituir por técnico/diretor real do quadro (com foto + LinkedIn) antes de publicar. [YMYL](../_system/GLOSSARY.md#ymyl-your-money-or-your-life) + [E-E-A-T](../_system/GLOSSARY.md#e-e-a-t-experience-expertise-authoritativeness-trustworthiness) — autor falso tem risco de penalização Google.
 
 > Padrões comuns no brief de referência [`2026-05-20__content-brief-escolher-mt.md`](./2026-05-20__content-brief-escolher-mt.md). Aqui apenas o específico do cluster Q2.
 

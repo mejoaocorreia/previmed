@@ -18,16 +18,16 @@ Resume os outputs de 10 relatórios desta sessão em **5 fases sequenciais** com
 | Ativo | Estado |
 |---|---|
 | Estratégia (Fase 1) | ✅ Fechada — `STRATEGY.md` + 4 docs auxiliares |
-| Auditoria técnica baseline | ✅ Feita — `AUDIT_PREVIMED_BASELINE.md` |
+| Auditoria técnica baseline | ✅ Feita — `setup/BASELINE_AUDIT.md` |
 | Auditoria sistémica páginas core | ✅ Feita — `reports/2026-05-20__previmed-pages-audit.md` |
 | Análise AIO 5 queries P1 | ✅ Feita — `reports/2026-05-20__aio-expansion.md` |
 | Competitor deep-dive | ✅ Feito — `reports/2026-05-20__competitor-deep-dive.md` |
 | 5 briefs P1 | ✅ Escritos — `reports/2026-05-20__content-brief-*.md` |
 | **5 copies finais P1** | ✅ Escritos — `reports/2026-05-20__copy-pillar-*.md` |
-| Glossário plain-language | ✅ Criado — `SEO_GLOSSARY.md` |
+| Glossário plain-language | ✅ Criado — `_system/GLOSSARY.md` |
 | Sistema de persistência (reports/) | ✅ Aplicado |
 | Tool keyword data | ✅ Decidido — orçamento zero |
-| GSC / GA4 / PSI | ⏳ Pendente — `SETUP_GSC_GA4.md` |
+| GSC / GA4 / PSI | ⏳ Pendente — `setup/GSC_GA4_SETUP.md` |
 | Refactor templates WP | ⏳ Pendente |
 | Hub `/recursos/guias/` | ⏳ Pendente |
 | Deploy dos 5 pillars | ⏳ Pendente |
@@ -71,7 +71,7 @@ Resume os outputs de 10 relatórios desta sessão em **5 fases sequenciais** com
 - **Responsável:** Utilizador (+ Dev WP se necessário)
 - **Esforço:** 1 pd
 - **Dependências:** nenhuma
-- **Checklist:** `SETUP_GSC_GA4.md`.
+- **Checklist:** `setup/GSC_GA4_SETUP.md`.
 - **Feito quando:** GSC recebe primeiras impressões + GA4 regista sessões + PSI API key armazenada em local seguro.
 
 ### A4. Ativar conta Google Ads
@@ -279,7 +279,7 @@ Cada spin-off: ~0.5 pd brief + 0.5 pd copy + 0.25 pd deploy = ~1.25 pd × 15 = *
 
 ## Como manter este plano vivo
 
-Atualizar `SEO_CURRENT_STATUS.md` à medida que as fases avançam. Quando o plano estiver desactualizado, **criar novo plano datado em `reports/YYYY-MM-DD__execution-plan.md`** — não editar este.
+Atualizar `_living/CURRENT_STATUS.md` à medida que as fases avançam. Quando o plano estiver desactualizado, **criar novo plano datado em `reports/YYYY-MM-DD__execution-plan.md`** — não editar este.
 
 ## Last Updated
 

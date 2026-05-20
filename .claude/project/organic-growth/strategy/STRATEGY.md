@@ -3,7 +3,7 @@
 > **Documento "north star" do Organic Growth da Previmed.**
 > Última atualização: 2026-05-20.
 > Fecha o Lote 1.5 e consolida Lotes 1.1–1.4.
-> Base: `STRATEGY_AUDIENCES.md`, `STRATEGY_INFORMATION_ARCHITECTURE.md`, `STRATEGY_KEYWORDS.md`, `STRATEGY_COMPETITORS.md`.
+> Base: `strategy/AUDIENCES.md`, `strategy/INFORMATION_ARCHITECTURE.md`, `strategy/KEYWORDS.md`, `strategy/COMPETITORS.md`.
 
 ---
 
@@ -23,7 +23,7 @@ A Previmed é uma empresa de SST/HSST B2B nacional, fundada em 1995 (razão soci
 
 ---
 
-## 2. Audiências (síntese; detalhe em `STRATEGY_AUDIENCES.md`)
+## 2. Audiências (síntese; detalhe em `strategy/AUDIENCES.md`)
 
 | Audiência | % esforço SEO | Triggers principais | Hubs | Sucesso = |
 |---|---|---|---|---|
@@ -41,7 +41,7 @@ A Previmed é uma empresa de SST/HSST B2B nacional, fundada em 1995 (razão soci
 
 ---
 
-## 3. Arquitetura de informação (síntese; detalhe em `STRATEGY_INFORMATION_ARCHITECTURE.md`)
+## 3. Arquitetura de informação (síntese; detalhe em `strategy/INFORMATION_ARCHITECTURE.md`)
 
 ### URL spine
 
@@ -101,7 +101,7 @@ elearning.previmed.pt           E-learning (decisão Fase 4: sub vs sub-folder)
 
 ---
 
-## 4. Estratégia de keywords (síntese; detalhe em `STRATEGY_KEYWORDS.md`)
+## 4. Estratégia de keywords (síntese; detalhe em `strategy/KEYWORDS.md`)
 
 ### 16 clusters mapeados, organizados em 3 camadas
 
@@ -152,7 +152,7 @@ Volumes e dificuldades são **estimativas qualitativas** (A/M/B) — não basead
 
 ---
 
-## 5. Cenário competitivo (síntese; detalhe em `STRATEGY_COMPETITORS.md`)
+## 5. Cenário competitivo (síntese; detalhe em `strategy/COMPETITORS.md`)
 
 ### Concorrentes núcleo (5 a vigiar)
 
@@ -218,7 +218,7 @@ Volumes e dificuldades são **estimativas qualitativas** (A/M/B) — não basead
 
 | Tarefa | Responsável | Bloqueador para |
 |---|---|---|
-| Configurar Google Search Console em previmed.pt actual | utilizador | Re-calibrar volumes/dificuldades em `STRATEGY_KEYWORDS.md` |
+| Configurar Google Search Console em previmed.pt actual | utilizador | Re-calibrar volumes/dificuldades em `strategy/KEYWORDS.md` |
 | (Opcional) Avaliar DataForSEO/Ahrefs (custo vs valor) | utilizador | Análise competitiva quantitativa |
 | Capturar AIO expandido em 5 queries de teste (clicar "Modo IA") | SEO Lead | Estratégia de conteúdo AIO-friendly |
 | Crawl técnico de previmed.pt actual | SEO Lead + WP impl. | Tabela redirects 301 para Fase 6 |
@@ -279,7 +279,7 @@ Volumes e dificuldades são **estimativas qualitativas** (A/M/B) — não basead
 
 | Risco | Probabilidade | Impacto | Mitigação |
 |---|---|---|---|
-| Estimativas de volume erradas → priorização errada | Alta | Médio | Recalibrar Fase 2 com GSC; tratar STRATEGY_KEYWORDS.md como hipótese |
+| Estimativas de volume erradas → priorização errada | Alta | Médio | Recalibrar Fase 2 com GSC; tratar strategy/KEYWORDS.md como hipótese |
 | Centralmed responde com ads agressivos | Média | Médio | Diferenciar em conteúdo, não em SEM; long-tail informacional |
 | AIO captura cliques sem driver tráfego | Alta | Alto | Foco em queries onde AIO ainda não domina + brand authority |
 | Decisão "abrir preços" rejeitada | Média | Baixo | L1+L2 são quick wins independentes; L3 não bloqueia |
@@ -308,7 +308,7 @@ Quando se entrar na fase WP, o implementador deve receber:
 
 ## 10. KPIs (Fase 7+)
 
-Definição completa em `SEO_KPI_MODEL.md` (já existe). Resumo das métricas estrela:
+Definição completa em `_system/KPI_MODEL.md` (já existe). Resumo das métricas estrela:
 
 | Métrica | Target Fase 7 (mês 3 pós go-live) | Fonte |
 |---|---|---|
@@ -337,10 +337,10 @@ Definição completa em `SEO_KPI_MODEL.md` (já existe). Resumo das métricas es
 
 | Lote | Documento | Estado |
 |---|---|---|
-| 1.1 | `STRATEGY_AUDIENCES.md` | ✅ Fechado |
-| 1.2 | `STRATEGY_INFORMATION_ARCHITECTURE.md` | ✅ Fechado |
-| 1.3 | `STRATEGY_KEYWORDS.md` | ✅ Fechado (com caveat de volumes qualitativos) |
-| 1.4 | `STRATEGY_COMPETITORS.md` | ✅ Fechado |
+| 1.1 | `strategy/AUDIENCES.md` | ✅ Fechado |
+| 1.2 | `strategy/INFORMATION_ARCHITECTURE.md` | ✅ Fechado |
+| 1.3 | `strategy/KEYWORDS.md` | ✅ Fechado (com caveat de volumes qualitativos) |
+| 1.4 | `strategy/COMPETITORS.md` | ✅ Fechado |
 | 1.5 | `STRATEGY.md` (este) | ✅ Fechado |
 
 **Fase 1 = COMPLETA.** Próxima decisão: arrancar Fase 2 (GSC + crawl) ou Fase 3 (briefs de conteúdo P1).

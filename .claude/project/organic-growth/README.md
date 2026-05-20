@@ -1,62 +1,95 @@
-# Organic Growth / SEO System Index
+# Organic Growth / SEO System
 
-This folder contains the high-end SEO and organic growth agent system.
+Sistema SEO de alto nível para o projeto Previmed. **Persistente em ficheiros**, não no chat.
 
-Scope includes:
-- competitor research;
-- keyword and search-intent strategy;
-- technical SEO;
-- WordPress SEO implementation;
-- local SEO;
-- schema and entity modelling;
-- internal linking;
-- content briefs and on-page quality;
-- Core Web Vitals and performance SEO;
-- AI Search / GEO visibility;
-- SEO QA and reporting.
+Scope: competitor research, keyword strategy, technical SEO, WordPress SEO, local SEO, schema/entidades, internal linking, content briefs, on-page quality, Core Web Vitals, AI Search / GEO visibility, SEO QA + reporting.
 
-The name **organic-growth** is intentional: this is broader than a narrow SEO checklist.
+## Estrutura desta pasta
 
-## Como ler esta pasta
+```
+organic-growth/
+├── README.md                ← este ficheiro (mapa de leitura)
+│
+├── _system/                 ← REGRAS DE TRABALHO (raras alterações)
+│   ├── OPERATING_SYSTEM.md  ← persistence rule + anti-token-waste
+│   ├── QUALITY_BAR.md
+│   ├── KPI_MODEL.md
+│   ├── GLOSSARY.md          ← jargão plain-language
+│   ├── TOOLING_MCP_STACK.md ← política orçamento zero
+│   └── playbooks/           ← workflows por área
+│       ├── COMPETITOR_RESEARCH.md
+│       ├── CONTENT_SYSTEM.md
+│       ├── TECHNICAL_AUDIT.md
+│       ├── SCHEMA_ENTITY_MODEL.md
+│       └── LOCAL_PLAYBOOK.md
+│
+├── _living/                 ← ESTADO ATUAL CURTO
+│   ├── CURRENT_STATUS.md    ← ponto de entrada para retomar trabalho
+│   ├── BACKLOG.md           ← tarefas acionáveis priorizadas
+│   ├── DECISION_LOG.md      ← decisões duradouras
+│   └── OPPORTUNITIES.md     ← hipóteses por validar
+│
+├── strategy/                ← FASE 1 (fechada)
+│   ├── STRATEGY.md          ← documento mestre
+│   ├── AUDIENCES.md
+│   ├── INFORMATION_ARCHITECTURE.md
+│   ├── KEYWORDS.md          ← 16 clusters, ~120 queries
+│   └── COMPETITORS.md
+│
+├── setup/                   ← DECISÕES + GUIAS SETUP
+│   ├── BASELINE_AUDIT.md
+│   ├── KEYWORD_DATA_DECISION.md
+│   └── GSC_GA4_SETUP.md
+│
+├── reports/                 ← ANÁLISES DATADAS (snapshots no tempo)
+│   ├── _TEMPLATE_seo-report.md
+│   ├── README.md
+│   └── 2026-05-20__*.md     ← análises, planos, recapturas
+│
+└── clusters/                ← CONTEÚDO EDITORIAL VIVO POR CLUSTER
+    ├── q1-medicina-trabalho/
+    │   ├── BRIEF.md         ← spec editorial
+    │   ├── COPY.md          ← copy pronto a deploy
+    │   └── aio-capture.yml  ← evidência bruta Playwright
+    ├── q2-seguranca-trabalho/
+    ├── q3-haccp/
+    ├── q4-formacao-40h/
+    └── q5-escolher-mt/
+        ├── BRIEF.md / COPY.md / aio-capture.yml
+        └── spin-offs/
+            └── avenca-vs-ato/
+                └── COPY.md
+```
 
-### 1. Operating system (regras de trabalho)
+## Por onde começar
 
-- [`SEO_OPERATING_SYSTEM.md`](./SEO_OPERATING_SYSTEM.md) — workflow, regras, **persistence rule**, **anti-token-waste**. Ler primeiro.
-- [`SEO_QUALITY_BAR.md`](./SEO_QUALITY_BAR.md), [`SEO_CONTENT_SYSTEM.md`](./SEO_CONTENT_SYSTEM.md), [`SEO_TECHNICAL_AUDIT.md`](./SEO_TECHNICAL_AUDIT.md), [`SEO_SCHEMA_ENTITY_MODEL.md`](./SEO_SCHEMA_ENTITY_MODEL.md), [`SEO_LOCAL_PLAYBOOK.md`](./SEO_LOCAL_PLAYBOOK.md), [`SEO_KPI_MODEL.md`](./SEO_KPI_MODEL.md), [`SEO_COMPETITOR_RESEARCH_PROTOCOL.md`](./SEO_COMPETITOR_RESEARCH_PROTOCOL.md), [`SEO_TOOLING_MCP_STACK.md`](./SEO_TOOLING_MCP_STACK.md) — playbooks específicos por área.
+| Se queres… | Lê primeiro… |
+|---|---|
+| Retomar o trabalho | [`_living/CURRENT_STATUS.md`](./_living/CURRENT_STATUS.md) |
+| Saber o que falta fazer | [`_living/BACKLOG.md`](./_living/BACKLOG.md) + [`reports/2026-05-20__execution-plan-90d.md`](./reports/2026-05-20__execution-plan-90d.md) |
+| Perceber jargão (AIO, E-E-A-T, cluster, etc.) | [`_system/GLOSSARY.md`](./_system/GLOSSARY.md) |
+| Entender a arquitetura completa do sistema | [`reports/2026-05-20__architecture-map.md`](./reports/2026-05-20__architecture-map.md) |
+| Ver o copy de um pillar (Q1/Q2/Q3/Q4/Q5) | [`clusters/q<N>-*/COPY.md`](./clusters/) |
+| Ver as regras de trabalho SEO | [`_system/OPERATING_SYSTEM.md`](./_system/OPERATING_SYSTEM.md) |
+| Ver a estratégia (Fase 1) | [`strategy/STRATEGY.md`](./strategy/STRATEGY.md) |
 
-### 2. Ficheiros vivos (consulta rápida, sempre atualizados)
+## Regras-chave
 
-- [`SEO_CURRENT_STATUS.md`](./SEO_CURRENT_STATUS.md) — estado atual curto + último relatório.
-- [`SEO_BACKLOG.md`](./SEO_BACKLOG.md) — tarefas acionáveis priorizadas.
-- [`SEO_OPPORTUNITIES.md`](./SEO_OPPORTUNITIES.md) — hipóteses/ideias antes de virarem tarefas.
-- [`SEO_DECISION_LOG.md`](./SEO_DECISION_LOG.md) — decisões SEO duradouras.
-- [`SEO_GLOSSARY.md`](./SEO_GLOSSARY.md) — glossário plain-language (AIO, E-E-A-T, cluster, etc.). Consultar sempre que aparecer um termo técnico.
+1. **Análise SEO grande sem ficheiro persistente = desperdício de contexto.** Ver [`_system/OPERATING_SYSTEM.md`](./_system/OPERATING_SYSTEM.md#anti-token-waste).
+2. **Snapshots datados** vão para `reports/YYYY-MM-DD__*.md`. Não editar após publicação.
+3. **Conteúdo editorial vivo** (brief + copy) vive em `clusters/q<N>-<slug>/`. Brief e copy juntos = sem drift.
+4. **Ficheiros vivos** (`_living/`) são índices curtos. Não duplicam análise — apontam para `reports/`.
 
-### 3. Reports (snapshots datados, históricos)
+## Convenções
 
-- [`reports/`](./reports/) — análises completas, datadas (`YYYY-MM-DD__report-type.md`). Não editar depois de publicar.
-- [`reports/_TEMPLATE_seo-report.md`](./reports/_TEMPLATE_seo-report.md) — template obrigatório para qualquer relatório novo.
-- [`reports/README.md`](./reports/README.md) — explicação completa do formato.
+- **Naming datado:** `YYYY-MM-DD__report-type.md` (Markdown, não `.txt`).
+- **Brand voice:** "Medicina do Trabalho" (forma canónica). Ver [`_living/DECISION_LOG.md`](./_living/DECISION_LOG.md).
+- **Autoria:** pessoa real do quadro Previmed. Placeholders atuais (substituir antes de publicar):
+  - Q1+Q5 → Dr. Miguel Henriques
+  - Q2 → Eng.ª Sara Vilela
+  - Q3 → Eng.ª Carla Tavares
+  - Q4 → Dra. Inês Carvalho
 
-### 4. Estratégia (Fase 1, fechada)
+## Última reorganização
 
-- [`STRATEGY.md`](./STRATEGY.md) — documento mestre da estratégia.
-- [`STRATEGY_AUDIENCES.md`](./STRATEGY_AUDIENCES.md), [`STRATEGY_INFORMATION_ARCHITECTURE.md`](./STRATEGY_INFORMATION_ARCHITECTURE.md), [`STRATEGY_KEYWORDS.md`](./STRATEGY_KEYWORDS.md), [`STRATEGY_COMPETITORS.md`](./STRATEGY_COMPETITORS.md) — drill-downs por área.
-
-### 5. Análises da Fase 2 (em curso)
-
-- [`AUDIT_PREVIMED_BASELINE.md`](./AUDIT_PREVIMED_BASELINE.md) — auditoria técnica baseline.
-- [`DECISION_KEYWORD_DATA_TOOL.md`](./DECISION_KEYWORD_DATA_TOOL.md) — decisão pendente sobre tool de keyword data.
-- [`SETUP_GSC_GA4.md`](./SETUP_GSC_GA4.md) — checklist de ligação GSC/GA4/PSI (lado utilizador).
-
-> Estes 3 ficheiros são da Fase 2 e existem fora de `reports/` por razões históricas. **Análises grandes futuras** devem ir para `reports/YYYY-MM-DD__*.md` conforme a [persistence rule](./SEO_OPERATING_SYSTEM.md#persistence-rule).
-
-### 6. Capturas brutas
-
-- [`aio-captures/`](./aio-captures/) — snapshots Playwright em raw YAML (evidência). Não são análise.
-
-## Regra-chave
-
-> Análise SEO grande sem ficheiro persistente = desperdício de contexto.
-
-Ver [`SEO_OPERATING_SYSTEM.md`](./SEO_OPERATING_SYSTEM.md#anti-token-waste) para detalhe.
+2026-05-20 — migrado de estrutura plana (23 ficheiros na raiz) para esta hierarquia funcional. Ver `reports/2026-05-20__architecture-map.md`.

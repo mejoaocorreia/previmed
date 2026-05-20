@@ -3,7 +3,7 @@
 > **Lote 2.3 da Fase 2.** Comparativo + recomendação para o tool de dados de keywords/SERPs/competidores.
 > Data: 2026-05-20.
 > Estado: ✅ **DECIDIDO — Cenário Z (orçamento zero)**. Utilizador descartou todas as opções pagas (A–F). Stack mantém-se apenas com ferramentas gratuitas.
-> Decisão completa registada em [`SEO_DECISION_LOG.md`](./SEO_DECISION_LOG.md).
+> Decisão completa registada em [`_living/DECISION_LOG.md`](./_living/DECISION_LOG.md).
 
 ---
 
@@ -13,7 +13,7 @@ A estratégia (Lote 1.5) e o crawl baseline (Lote 2.1) precisam de um data layer
 
 | Caso de uso | Frequência | Volume estimado |
 |---|---|---|
-| **Search volume PT** para os ~120 keywords do `STRATEGY_KEYWORDS.md` | Inicial + refresh trimestral | ~500 lookups iniciais, ~100/trimestre |
+| **Search volume PT** para os ~120 keywords do `strategy/KEYWORDS.md` | Inicial + refresh trimestral | ~500 lookups iniciais, ~100/trimestre |
 | **SERP capture** de queries comerciais e informacionais (validação de intent, tracking de top 10) | Mensal | ~50–80 SERPs/mês |
 | **Competitor ranked keywords** (que palavras ranqueiam Centralmed, Quadrimed, etc) | Inicial + ad-hoc | ~10 domínios × ~1000 keywords |
 | **Keyword ideas / related** para expandir clusters | Esporádico | ~20 seeds/mês |
@@ -113,7 +113,7 @@ Ahrefs/Semrush ganham por larga margem. Mas o `STRATEGY.md` define que **a equip
 | 4 | Activar MCP DataForSEO ou criar wrapper de chamadas | Claude | 🔒 |
 | 5 | Smoke test: 1 SERP + 5 search volume lookups | Claude | 🔒 |
 | 6 | Pull initial: 120 keywords × search volume + 30 SERPs prioritários | Claude | 🔒 |
-| 7 | Adicionar a `MCP_STACK.md` e `SEO_TOOLING_MCP_STACK.md` | Claude | 🔒 |
+| 7 | Adicionar a `MCP_STACK.md` e `_system/TOOLING_MCP_STACK.md` | Claude | 🔒 |
 | 8 | Setup GSC + GA4 (Lote 2.4) — independente de #1-#7 | João + Claude | em paralelo |
 
 ---
@@ -168,7 +168,7 @@ Ahrefs/Semrush ganham por larga margem. Mas o `STRATEGY.md` define que **a equip
 >
 > | # | Ação | Responsável | Estado |
 > |---|---|---|---|
-> | 1 | Executar Lote 2.4 (`SETUP_GSC_GA4.md`) — ligar GSC, GA4, Site Kit, criar API key PSI | João | ⏳ pendente |
+> | 1 | Executar Lote 2.4 (`setup/GSC_GA4_SETUP.md`) — ligar GSC, GA4, Site Kit, criar API key PSI | João | ⏳ pendente |
 > | 2 | Garantir conta Google Ads ativa (mesmo sem spend) para destravar Keyword Planner | João | ⏳ pendente |
-> | 3 | Atualizar `SEO_TOOLING_MCP_STACK.md` para refletir stack zero-cost | Claude | ✅ a fazer agora |
+> | 3 | Atualizar `_system/TOOLING_MCP_STACK.md` para refletir stack zero-cost | Claude | ✅ a fazer agora |
 > | 4 | Briefs P1 começam imediatamente — não dependem de keyword data tool para arrancar (estratégia + competitor deep-dive já dão input suficiente) | Claude + João | desbloqueado |

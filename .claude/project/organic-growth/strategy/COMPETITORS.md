@@ -9,7 +9,7 @@
 
 ## Metodologia
 
-- **Fonte:** 12 queries-âncora de `STRATEGY_KEYWORDS.md` § "Queries a monitorizar quando GSC estiver activo".
+- **Fonte:** 12 queries-âncora de `strategy/KEYWORDS.md` § "Queries a monitorizar quando GSC estiver activo".
 - **Extração:** `mcp__playwright__browser_evaluate` em cada SERP — top ~10 orgânicos + SERP features (FS, PAA, KP, local pack, AIO, ads).
 - **Limitações:**
   - Captura única (snapshot 2026-05-20), sem mediana temporal.
@@ -203,7 +203,7 @@ Critério: tamanho da intent × facilidade de ataque × distância à oferta Pre
 - Captura única, não temporal. SERPs mudam (especialmente local pack).
 - Sem dados de tráfego real por concorrente (precisa Ahrefs/Semrush).
 - AI Overview detectado mas não expandido — não sabemos que fontes Google cita lá.
-- 11 das 12 queries são de `STRATEGY_KEYWORDS.md`; não cobre long-tail.
+- 11 das 12 queries são de `strategy/KEYWORDS.md`; não cobre long-tail.
 
 **Próximos lotes:**
 - **Lote 1.5 (sugestão):** definição de Quick Wins concretos (L1+L2+L3 acima) com briefs de conteúdo + arquitectura URL final.

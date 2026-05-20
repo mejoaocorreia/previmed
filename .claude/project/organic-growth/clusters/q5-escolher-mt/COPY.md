@@ -9,7 +9,7 @@
 >
 > ⚠️ **Antes de publicar:**
 > 1. Substituir o autor placeholder por médico do trabalho real (nome + foto + LinkedIn).
-> 2. Criar hub `/recursos/guias/` (ver `SEO_BACKLOG.md` — bloqueio técnico).
+> 2. Criar hub `/recursos/guias/` (ver `_living/BACKLOG.md` — bloqueio técnico).
 > 3. Confirmar dados Previmed específicos marcados com `<<…>>` no copy (rede de centros, contactos, etc.).
 > 4. Validar schema JSON-LD num Rich Results Test antes de deploy.
 

@@ -277,7 +277,7 @@ Brief curto para cada um dos **15 spin-offs** documentados nos briefs dos 5 pill
 
 ## Backlog Items To Add
 
-A copiar para `../SEO_BACKLOG.md`:
+A copiar para `../_living/BACKLOG.md`:
 
 - `[Content opportunity] P1` 3 spin-offs P1-A (Avença, Lei 93/2019, Ficha Aptidão) — ~3.75 pd. Origem: `reports/2026-05-20__spin-offs-briefs.md` §P1-A.
 - `[Content opportunity] P2` 3 spin-offs P1-B (Relatório Único, HACCP restauração, 4 modalidades) — ~4 pd. Origem: §P1-B.

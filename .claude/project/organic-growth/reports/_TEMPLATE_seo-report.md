@@ -120,7 +120,7 @@ Incluir **apenas as secções aplicáveis** ao tipo de relatório. Apagar as que
 
 ## Recommended Action Plan
 
-Separar por fases. Cada item deve poder virar tarefa em `SEO_BACKLOG.md`.
+Separar por fases. Cada item deve poder virar tarefa em `_living/BACKLOG.md`.
 
 ### Phase 1 — Foundation
 - [ ] …
@@ -139,7 +139,7 @@ Separar por fases. Cada item deve poder virar tarefa em `SEO_BACKLOG.md`.
 
 ## Backlog Items To Add
 
-Lista crua de tarefas que devem ser copiadas para `SEO_BACKLOG.md` na secção certa. Formato curto:
+Lista crua de tarefas que devem ser copiadas para `_living/BACKLOG.md` na secção certa. Formato curto:
 
 - `[Quick win]` Corrigir titles duplicados em /servicos/*.
 - `[Technical blocker]` Sitemap.xml não inclui CPTs de formação.
@@ -167,8 +167,8 @@ YYYY-MM-DD por [autor/agente].
 ---
 
 > Após gravar este relatório:
-> 1. Atualizar `SEO_CURRENT_STATUS.md` (resumo curto + link).
-> 2. Mover backlog items para `SEO_BACKLOG.md`.
-> 3. Mover oportunidades para `SEO_OPPORTUNITIES.md`.
-> 4. Registar decisões duradouras em `SEO_DECISION_LOG.md`.
+> 1. Atualizar `_living/CURRENT_STATUS.md` (resumo curto + link).
+> 2. Mover backlog items para `_living/BACKLOG.md`.
+> 3. Mover oportunidades para `_living/OPPORTUNITIES.md`.
+> 4. Registar decisões duradouras em `_living/DECISION_LOG.md`.
 > 5. **Não duplicar** o relatório inteiro nos ficheiros vivos.

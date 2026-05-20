@@ -1,10 +1,10 @@
 # Content Brief — Pillar "Medicina do Trabalho" (Q1) — 2026-05-20
 
 > **Decisões aplicadas (2026-05-20):**
-> - **Brand voice**: "Medicina do Trabalho" (canónica). [`SEO_GLOSSARY.md#query`](../SEO_GLOSSARY.md#query).
+> - **Brand voice**: "Medicina do Trabalho" (canónica). [`_system/GLOSSARY.md#query`](../_system/GLOSSARY.md#query).
 > - **Autor (PLACEHOLDER — substituir antes de publicar)**: **Dr. Miguel Henriques** — Diretor Clínico, Medicina do Trabalho.
 >
-> ⚠️ **Nome fictício para arrancar fluxo editorial.** Substituir por médico do trabalho real do quadro Previmed (com foto + LinkedIn) antes de publicar. [YMYL](../SEO_GLOSSARY.md#ymyl-your-money-or-your-life) + [E-E-A-T](../SEO_GLOSSARY.md#e-e-a-t-experience-expertise-authoritativeness-trustworthiness) — publicar com autor falso tem risco de penalização Google.
+> ⚠️ **Nome fictício para arrancar fluxo editorial.** Substituir por médico do trabalho real do quadro Previmed (com foto + LinkedIn) antes de publicar. [YMYL](../_system/GLOSSARY.md#ymyl-your-money-or-your-life) + [E-E-A-T](../_system/GLOSSARY.md#e-e-a-t-experience-expertise-authoritativeness-trustworthiness) — publicar com autor falso tem risco de penalização Google.
 
 > **Padrões comuns** (estrutura geral, regras editoriais, métricas de sucesso, decisões pendentes) estão no brief de referência [`2026-05-20__content-brief-escolher-mt.md`](./2026-05-20__content-brief-escolher-mt.md). Aqui apenas o que é **específico do cluster Q1**.
 

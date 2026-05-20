@@ -3,7 +3,7 @@
 > Lote 1.2 da Fase 1.
 > Última atualização: 2026-05-19.
 > Autor: SEO Lead + Site Structure agent.
-> Base: `STRATEGY_AUDIENCES.md` + `PROJECT_CONTEXT.md`.
+> Base: `strategy/AUDIENCES.md` + `PROJECT_CONTEXT.md`.
 
 ## Princípios da arquitetura
 

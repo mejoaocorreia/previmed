@@ -14,17 +14,17 @@ Snapshot fechado no tempo. Quando o Google atualizar a AIO destas queries, criar
 
 - **5 queries** capturadas em `udm=50` (Modo IA), `hl=pt-PT`, `gl=PT`, navegador sem login, sem cookies aceites (rejected all).
 - Sessão de captura: 2026-05-20.
-- Snapshots brutos em [`../aio-captures/`](../aio-captures/) (`aio-q1` a `aio-q5`).
-- **Não coberto:** análise de SERP tradicional (10 blue links) — já feita parcialmente em Lote 1.4 (`STRATEGY_COMPETITORS.md`). Não coberto também: variações de query, queries long-tail, queries comerciais puras (`preço`, `proposta`, `orçamento`).
+- Snapshots brutos em [`../clusters/q<N>-*/aio-capture.yml`](../clusters/) (1 por cluster).
+- **Não coberto:** análise de SERP tradicional (10 blue links) — já feita parcialmente em Lote 1.4 (`strategy/COMPETITORS.md`). Não coberto também: variações de query, queries long-tail, queries comerciais puras (`preço`, `proposta`, `orçamento`).
 
 ## Data Sources Used
 
 | Fonte | Estado |
 |---|---|
 | Playwright MCP (`mcp__playwright`) — Modo IA Google.pt | completed |
-| `STRATEGY_KEYWORDS.md` (clusters P1 origem) | reviewed |
-| `AUDIT_PREVIMED_BASELINE.md` (estado site) | reviewed |
-| `STRATEGY_COMPETITORS.md` (Lote 1.4) | reviewed |
+| `strategy/KEYWORDS.md` (clusters P1 origem) | reviewed |
+| `setup/BASELINE_AUDIT.md` (estado site) | reviewed |
+| `strategy/COMPETITORS.md` (Lote 1.4) | reviewed |
 | Google Search Console / GA4 | not connected |
 | DataForSEO / SEMrush / Ahrefs (volumes, dificuldade) | not connected |
 | PageSpeed / Lighthouse | not run nesta sessão |
@@ -34,7 +34,7 @@ Snapshot fechado no tempo. Quando o Google atualizar a AIO destas queries, criar
 - **Medium.**
 - **Limitações:**
   - AIO é não-determinística: a mesma query a uma hora diferente pode devolver fontes e texto diferentes. Capturas únicas, sem repetição cross-time.
-  - Sem dados quantitativos: volumes, CTR, CPC, dificuldade SEO — ainda bloqueados pela decisão de keyword data tool (`DECISION_KEYWORD_DATA_TOOL.md`).
+  - Sem dados quantitativos: volumes, CTR, CPC, dificuldade SEO — ainda bloqueados pela decisão de keyword data tool (`setup/KEYWORD_DATA_DECISION.md`).
   - Sem GSC: não sabemos se Previmed já tem ranking marginal para estas queries que poderíamos amplificar.
   - Q1–Q4 são head terms — AIO está estável o suficiente para serem indicativas; Q5 é mais nicho e pode flutuar mais.
   - AIO PT mistura fontes BR — análise tem de filtrar.
@@ -47,9 +47,9 @@ Snapshot fechado no tempo. Quando o Google atualizar a AIO destas queries, criar
 
 **2. Previmed só aparece em 1/5 queries** (Q5, "como escolher empresa medicina do trabalho"). Nas outras 4 queries — todas head terms dos 3 serviços core — Previmed está **fora** das fontes citadas. Concorrentes diretos PT que dominam: **Centralmed, SEPRI, Forprev, Medilav, Ecosáude, Preveris**. Conteúdo institucional (ACT, ASAE, DGS, Ordem dos Advogados) tem peso massivo.
 
-**3. Achado crítico em Q4 (formação 35h):** AIO afirma que **"a lei mudou: 35 → 40 horas"** (Lei 93/2019). Maioria do conteúdo PT existente (e provavelmente do Previmed quando voltar a ter formação online) ainda fala em 35h. Conteúdo atualizado para 40h é defensável legalmente e diferenciador editorialmente. Implica revisão imediata de `STRATEGY_KEYWORDS.md` (cluster "Formação 35h") e do plano de conteúdo informacional.
+**3. Achado crítico em Q4 (formação 35h):** AIO afirma que **"a lei mudou: 35 → 40 horas"** (Lei 93/2019). Maioria do conteúdo PT existente (e provavelmente do Previmed quando voltar a ter formação online) ainda fala em 35h. Conteúdo atualizado para 40h é defensável legalmente e diferenciador editorialmente. Implica revisão imediata de `strategy/KEYWORDS.md` (cluster "Formação 35h") e do plano de conteúdo informacional.
 
-**Decisão pendente que bloqueia depth:** sem keyword data tool ligado (`DECISION_KEYWORD_DATA_TOOL.md`) não temos volumes nem dificuldade reais. As 5 queries são P1 por intuição estratégica (head terms dos clusters core) — confirmação quantitativa fica para depois da decisão A–F.
+**Decisão pendente que bloqueia depth:** sem keyword data tool ligado (`setup/KEYWORD_DATA_DECISION.md`) não temos volumes nem dificuldade reais. As 5 queries são P1 por intuição estratégica (head terms dos clusters core) — confirmação quantitativa fica para depois da decisão A–F.
 
 **Direção recomendada:** preparar 5 briefs de conteúdo (1 por query) com estrutura "AIO-friendly" — secções claras, schema FAQPage/HowTo/Article, citações de fontes institucionais (Lei 102/2009, ACT, ASAE) — visando entrada nas fontes AIO num horizonte de 4–8 meses pós-publicação.
 
@@ -57,7 +57,7 @@ Snapshot fechado no tempo. Quando o Google atualizar a AIO destas queries, criar
 
 ### Critical
 
-- **C1. Lei mudou: 35h → 40h de formação anual obrigatória.** Lei 93/2019 alterou Art.º 131.º do Código do Trabalho. AIO já reflete esta correção. `STRATEGY_KEYWORDS.md` cluster "Formação 35h" tem de ser revisto (volumes "35h" vs "40h" — qual maior hoje?). Conteúdo Previmed sobre formação tem de ser explicitamente "40 horas" + nota explicativa sobre transição 35→40. Risco: produzir conteúdo desatualizado que perde credibilidade junto a RH/jurídico.
+- **C1. Lei mudou: 35h → 40h de formação anual obrigatória.** Lei 93/2019 alterou Art.º 131.º do Código do Trabalho. AIO já reflete esta correção. `strategy/KEYWORDS.md` cluster "Formação 35h" tem de ser revisto (volumes "35h" vs "40h" — qual maior hoje?). Conteúdo Previmed sobre formação tem de ser explicitamente "40 horas" + nota explicativa sobre transição 35→40. Risco: produzir conteúdo desatualizado que perde credibilidade junto a RH/jurídico.
 
 - **C2. Previmed fora de AIO em 4/5 head terms P1.** Para queries de altíssimo valor estratégico (medicina do trabalho, segurança no trabalho, HACCP, formação obrigatória), Previmed não está nas fontes que a IA usa para responder a um decisor B2B. Concorrentes diretos PT (Centralmed, SEPRI, Forprev, Medilav, Ecosáude) ocupam o espaço.
 
@@ -97,7 +97,7 @@ Snapshot fechado no tempo. Quando o Google atualizar a AIO destas queries, criar
 
 - Sem páginas citadas para 4 dos 5 head terms P1.
 - Conteúdo atual provavelmente não cita Lei 102/2009, ACT, ASAE com a frequência/estrutura que a AIO premeia.
-- Hub editorial inexistente (já flagged em `AUDIT_PREVIMED_BASELINE.md`).
+- Hub editorial inexistente (já flagged em `setup/BASELINE_AUDIT.md`).
 - Risco de conteúdo desatualizado em formação (35h obsoleto).
 
 ### Opportunities
@@ -254,7 +254,7 @@ Snapshot fechado no tempo. Quando o Google atualizar a AIO destas queries, criar
 2. Explicar a alteração 35→40 logo no H2 inicial,
 3. Citar Lei 93/2019 e Nota Técnica 9 da ACT.
 
-Revisão imediata necessária: `STRATEGY_KEYWORDS.md` linhas 213–216 (cluster Formação 35h).
+Revisão imediata necessária: `strategy/KEYWORDS.md` linhas 213–216 (cluster Formação 35h).
 
 ---
 
@@ -296,8 +296,8 @@ Revisão imediata necessária: `STRATEGY_KEYWORDS.md` linhas 213–216 (cluster 
 
 ### Phase 1 — Foundation
 
-- [ ] **F1.** Atualizar `STRATEGY_KEYWORDS.md` para refletir "35h → 40h" no cluster Formação. Avaliar adicionar variantes ("40 horas obrigatórias", "Lei 93/2019 formação", "40h formação contínua").
-- [ ] **F2.** Decidir keyword data tool (`DECISION_KEYWORD_DATA_TOOL.md`) — desbloqueia confirmação quantitativa das 5 queries deste relatório.
+- [ ] **F1.** Atualizar `strategy/KEYWORDS.md` para refletir "35h → 40h" no cluster Formação. Avaliar adicionar variantes ("40 horas obrigatórias", "Lei 93/2019 formação", "40h formação contínua").
+- [ ] **F2.** Decidir keyword data tool (`setup/KEYWORD_DATA_DECISION.md`) — desbloqueia confirmação quantitativa das 5 queries deste relatório.
 - [ ] **F3.** Marcar URL `/saude-no-trabalho/` como "protegida" — não mexer sem plano de redirect (já citada por AIO).
 
 ### Phase 2 — Content & Structure
@@ -317,17 +317,17 @@ Revisão imediata necessária: `STRATEGY_KEYWORDS.md` linhas 213–216 (cluster 
 ### Phase 4 — Authority & Internal Linking
 
 - [ ] **A1.** Cada pillar (C1–C5) deve ter ≥5 links internos para subtópicos e ≥5 links externos para fontes institucionais (Lei, ACT, ASAE, DGS, OA).
-- [ ] **A2.** Hub `/recursos/` (ainda inexistente) — ver `AUDIT_PREVIMED_BASELINE.md` — torna-se necessário para suportar os 5 pillars.
+- [ ] **A2.** Hub `/recursos/` (ainda inexistente) — ver `setup/BASELINE_AUDIT.md` — torna-se necessário para suportar os 5 pillars.
 
 ### Phase 5 — Measurement & Iteration
 
-- [ ] **M1.** Após GSC ligado (`SETUP_GSC_GA4.md`): trackear se Previmed entra em ranking para cada uma das 5 queries.
+- [ ] **M1.** Após GSC ligado (`setup/GSC_GA4_SETUP.md`): trackear se Previmed entra em ranking para cada uma das 5 queries.
 - [ ] **M2.** Repetir captura AIO em **t+90 dias** e **t+180 dias** após publicação dos pillars (novo relatório `YYYY-MM-DD__aio-expansion.md`). Comparar: entrámos nas fontes? Em que posição?
 - [ ] **M3.** Capturar pelo menos 1 vez por trimestre a AIO para Q4 (formação 35→40) — risco alto de a query ainda usar "35h" enquanto a lei diz 40h; manter conteúdo Previmed ajustado.
 
 ## Backlog Items To Add
 
-A copiar para `../SEO_BACKLOG.md` na secção certa:
+A copiar para `../_living/BACKLOG.md` na secção certa:
 
 - `[Content opportunity] P1` Brief Pillar "Medicina do Trabalho" — `/servicos/medicina-trabalho/`. Origem: `reports/2026-05-20__aio-expansion.md` §Q1.
 - `[Content opportunity] P1` Brief Pillar "Segurança no Trabalho" — `/servicos/seguranca-trabalho/`. Origem: §Q2.
@@ -336,12 +336,12 @@ A copiar para `../SEO_BACKLOG.md` na secção certa:
 - `[Content opportunity] P1` Guia "Como escolher empresa de medicina do trabalho" — `/recursos/guias/escolher-medicina-do-trabalho/`. Origem: §Q5.
 - `[Schema/entity] P2` Adicionar schema FAQPage + Article (e HowTo onde aplicável) em todas as páginas pillar P1.
 - `[Competitor gap] P2` Auditoria competitiva: forprev.pt, sepri.pt, centralmed.pt (3 páginas top citadas). Origem: §T1+T2.
-- `[Technical blocker] P2` Atualizar `STRATEGY_KEYWORDS.md` cluster Formação 35h para refletir 35→40h. Origem: §C1.
+- `[Technical blocker] P2` Atualizar `strategy/KEYWORDS.md` cluster Formação 35h para refletir 35→40h. Origem: §C1.
 - `[Measurement] P3` Recaptura AIO t+90d e t+180d pós-publicação pillars. Origem: §M2.
 
 ## Decisions Needed
 
-1. **Decisão keyword data tool (A–F).** Bloqueia confirmação quantitativa das 5 queries. Documentado em `../DECISION_KEYWORD_DATA_TOOL.md`. **Sem isto, não há volumes/dificuldade — todos os 5 pillars assumem prioridade P1 por intuição estratégica.**
+1. **Decisão keyword data tool (A–F).** Bloqueia confirmação quantitativa das 5 queries. Documentado em `../setup/KEYWORD_DATA_DECISION.md`. **Sem isto, não há volumes/dificuldade — todos os 5 pillars assumem prioridade P1 por intuição estratégica.**
 
 2. **Brief order: pelos 5 ao mesmo tempo ou um a um?**
    - Opção A: 5 briefs em paralelo (output massivo, risco de mistura de tom/qualidade).
@@ -359,10 +359,10 @@ A copiar para `../SEO_BACKLOG.md` na secção certa:
 
 ## Next Steps
 
-1. **Utilizador**: decidir keyword data tool em `../DECISION_KEYWORD_DATA_TOOL.md`.
-2. **Utilizador**: executar checklist `../SETUP_GSC_GA4.md` (ligar GSC/GA4/PSI).
-3. **SEO Lead (Claude)**: atualizar ficheiros vivos com sumário deste relatório (`SEO_CURRENT_STATUS.md`, `SEO_BACKLOG.md`, `SEO_OPPORTUNITIES.md`, `SEO_DECISION_LOG.md`).
-4. **SEO Lead (Claude)**: atualizar `STRATEGY_KEYWORDS.md` cluster Formação 35h → 40h (criar entry no `SEO_DECISION_LOG.md` se for alteração estrutural).
+1. **Utilizador**: decidir keyword data tool em `../setup/KEYWORD_DATA_DECISION.md`.
+2. **Utilizador**: executar checklist `../setup/GSC_GA4_SETUP.md` (ligar GSC/GA4/PSI).
+3. **SEO Lead (Claude)**: atualizar ficheiros vivos com sumário deste relatório (`_living/CURRENT_STATUS.md`, `_living/BACKLOG.md`, `_living/OPPORTUNITIES.md`, `_living/DECISION_LOG.md`).
+4. **SEO Lead (Claude)**: atualizar `strategy/KEYWORDS.md` cluster Formação 35h → 40h (criar entry no `_living/DECISION_LOG.md` se for alteração estrutural).
 5. **Utilizador + SEO Lead**: decidir ordem de produção dos 5 briefs P1 (ver Decisão #2).
 6. **Após 28d GSC coleta**: relatório baseline metrics em `reports/`.
 
@@ -373,8 +373,8 @@ A copiar para `../SEO_BACKLOG.md` na secção certa:
 ---
 
 > Após gravar este relatório:
-> 1. ✅ Atualizar `SEO_CURRENT_STATUS.md` (resumo curto + link).
-> 2. ✅ Mover backlog items para `SEO_BACKLOG.md`.
-> 3. ✅ Mover oportunidades para `SEO_OPPORTUNITIES.md`.
-> 4. ✅ Registar decisões duradouras em `SEO_DECISION_LOG.md`.
+> 1. ✅ Atualizar `_living/CURRENT_STATUS.md` (resumo curto + link).
+> 2. ✅ Mover backlog items para `_living/BACKLOG.md`.
+> 3. ✅ Mover oportunidades para `_living/OPPORTUNITIES.md`.
+> 4. ✅ Registar decisões duradouras em `_living/DECISION_LOG.md`.
 > 5. **Não duplicar** o relatório inteiro nos ficheiros vivos.

@@ -111,16 +111,16 @@ A pasta `organic-growth/` separa **ficheiros datados** (snapshots históricos) d
 | Tipo | Localização | Função |
 |---|---|---|
 | Datado | `reports/YYYY-MM-DD__*.md` | Análise completa, snapshot no tempo, não editar depois de publicar. |
-| Vivo | `SEO_CURRENT_STATUS.md` | Estado atual curto + apontador para último relatório. |
-| Vivo | `SEO_BACKLOG.md` | Tarefas acionáveis priorizadas. |
-| Vivo | `SEO_OPPORTUNITIES.md` | Hipóteses/ideias antes de virarem tarefas. |
-| Vivo | `SEO_DECISION_LOG.md` | Decisões SEO importantes e duradouras. |
+| Vivo | `_living/CURRENT_STATUS.md` | Estado atual curto + apontador para último relatório. |
+| Vivo | `_living/BACKLOG.md` | Tarefas acionáveis priorizadas. |
+| Vivo | `_living/OPPORTUNITIES.md` | Hipóteses/ideias antes de virarem tarefas. |
+| Vivo | `_living/DECISION_LOG.md` | Decisões SEO importantes e duradouras. |
 
 **Após criar um relatório datado**, atualizar os ficheiros vivos:
 
-1. `SEO_CURRENT_STATUS.md` — resumo curto + link para o novo relatório.
-2. `SEO_BACKLOG.md` — adicionar tarefas acionáveis identificadas.
-3. `SEO_OPPORTUNITIES.md` — adicionar oportunidades novas.
-4. `SEO_DECISION_LOG.md` — registar **apenas** decisões reais e duradouras.
+1. `_living/CURRENT_STATUS.md` — resumo curto + link para o novo relatório.
+2. `_living/BACKLOG.md` — adicionar tarefas acionáveis identificadas.
+3. `_living/OPPORTUNITIES.md` — adicionar oportunidades novas.
+4. `_living/DECISION_LOG.md` — registar **apenas** decisões reais e duradouras.
 
 **Nunca duplicar** o relatório inteiro nos ficheiros vivos — os ficheiros vivos são índices/sumários.

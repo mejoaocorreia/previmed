@@ -47,7 +47,7 @@ Cria-se um novo ficheiro em `reports/` sempre que o utilizador pede uma destas a
 - AI Search / GEO;
 - plano de ação SEO.
 
-Análise grande **sem** ficheiro persistente = desperdício de contexto. Ver [Anti-token waste](../SEO_OPERATING_SYSTEM.md#anti-token-waste) no operating system.
+Análise grande **sem** ficheiro persistente = desperdício de contexto. Ver [Anti-token waste](../_system/OPERATING_SYSTEM.md#anti-token-waste) no operating system.
 
 ## Template obrigatório
 
@@ -65,17 +65,17 @@ Em paralelo, existem 4 ficheiros vivos curtos em [`../`](..) que servem para con
 
 | Ficheiro vivo | Função |
 |---|---|
-| [`SEO_CURRENT_STATUS.md`](../SEO_CURRENT_STATUS.md) | Estado atual curto do SEO + apontador para o último relatório. |
-| [`SEO_BACKLOG.md`](../SEO_BACKLOG.md) | Tarefas acionáveis priorizadas. |
-| [`SEO_OPPORTUNITIES.md`](../SEO_OPPORTUNITIES.md) | Oportunidades, ideias, hipóteses antes de virarem tarefas. |
-| [`SEO_DECISION_LOG.md`](../SEO_DECISION_LOG.md) | Decisões SEO importantes e duradouras. |
+| [`_living/CURRENT_STATUS.md`](../_living/CURRENT_STATUS.md) | Estado atual curto do SEO + apontador para o último relatório. |
+| [`_living/BACKLOG.md`](../_living/BACKLOG.md) | Tarefas acionáveis priorizadas. |
+| [`_living/OPPORTUNITIES.md`](../_living/OPPORTUNITIES.md) | Oportunidades, ideias, hipóteses antes de virarem tarefas. |
+| [`_living/DECISION_LOG.md`](../_living/DECISION_LOG.md) | Decisões SEO importantes e duradouras. |
 
 **Depois de criar um relatório datado**, o autor deve:
 
-1. atualizar `SEO_CURRENT_STATUS.md` com um resumo curto + link para o relatório novo;
-2. adicionar tarefas acionáveis ao `SEO_BACKLOG.md` (não duplicar o relatório inteiro);
-3. adicionar oportunidades ao `SEO_OPPORTUNITIES.md`;
-4. adicionar decisões ao `SEO_DECISION_LOG.md` **apenas** se forem decisões reais e duradouras;
+1. atualizar `_living/CURRENT_STATUS.md` com um resumo curto + link para o relatório novo;
+2. adicionar tarefas acionáveis ao `_living/BACKLOG.md` (não duplicar o relatório inteiro);
+3. adicionar oportunidades ao `_living/OPPORTUNITIES.md`;
+4. adicionar decisões ao `_living/DECISION_LOG.md` **apenas** se forem decisões reais e duradouras;
 5. **não** copiar o relatório inteiro para os ficheiros vivos — os ficheiros vivos são índices/sumários, não cópias.
 
 ## Quem consulta esta pasta
@@ -86,6 +86,11 @@ Em paralelo, existem 4 ficheiros vivos curtos em [`../`](..) que servem para con
 
 ## O que NÃO está aqui
 
-- Capturas brutas (snapshots Playwright, exports CSV, screenshots) — vão para subpastas próprias como [`../aio-captures/`](../aio-captures/) ou similares.
-- Templates de WordPress, código de implementação — fora do scope.
+- **Briefs editoriais e copies finais** dos clusters → vivem em [`../clusters/q<N>-<slug>/BRIEF.md`](../clusters/) e [`COPY.md`](../clusters/). Brief + copy juntos = sem drift.
+- **Snapshots brutos Playwright** (aio-capture.yml) → vivem dentro da pasta do cluster correspondente em [`../clusters/`](../clusters/).
+- **Regras de trabalho e playbooks** → vivem em [`../_system/`](../_system/).
+- **Estado vivo** (status, backlog, decisões, oportunidades) → vivem em [`../_living/`](../_living/).
+- **Estratégia Fase 1** → vive em [`../strategy/`](../strategy/).
+- **Decisões + guias setup técnico** → vivem em [`../setup/`](../setup/).
+- Templates WordPress, código de implementação — fora do scope.
 - Roadmaps de produto que não sejam SEO — fora do scope.

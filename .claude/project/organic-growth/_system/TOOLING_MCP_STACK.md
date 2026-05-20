@@ -4,9 +4,9 @@ Este ficheiro lista ferramentas e MCPs úteis para um SEO Lead de alto nível.
 
 ## Política orçamental — orçamento zero
 
-> **Decisão 2026-05-20** (ver [`SEO_DECISION_LOG.md`](./SEO_DECISION_LOG.md)): toda a stack SEO opera com ferramentas **gratuitas**. Sem subscrições pagas. Sem APIs com top-up.
+> **Decisão 2026-05-20** (ver [`_living/DECISION_LOG.md`](./_living/DECISION_LOG.md)): toda a stack SEO opera com ferramentas **gratuitas**. Sem subscrições pagas. Sem APIs com top-up.
 >
-> As 6 opções pagas avaliadas (DataForSEO, SerpAPI, Ahrefs, Semrush, SE Ranking, híbrido) foram rejeitadas. Detalhe completo em [`DECISION_KEYWORD_DATA_TOOL.md`](./DECISION_KEYWORD_DATA_TOOL.md).
+> As 6 opções pagas avaliadas (DataForSEO, SerpAPI, Ahrefs, Semrush, SE Ranking, híbrido) foram rejeitadas. Detalhe completo em [`setup/KEYWORD_DATA_DECISION.md`](./setup/KEYWORD_DATA_DECISION.md).
 >
 > **Trade-offs aceites**: sem volumes finos (Keyword Planner em buckets), sem competitor ranked keywords automatizadas, sem rank tracking automatizado, sem backlinks data profunda, sem dashboard SaaS.
 >

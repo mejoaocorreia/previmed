@@ -15,7 +15,7 @@ A **resposta gerada por inteligência artificial** que o Google mostra no topo d
 
 **Sinónimos:** "AI Overview" (Google em inglês), "Modo IA" (Google em português), "SGE" (Search Generative Experience — nome antigo).
 
-Ver capturas reais em `aio-captures/`.
+Ver capturas reais em `../clusters/q<N>-*/aio-capture.yml`.
 
 ---
 
@@ -66,7 +66,7 @@ Tag HTML que indica ao Google **qual é a URL "oficial"** de um conteúdo, quand
 
 Todas tratam de medicina do trabalho — agrupam-se num **cluster**. O cluster geralmente é coberto por **um pillar** + alguns **spin-offs** (ver abaixo).
 
-Os clusters da Previmed estão definidos em `STRATEGY_KEYWORDS.md` (16 clusters, ~120 queries).
+Os clusters da Previmed estão definidos em `strategy/KEYWORDS.md` (16 clusters, ~120 queries).
 
 ---
 
@@ -314,7 +314,7 @@ A estratégia "pillar + spin-offs" foi observada na SEPRI (`reports/2026-05-20__
 
 **Representação de um decisor típico** do público-alvo. Não é uma pessoa real, é um arquétipo.
 
-Personas Previmed (em `STRATEGY_AUDIENCES.md`):
+Personas Previmed (em `strategy/AUDIENCES.md`):
 1. RH/Office Manager de PME.
 2. Diretor Industrial / responsável produção.
 3. Formando (trabalhador a candidatar-se a curso CAP).
@@ -347,7 +347,7 @@ Ex.: alguém abre o Google.pt e escreve `medicina do trabalho` — essa frase é
 
 **Acompanhar a posição** em que o site aparece para um conjunto de queries-alvo, ao longo do tempo. Ex.: monitorizar se Previmed ranqueia top 10 para "medicina do trabalho" semana a semana.
 
-Sem tool pago, fazemos rank checks manuais via Playwright (ad-hoc). Documentado em `DECISION_KEYWORD_DATA_TOOL.md`.
+Sem tool pago, fazemos rank checks manuais via Playwright (ad-hoc). Documentado em `setup/KEYWORD_DATA_DECISION.md`.
 
 ---
 

@@ -64,7 +64,7 @@ Auditadas 8 URLs (7 concorrentes + 1 Previmed). Padrão claro emerge:
 **3. Forprev é o caso mais curto (656w) que aparece em AIO.** Conta com Service schema com offers, breadcrumb, e 28 FAQ-like accordions (mas SEM FAQPage schema explícito). Apenas 2 links externos. Sugere que **um Service schema bem feito + FAQ estruturada** pode compensar baixo word count.
 
 **4. Previmed `/saude-no-trabalho/` tem problemas estruturais graves comparativamente:**
-- **Title duplicado**: "Medicina No Trabalho - Previmed - PrevimedPrevimed" (confirma achado do `AUDIT_PREVIMED_BASELINE.md`).
+- **Title duplicado**: "Medicina No Trabalho - Previmed - PrevimedPrevimed" (confirma achado do `setup/BASELINE_AUDIT.md`).
 - **Hierarquia editorial quebrada**: H1 → salta para H3 (sem H2 visíveis).
 - **0 hits da query "medicina do trabalho"** no body: a página usa "Medicina **No** Trabalho" (com N maiúsculo, sem preposição "do") — divergência ortográfica relevante face à query AIO real.
 - **0 links externos institucionais**: nem ACT, nem Lei 102/2009 (mencionada em meta description mas não linkada), nem DGS, nem ASAE. Citação Previmed em AIO Q5 acontece **apesar** disto, não por mérito on-page — provavelmente por autoridade de marca residual.
@@ -77,7 +77,7 @@ Auditadas 8 URLs (7 concorrentes + 1 Previmed). Padrão claro emerge:
 
 ### Critical
 
-- **C1. Previmed `/saude-no-trabalho/` tem title duplicado** — "Medicina No Trabalho - Previmed - PrevimedPrevimed". Já tinha sido flagged em `AUDIT_PREVIMED_BASELINE.md`. Esta página **é citada em AIO Q5** — o title impacta CTR e snippet. Fix imediato (baixo esforço, alto impacto).
+- **C1. Previmed `/saude-no-trabalho/` tem title duplicado** — "Medicina No Trabalho - Previmed - PrevimedPrevimed". Já tinha sido flagged em `setup/BASELINE_AUDIT.md`. Esta página **é citada em AIO Q5** — o title impacta CTR e snippet. Fix imediato (baixo esforço, alto impacto).
 - **C2. Previmed `/saude-no-trabalho/` usa "Medicina No Trabalho"** (N maiúsculo, sem "do") em vez da forma idiomática "medicina do trabalho". 0 ocorrências da query AIO real no body. **Decisão necessária**: corrigir on-page e/ou criar nova página com slug correto + redirect.
 - **C3. Zero links externos institucionais nas páginas Previmed.** Centralmed linka 8–12 fontes (ACT, DGS, DGERT, pgdlisboa, FAO, APSEI). Padrão a replicar em todos os 5 briefs P1.
 
@@ -225,7 +225,7 @@ Auditadas 8 URLs (7 concorrentes + 1 Previmed). Padrão claro emerge:
 ### Phase 1 — Foundation (quick fixes)
 
 - [ ] **F1.** Corrigir title duplicado de `/saude-no-trabalho/` ("Previmed - PrevimedPrevimed" → "Medicina do Trabalho — Previmed"). **Sem alterar URL/slug.** Página já tem foothold AIO Q5.
-- [ ] **F2.** Decidir: manter "Medicina No Trabalho" como brand voice OU canonicalizar para "Medicina do Trabalho" (forma idiomática). Decisão de stakeholder antes de mexer. Registar no `SEO_DECISION_LOG.md`.
+- [ ] **F2.** Decidir: manter "Medicina No Trabalho" como brand voice OU canonicalizar para "Medicina do Trabalho" (forma idiomática). Decisão de stakeholder antes de mexer. Registar no `_living/DECISION_LOG.md`.
 - [ ] **F3.** Atualizar hierarquia editorial `/saude-no-trabalho/`: introduzir H2 antes dos blocos H3 atuais.
 
 ### Phase 2 — Content & Structure (briefs P1)
@@ -257,7 +257,7 @@ Aplicar a todos os 5 briefs originados em `2026-05-20__aio-expansion.md`:
 
 ## Backlog Items To Add
 
-A copiar para `../SEO_BACKLOG.md`:
+A copiar para `../_living/BACKLOG.md`:
 
 - `[Quick win] P1` Corrigir title duplicado `/saude-no-trabalho/` ("Previmed - PrevimedPrevimed"). Origem: `reports/2026-05-20__competitor-deep-dive.md` §F1.
 - `[Quick win] P2` Adicionar H2 à página `/saude-no-trabalho/` (atualmente salta H1→H3). Origem: §F3.
@@ -282,8 +282,8 @@ A copiar para `../SEO_BACKLOG.md`:
 
 ## Next Steps
 
-1. Atualizar `SEO_CURRENT_STATUS.md`, `SEO_BACKLOG.md`, `SEO_OPPORTUNITIES.md` com findings deste relatório.
-2. Registar decisão "brand voice MT" no `SEO_DECISION_LOG.md` quando o utilizador resolver.
+1. Atualizar `_living/CURRENT_STATUS.md`, `_living/BACKLOG.md`, `_living/OPPORTUNITIES.md` com findings deste relatório.
+2. Registar decisão "brand voice MT" no `_living/DECISION_LOG.md` quando o utilizador resolver.
 3. Decidir com utilizador qual quick fix arrancar primeiro.
 4. Aplicar as regras de Phase 2 (C0–C5) como **template fixo** dos briefs futuros — promover a documento próprio se necessário.
 
