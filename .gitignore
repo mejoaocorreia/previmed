@@ -46,3 +46,6 @@ wp-content/object-cache.php
 
 # Playwright MCP runtime artifacts
 .playwright-mcp/
+
+# External project repositories
+professional/previmed/website/
