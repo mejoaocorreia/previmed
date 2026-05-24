@@ -1,0 +1,13 @@
+{
+  "extraKnownMarketplaces": {
+    "previmed-marketplace": {
+      "source": {
+        "source": "github",
+        "repo": "mejoaocorreia/previmed"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "seo-growth-system@previmed-marketplace": true
+  }
+}
