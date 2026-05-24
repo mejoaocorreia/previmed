@@ -6,7 +6,7 @@ Comando único de entrada do module **SEO Growth System**. Em vez de um ficheiro
 1. O comando encaminha sempre para o **SEO Lead** ([`../agents/seo-lead.md`](../agents/seo-lead.md)).
 2. O SEO Lead lê o modo, decide os subagentes/skills/project docs e coordena.
 3. Em trabalhos importantes, passa por **SEO QA** antes de entregar.
-4. Análises grandes são persistidas como records (ver [`../project/REPORTING_MODEL.md`](../project/REPORTING_MODEL.md) e [`../records_template/`](../records_template/)).
+4. Análises grandes são persistidas como records (ver [`../project/REPORTING_MODEL.md`](../project/REPORTING_MODEL.md); templates em [`.claude/records/templates/seo/`](../../../records/templates/seo/README.md)).
 
 ## Regras transversais (todos os modos)
 - Não alterar o site, WordPress, indexação ou URLs sem autorização do supervisor.
@@ -91,7 +91,7 @@ Comando único de entrada do module **SEO Growth System**. Em vez de um ficheiro
 ### /seo go-live
 - **Quando:** preparar go-live SEO seguro.
 - **Agentes:** seo-qa, technical-seo, wordpress-seo-implementation.
-- **Skills/docs:** [`../records_template/SEO_GO_LIVE_CHECKLIST.md`](../records_template/SEO_GO_LIVE_CHECKLIST.md), `QUALITY_GATE`.
+- **Skills/docs:** [`SEO_GO_LIVE_CHECKLIST.md`](../../../records/templates/seo/SEO_GO_LIVE_CHECKLIST.md), `QUALITY_GATE`.
 - **Output:** checklist validada, riscos, autorização necessária.
 
 ### /seo qa
@@ -100,5 +100,5 @@ Comando único de entrada do module **SEO Growth System**. Em vez de um ficheiro
 - **Skills/docs:** `seo-quality-gate`, `QUALITY_GATE`.
 - **Output:** aprovado/bloqueado, problemas, correções, risco residual.
 
-## Notas de migração
-Consolida os comandos ativos (`seo-audit`, `content-review`, `competitor-review`) e os comandos do `_archive/.../commands/organic-growth/` (`competitor-analysis`, `content-brief`, `gsc-analysis`, `local-seo`, `page-review`, `schema-review`, `seo-go-live`, `seo-strategy`, `technical-audit`) num único comando com modos. Ver [`../MIGRATION_MAP.md`](../MIGRATION_MAP.md).
+## Notas de consolidação
+Consolida num único comando com modos os vários comandos SEO que antes existiam separados (auditoria, conteúdo, brief, concorrência, dados, local, schema, go-live, estratégia, técnico). As pontes em `.claude/commands/seo-growth-system/` encaminham os nomes antigos para os modos correspondentes.

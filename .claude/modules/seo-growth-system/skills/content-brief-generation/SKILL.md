@@ -33,5 +33,5 @@ Brief genérico; pedir keywords sem intenção; ignorar prova/CTA; copiar estrut
 ## Ferramentas/MCPs possíveis
 Browser/Search (referência SERP), Search Console (queries reais). Read-only.
 
-## Notas de migração
-Migrado de `_archive/.../skills/organic-growth/content-brief-generation/` + agente/ comando `content-brief` do archive.
+## Notas de consolidação
+Consolidado da versão anterior do pacote SEO (skill de brief + capacidade de content-brief).

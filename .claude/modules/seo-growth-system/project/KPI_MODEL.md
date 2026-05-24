@@ -43,5 +43,5 @@ Search Console, GA4, PageSpeed/CrUX. Ver [`TOOLING_MODEL.md`](TOOLING_MODEL.md).
 ## Critérios de qualidade
 KPIs ligados a fase e ação; brand vs non-brand separados; períodos comparáveis; limitações explícitas.
 
-## Notas de migração
-Migrado de `_archive/.../_system/KPI_MODEL.md`. Reporting movido para [`REPORTING_MODEL.md`](REPORTING_MODEL.md).
+## Notas de consolidação
+Consolidado do KPI model da versão anterior do pacote SEO. Reporting movido para [`REPORTING_MODEL.md`](REPORTING_MODEL.md).

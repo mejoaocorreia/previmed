@@ -33,5 +33,5 @@ Priorizar por volume puro; criar clusters que canibalizam; ignorar intenção; i
 ## Ferramentas/MCPs possíveis
 Search Console, SERPs (Browser), Keyword Planner (buckets). Pagas só com autorização.
 
-## Notas de migração
-Migrado de `_archive/.../skills/organic-growth/keyword-cluster-map/` + agente `keyword-intent`.
+## Notas de consolidação
+Consolidado da versão anterior do pacote SEO (skill de cluster map + capacidade de keyword-intent).

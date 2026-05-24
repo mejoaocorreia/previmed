@@ -48,10 +48,10 @@ Quando o pedido tocar:
 ## Skills incluídas (11)
 `technical-seo-crawl-audit` · `content-brief-generation` · `keyword-cluster-map` · `schema-entity-review` · `onpage-optimization-pass` · `seo-quality-gate` · `competitor-gap-analysis` · `local-seo-review` · `cwv-performance-seo-review` · `gsc-ga4-analysis` · `serp-intent-audit`.
 
-Skills avaliadas e **deferidas** (capacidade coberta por agente/project doc, para evitar selva de skills): `ai-search-visibility-review` (→ agente `ai-search-visibility` + `CONTENT_RULES`/`STRATEGY_RULES`), `internal-linking-architecture` (→ agente `internal-linking` + `onpage-optimization-pass`), `wordpress-seo-implementation` (→ agente `wordpress-seo-implementation` + `TECHNICAL_RULES`), `seo-reporting-dashboard` (→ `REPORTING_MODEL` + `KPI_MODEL`). Ver [MIGRATION_MAP.md](MIGRATION_MAP.md).
+Skills avaliadas e **deferidas** (capacidade coberta por agente/project doc, para evitar selva de skills): `ai-search-visibility-review` (→ agente `ai-search-visibility` + `CONTENT_RULES`/`STRATEGY_RULES`), `internal-linking-architecture` (→ agente `internal-linking` + `onpage-optimization-pass`), `wordpress-seo-implementation` (→ agente `wordpress-seo-implementation` + `TECHNICAL_RULES`), `seo-reporting-dashboard` (→ `REPORTING_MODEL` + `KPI_MODEL`).
 
-## Records templates incluídos
-`README` · `SEO_AUDIT_TEMPLATE` · `SEO_TASK_TEMPLATE` · `SEO_REPORT_TEMPLATE` · `SEO_DECISION_TEMPLATE` · `SEO_GO_LIVE_CHECKLIST`. São **templates**; os records reais vivem em `.claude/records/`.
+## Records templates usados
+O module **usa** templates SEO centralizados em [`.claude/records/templates/seo/`](../../records/templates/seo/README.md) — `SEO_AUDIT_TEMPLATE` · `SEO_TASK_TEMPLATE` · `SEO_REPORT_TEMPLATE` · `SEO_DECISION_TEMPLATE` · `SEO_GO_LIVE_CHECKLIST`. São **templates** (não records reais) e **não vivem dentro do module** — os records reais vivem em `.claude/records/`.
 
 ## Dependências opcionais futuras
 - Ferramentas gratuitas Google (Search Console, GA4, PageSpeed/CrUX, Keyword Planner) — ver `project/TOOLING_MODEL.md`.

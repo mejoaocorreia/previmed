@@ -51,5 +51,5 @@ Principalmente [`seo-data-analyst`](../agents/seo-data-analyst.md), [`technical-
 ## Critérios de qualidade
 Nunca assumir ferramenta instalada; propor alternativa se faltar; declarar fonte e limitações; nada de tokens no repo.
 
-## Notas de migração
-Migrado de `_archive/.../_system/TOOLING_MCP_STACK.md`. **Generalizado:** a decisão específica de orçamento-zero de 2026-05-20 e os estados "a ligar/ativo" eram dados Previmed — ficam no `_archive` e podem ir para records reais do workspace. Aqui fica o modelo reutilizável.
+## Notas de consolidação
+Consolidado do tooling/MCP stack da versão anterior do pacote SEO. **Generalizado:** decisões específicas de orçamento e estados de ligação de ferramentas são dados de projeto — vão para records reais do workspace. Aqui fica o modelo reutilizável.

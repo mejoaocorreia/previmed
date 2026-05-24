@@ -48,5 +48,5 @@ Search Console, SERP (Browser), Business Profile. Ver [`TOOLING_MODEL.md`](TOOLI
 ## Critérios de qualidade
 Cada decisão liga a objetivo+intenção+arquitetura; sem páginas sem papel; AI Search sem truques.
 
-## Notas de migração
-Migrado de `.claude/project/seo-growth-system/SEO_STRATEGY_RULES.md` (ativo) + ideias de `_archive/.../strategy/` (INFORMATION_ARCHITECTURE, KEYWORDS) — generalizadas (sem dados Previmed).
+## Notas de consolidação
+Consolidado das regras de estratégia SEO do conteúdo ativo + ideias de arquitetura/keywords da versão anterior do pacote SEO — generalizadas (sem dados específicos de projeto).

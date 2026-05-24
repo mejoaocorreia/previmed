@@ -49,5 +49,5 @@ Colabora com cwv-performance-seo (performance), schema-entity (dados estruturado
 ## Critérios de qualidade
 Preserva URLs estáveis; alterações sensíveis têm plano+rollback+validação; schema representa conteúdo visível; diz claramente o que foi e não foi validado.
 
-## Notas de migração
-Fusão de `.claude/agents/seo-growth-system/technical-seo.md` (ativo — checklist técnica detalhada, regras críticas, output) com `_archive/.../agents/organic-growth/technical-seo.md` (lista de responsabilidades). Detalhe de processo migrado para `TECHNICAL_RULES` e skill `technical-seo-crawl-audit`.
+## Notas de consolidação
+Fusão do conteúdo SEO ativo (checklist técnica detalhada, regras críticas, output) com a versão anterior do pacote SEO (lista de responsabilidades). Detalhe de processo em `TECHNICAL_RULES` e no skill `technical-seo-crawl-audit`.

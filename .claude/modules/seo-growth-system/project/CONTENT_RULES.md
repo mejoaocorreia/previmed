@@ -50,5 +50,5 @@ Browser/Search (referência), Search Console (queries/CTR). Read-only.
 ## Critérios de qualidade
 Específico, original, com prova, revisto, sem claims inventados; alinhado com marca e intenção; YMYL com revisão humana.
 
-## Notas de migração
-Fusão de `.claude/project/seo-growth-system/CONTENT_GROWTH_RULES.md` (ativo) + `_archive/.../_system/playbooks/CONTENT_SYSTEM.md` (tipos de página, brief) + `QUALITY_BAR.md` (people-first, rejeitar se…).
+## Notas de consolidação
+Fusão das regras de conteúdo do conteúdo ativo com a versão anterior do pacote SEO (tipos de página, brief, quality bar people-first).

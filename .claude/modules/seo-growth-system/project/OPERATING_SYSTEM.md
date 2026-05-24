@@ -55,5 +55,5 @@ Ver [`TOOLING_MODEL.md`](TOOLING_MODEL.md).
 ## Critérios de qualidade
 SEO só é bom se melhora utilidade, clareza para motores, confiança, performance, conversão e sustentabilidade. (Ver [`QUALITY_GATE.md`](QUALITY_GATE.md).)
 
-## Notas de migração
-Fusão de `.claude/project/seo-growth-system/SEO_GROWTH_OPERATING_SYSTEM.md` (ativo) + `_archive/.../project/organic-growth/_system/OPERATING_SYSTEM.md` (anti-token-waste, living vs dated, persistence rule). A mecânica de ficheiros vivos/datados foi generalizada para `REPORTING_MODEL`.
+## Notas de consolidação
+Fusão do operating system SEO do conteúdo ativo com a versão anterior do pacote SEO (anti-token-waste, living vs dated, persistence rule). A mecânica de ficheiros vivos/datados foi generalizada para `REPORTING_MODEL`.

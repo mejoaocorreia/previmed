@@ -9,7 +9,7 @@ Sempre que se produz uma análise grande: auditoria completa, planeamento, conco
 ## Regras principais
 - **Análise grande sem record persistente = desperdício de contexto.** Antes de continuar, confirmar "isto está a ser persistido?". Se não, criar o record e só depois continuar.
 - Markdown (`.md`) por defeito (renderiza no GitHub).
-- Records reais vivem em `.claude/records/` (não no module). O module só fornece **templates** em [`../records_template/`](../records_template/).
+- Records reais vivem em `.claude/records/` (não no module). Os **templates** vivem centralizados em [`.claude/records/templates/seo/`](../../../records/templates/seo/README.md).
 - Não duplicar o relatório inteiro em ficheiros de estado — estes são índices/sumários.
 
 ## Processo
@@ -30,7 +30,7 @@ Formato de nome: data ISO 8601 + `__` + `report-type` em kebab-case + `.md`.
 Após um relatório datado: atualizar status (resumo+link), mover tarefas para backlog, oportunidades para opportunities, decisões duradouras para decisions. **Nunca** duplicar o relatório inteiro.
 
 ## Inputs
-A análise produzida + o template adequado de [`../records_template/`](../records_template/).
+A análise produzida + o template adequado de [`.claude/records/templates/seo/`](../../../records/templates/seo/README.md).
 
 ## Outputs
 Record datado consistente + ficheiros de estado atualizados.
@@ -47,5 +47,5 @@ Filesystem (criar records, autorizado).
 ## Critérios de qualidade
 Análise grande sempre persistida; nome consistente; estado atualizado sem duplicar conteúdo.
 
-## Notas de migração
-Migrado de `_archive/.../_system/OPERATING_SYSTEM.md` (persistence rule, anti-token-waste, living vs dated) + `reports/README.md`. **Generalizado:** caminhos `organic-growth/reports/` e clusters Previmed ficam no `_archive`; aqui fica o modelo reutilizável apontando para `.claude/records/`.
+## Notas de consolidação
+Consolidado da versão anterior do pacote SEO (persistence rule, anti-token-waste, living vs dated, convenção de reports). **Generalizado:** caminhos e dados específicos de projeto ficam nos records reais; aqui fica o modelo reutilizável apontando para `.claude/records/`.

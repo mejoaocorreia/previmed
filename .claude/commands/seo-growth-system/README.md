@@ -8,4 +8,4 @@ Estes comandos foram **consolidados** no comando único `/seo` do module.
 
 Fonte da verdade: [`.claude/modules/seo-growth-system/commands/seo.md`](../../modules/seo-growth-system/commands/seo.md). Entrada nativa: [`.claude/commands/seo.md`](../seo.md).
 
-Estado: merged. Ver [`../../modules/seo-growth-system/MIGRATION_MAP.md`](../../modules/seo-growth-system/MIGRATION_MAP.md).
+Estado: consolidado no module (estes ficheiros são apenas pontes).

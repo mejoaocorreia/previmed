@@ -37,5 +37,5 @@ Browser/Search (SERP real), Rich Results (schema dos rivais). Pagas só com auto
 ## Critérios de qualidade
 Concorrentes orgânicos reais; data registada; recomendação para superar; dados pagos só se existirem.
 
-## Notas de migração
-Fusão de `.claude/project/seo-growth-system/COMPETITOR_RESEARCH_PROTOCOL.md` (ativo) + `_archive/.../_system/playbooks/COMPETITOR_RESEARCH.md` + agentes de concorrência (ativo+archive).
+## Notas de consolidação
+Fusão do protocolo de concorrência do conteúdo ativo com o playbook de competitor research da versão anterior do pacote SEO + capacidade dos agentes de concorrência.

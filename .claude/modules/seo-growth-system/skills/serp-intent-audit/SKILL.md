@@ -33,5 +33,5 @@ Assumir intenção pela query literal; ignorar SERP features; confundir intenç�
 ## Ferramentas/MCPs possíveis
 Browser/Search (SERP real). Read-only; sem scraping agressivo.
 
-## Notas de migração
-Migrado de `_archive/.../skills/organic-growth/serp-intent-audit/`. Incluído (não deferido) porque a classificação de intenção da SERP é um procedimento reutilizável e distinto do mapa de clusters.
+## Notas de consolidação
+Consolidado da versão anterior do pacote SEO. Incluído (não deferido) porque a classificação de intenção da SERP é um procedimento reutilizável e distinto do mapa de clusters.

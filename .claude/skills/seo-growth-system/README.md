@@ -15,4 +15,4 @@ Estas skills foram **consolidadas** no module:
 | `competitor-scan/SKILL.md` | `skills/competitor-gap-analysis/SKILL.md` |
 | `content-quality-review/SKILL.md` | `skills/onpage-optimization-pass` + `CONTENT_RULES` (fundido) |
 
-Ver [`../../modules/seo-growth-system/MIGRATION_MAP.md`](../../modules/seo-growth-system/MIGRATION_MAP.md).
+A fonte da verdade é o module. Estes ficheiros existem só por compatibilidade.

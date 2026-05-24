@@ -15,7 +15,8 @@ Este repo é um **repositório Git separado**, mantido dentro da árvore local d
 - **manuals/** — manuais e procedimentos. Representa *como se faz*.
 - **shared/** — contexto, glossário, marca, referências e templates comuns. Representa *o que toda a gente precisa de saber*.
 - **.claude/** — agentes, comandos, skills, connectors, records e regras operacionais. Representa *a equipa* que executa.
-- **.claude/modules/** — *unidades reutilizáveis e exportáveis* de capacidade (agents + commands + project + skills + records_template). Primeiro module: **`seo-growth-system`** (a equipa SEO). Representa *capacidades que podem servir vários workspaces ou outros projetos*.
+- **.claude/modules/** — *unidades reutilizáveis e exportáveis* de capacidade (agents + commands + project + skills). Primeiro module: **`seo-growth-system`** (a equipa SEO). Representa *capacidades que podem servir vários workspaces ou outros projetos*. **Workspaces usam modules; não os absorvem.**
+- **.claude/records/** — registos reais. Inclui `templates/` (templates reutilizáveis de records; SEO em `templates/seo/`) e `architecture/` (decisões estruturais e razões). Os modules **usam** os templates centralizados; não guardam templates próprios.
 
 ## Não é só website/SEO
 SEO e WordPress vieram da origem deste repo, mas passam a ser **capacidades dentro do departamento `web`**, não a identidade do sistema. A Previmed cobre comercial, operações, comunicações, compliance, saúde & segurança e formação — além do digital.

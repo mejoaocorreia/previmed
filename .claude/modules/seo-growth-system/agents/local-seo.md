@@ -37,5 +37,5 @@ Colabora com schema-entity (LocalBusiness/NAP), content-brief (páginas locais),
 ## Critérios de qualidade
 Páginas locais úteis e justificadas; NAP consistente; sem doorways; alterações ao GBP só com autorização.
 
-## Notas de migração
-Fusão de `_archive/.../agents/organic-growth/local-seo.md` + playbook `_system/playbooks/LOCAL_PLAYBOOK.md` + comando `commands/organic-growth/local-seo.md`. Playbook detalhado em `LOCAL_SEO_PLAYBOOK`.
+## Notas de consolidação
+Consolidado da versão anterior do pacote SEO. Playbook detalhado em `LOCAL_SEO_PLAYBOOK`.

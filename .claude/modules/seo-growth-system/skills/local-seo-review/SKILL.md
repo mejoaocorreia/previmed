@@ -33,5 +33,5 @@ Criar páginas locais vazias/duplicadas; inventar moradas/zonas; alterar GBP sem
 ## Ferramentas/MCPs possíveis
 Google Business Profile API (autorizado), Browser (SERP local), mapas. Read-only por defeito.
 
-## Notas de migração
-Fusão de `_archive/.../skills/organic-growth/local-seo-review/` + (archive antigo) `skills/local-seo-review/` + playbook local.
+## Notas de consolidação
+Consolidado da versão anterior do pacote SEO (skill de local review + playbook local).

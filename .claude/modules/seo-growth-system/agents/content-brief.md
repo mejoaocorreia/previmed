@@ -34,5 +34,5 @@ Recebe de keyword-intent e serp-competitor-analyst; entrega a content-growth/onp
 ## Critérios de qualidade
 Brief tem intenção clara, prova exigida, CTA e estrutura; não pede conteúdo genérico nem claims inventados; pronto para produção editorial.
 
-## Notas de migração
-Migrado de `_archive/.../agents/organic-growth/content-brief.md` + comando `_archive/.../commands/organic-growth/content-brief.md`. Processo detalhado no skill `content-brief-generation`. Capacidade que faltava no ativo.
+## Notas de consolidação
+Consolidado da versão anterior do pacote SEO. Processo detalhado no skill `content-brief-generation`.

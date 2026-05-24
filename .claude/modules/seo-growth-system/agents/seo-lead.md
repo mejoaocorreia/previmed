@@ -46,7 +46,7 @@ Mapa de decisão (chamar só o necessário):
 | **Dados (GSC/GA4)** | seo-data-analyst | `gsc-ga4-analysis`, `KPI_MODEL` |
 | **AI Search / GEO** | ai-search-visibility, content-growth, schema-entity | `STRATEGY_RULES`, `CONTENT_RULES` |
 | **WordPress SEO** | wordpress-seo-implementation, technical-seo | `TECHNICAL_RULES` |
-| **Go-live SEO** | seo-qa, technical-seo, wordpress-seo-implementation | `records_template/SEO_GO_LIVE_CHECKLIST`, `QUALITY_GATE` |
+| **Go-live SEO** | seo-qa, technical-seo, wordpress-seo-implementation | `.claude/records/templates/seo/SEO_GO_LIVE_CHECKLIST.md`, `QUALITY_GATE` |
 | **Revisão final** | seo-qa | `seo-quality-gate`, `QUALITY_GATE` |
 
 ## Processo padrão (tarefas médias/grandes)
@@ -68,5 +68,5 @@ Search/Browser, Search Console, URL Inspection, GA4, PageSpeed/Lighthouse, Playw
 ## Critérios de qualidade
 Antes de aprovar: ajuda o utilizador? ajuda o negócio? é tecnicamente seguro? não prejudica marca/performance/acessibilidade? não usa dados inventados? não depende de ferramenta inexistente? não mexe em produção sem autorização? está alinhado com os project docs? (Ver [`QUALITY_GATE`](../project/QUALITY_GATE.md).)
 
-## Notas de migração
-Fusão de `.claude/agents/seo-growth-system/seo-lead.md` (ativo — source-of-truth, princípios, quando assumir, quality gate) com `_archive/.../agents/organic-growth/seo-lead.md` (estrutura de equipa de 13 especialistas, matriz de priorização quick-wins, regras WordPress). A tabela "Routing interno SEO" é nova, consolidando os comandos antigos do archive. Referências externas centralizadas no [README do module](../README.md).
+## Notas de consolidação
+Fusão do conteúdo SEO ativo (source-of-truth, princípios, quando assumir, quality gate) com a versão anterior do pacote SEO (estrutura de equipa de especialistas, matriz de priorização quick-wins, regras WordPress). A tabela "Routing interno SEO" é nova, consolidando os comandos SEO num só. Referências externas centralizadas no [README do module](../README.md).

@@ -5,7 +5,7 @@ Equipa SEO / crescimento orgânico como **module reutilizável e exportável**.
 ## O que é
 O SEO Growth System é a capacidade de crescimento orgânico, visibilidade, autoridade, conteúdo estratégico, SEO técnico, schema/entidades, local SEO, performance/Core Web Vitals, AI Search e medição — organizada como **um module único**, com SEO Lead e subagentes bem definidos.
 
-Deixou de estar espalhado por `.claude/agents|commands|project|skills/seo-growth-system/`. **A fonte da verdade é este module.** Os caminhos antigos são pontes (ver [MIGRATION_MAP.md](MIGRATION_MAP.md)).
+Deixou de estar espalhado por `.claude/agents|commands|project|skills/seo-growth-system/`. **A fonte da verdade é este module.** Os caminhos antigos são pontes para o Claude Code descobrir/invocar o module.
 
 ## Fasquia
 Alta. O objetivo é trabalho SEO profissional, não básico — mesmo que gaste mais tokens quando a tarefa o justificar. SEO excelente alinha intenção, qualidade, técnica, autoridade, velocidade, experiência e negócio. Se uma proposta melhora ranking mas piora confiança, UX ou performance, **não está pronta**.
@@ -16,15 +16,15 @@ Alta. O objetivo é trabalho SEO profissional, não básico — mesmo que gaste 
 - [`commands/seo.md`](commands/seo.md) — comando único `/seo` com modos. Ponte global em `.claude/commands/seo.md`.
 - [`project/`](project/) — operating system, regras, quality gate e playbooks (fonte de detalhe operacional).
 - [`skills/`](skills/) — procedimentos reutilizáveis.
-- [`records_template/`](records_template/) — templates para records SEO (os records reais vivem em `.claude/records/`).
-- [`MIGRATION_MAP.md`](MIGRATION_MAP.md) — mapa origem→destino de tudo o que foi migrado/consolidado do ativo e do `_archive`.
+
+Os **templates de records SEO** não ficam dentro do module — vivem em [`.claude/records/templates/seo/`](../../records/templates/seo/README.md). Os records reais vivem em `.claude/records/`.
 
 ## Como é chamado
 1. O **supervisor** identifica que o pedido toca web/search/content/WordPress SEO.
 2. Encaminha para o **SEO Lead** ([`agents/seo-lead.md`](agents/seo-lead.md)) — o supervisor não faz SEO diretamente.
 3. O SEO Lead decide que subagentes/skills/project docs usar (ver "Routing interno SEO" no seu ficheiro).
 4. Em trabalhos importantes, passa por **SEO QA** antes da entrega.
-5. Análises grandes são persistidas como records (ver `project/REPORTING_MODEL.md` + `records_template/`).
+5. Análises grandes são persistidas como records (ver `project/REPORTING_MODEL.md`; templates em `.claude/records/templates/seo/`).
 
 ## Limites (governação vence sempre)
 Segurança, RGPD/dados pessoais, produção, WordPress safety, rollback e escopo são do **supervisor / system-safety**. O SEO recomenda; não passa por cima destes limites. SEO não deve contaminar workspaces que não são web/search/content.
@@ -49,4 +49,4 @@ Para evitar repetição, as referências oficiais ficam **só aqui**. Os agentes
 Este module é **genérico**. Não contém dados específicos da Previmed (serviços, leis, entidades, clusters). Esses dados vivem no workspace que usa o module e/ou em records reais. Assim, o module pode ser exportado para outros projetos (ver `manifest.md` → "Como exportar/reutilizar").
 
 ## Estado atual
-Module estruturado e consolidado a partir do ativo e do `_archive`. Sem código funcional, sem comandos automáticos.
+Module estruturado e consolidado (estrutura final). Sem código funcional, sem comandos automáticos.

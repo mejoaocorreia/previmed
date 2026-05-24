@@ -37,5 +37,5 @@ Colabora com content-growth (conteúdo citável), schema-entity (entidades), ser
 ## Critérios de qualidade
 Fundamentos SEO respeitados; sem manipulação; informação textual visível; entidade/marca reforçada de forma legítima.
 
-## Notas de migração
-Migrado de `_archive/.../agents/organic-growth/ai-search-visibility.md`. Regras AI Search consolidadas em `STRATEGY_RULES`/`CONTENT_RULES`. Skill própria deferida — ver MIGRATION_MAP.
+## Notas de consolidação
+Consolidado da versão anterior do pacote SEO. Regras AI Search em `STRATEGY_RULES`/`CONTENT_RULES`. Skill própria deferida (coberta por este agente + esses project docs).

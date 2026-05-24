@@ -16,7 +16,14 @@ Antes de agir, o supervisor identifica:
 7. **agente/capacidade** — que agente ou skill específico executa?
 
 ## Modules
-Os modules vivem em [`.claude/modules/`](../../modules/README.md) e são **unidades reutilizáveis** (agents + commands + project + skills + records_template). O supervisor não executa a capacidade do module diretamente — **encaminha para o líder do module**.
+Os modules vivem em [`.claude/modules/`](../../modules/README.md) e são **unidades reutilizáveis** (agents + commands + project + skills). O supervisor não executa a capacidade do module diretamente — **encaminha para o líder do module**.
+
+Regras de modules e records:
+- **Workspaces usam modules; não absorvem modules.** Um workspace referencia um module, mas **não** copia agentes/skills/regras para dentro dele. O workspace guarda contexto específico; o module guarda capacidade reutilizável.
+- **Records reais** vivem em `.claude/records/`.
+- **Templates de records** vivem em `.claude/records/templates/` (SEO em `.claude/records/templates/seo/`). Os modules **referenciam** estes templates; **não** guardam templates próprios.
+- **Decisões arquiteturais** vivem em `.claude/records/architecture/` (distinto de `.claude/records/decisions/`, que são logs operacionais).
+- O module SEO usa os templates SEO a partir de `.claude/records/templates/seo/` e **já não depende** de migração nem de qualquer archive.
 
 ### Regra SEO (module `seo-growth-system`)
 Quando o pedido tocar **SEO, pesquisa orgânica, web content, Google, SERP, schema, performance SEO, AI Search ou WordPress SEO**, usar o module:

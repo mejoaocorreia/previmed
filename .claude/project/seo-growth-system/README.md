@@ -18,4 +18,4 @@ Estes project docs foram **consolidados e generalizados** no module:
 | `COMPETITOR_RESEARCH_PROTOCOL.md` | `project/COMPETITOR_RESEARCH_PLAYBOOK.md` |
 | `GROWTH_QUALITY_GATE.md` | `project/QUALITY_GATE.md` |
 
-Ver [`../../modules/seo-growth-system/MIGRATION_MAP.md`](../../modules/seo-growth-system/MIGRATION_MAP.md).
+A fonte da verdade é o module. Estes ficheiros existem só por compatibilidade.

@@ -26,7 +26,7 @@ Não aprovar alteração de slug/redirect/indexação sem plano; não aprovar sc
 [`seo-quality-gate`](../skills/seo-quality-gate/SKILL.md).
 
 ## Project docs relacionados
-[`QUALITY_GATE`](../project/QUALITY_GATE.md); checklist de go-live em [`../records_template/SEO_GO_LIVE_CHECKLIST.md`](../records_template/SEO_GO_LIVE_CHECKLIST.md).
+[`QUALITY_GATE`](../project/QUALITY_GATE.md); checklist de go-live em [`SEO_GO_LIVE_CHECKLIST.md`](../../../records/templates/seo/SEO_GO_LIVE_CHECKLIST.md).
 
 ## MCPs / ferramentas possíveis
 Playwright (render/mobile), Lighthouse, Rich Results, URL Inspection. Read-only.
@@ -37,5 +37,5 @@ Recebe de todos os subagentes via SEO Lead; devolve veredito ao SEO Lead. Escala
 ## Critérios de qualidade
 Veredito claro (aprovado/bloqueado) com evidência e correções; risco residual explícito; valida o que foi realmente testado (validation honesty).
 
-## Notas de migração
-Fusão de `_archive/.../agents/organic-growth/seo-qa.md` + skill ativa `seo-growth-system/seo-quality-gate` + project doc ativo `GROWTH_QUALITY_GATE`. Gate consolidado em `QUALITY_GATE` e no skill `seo-quality-gate`.
+## Notas de consolidação
+Fusão da versão anterior do pacote SEO com a skill e o project doc de quality gate do conteúdo SEO ativo. Gate consolidado em `QUALITY_GATE` e no skill `seo-quality-gate`.

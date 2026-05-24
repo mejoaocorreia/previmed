@@ -20,9 +20,10 @@ previmed/
 ```
 
 ### Dentro de `.claude/`
-- **modules/** — unidades reutilizáveis e exportáveis. Module ativo: `seo-growth-system` (SEO Lead + 14 subagentes, comando `/seo`, project docs, skills, records_template). Fonte da verdade do SEO.
+- **modules/** — unidades reutilizáveis e exportáveis. Module ativo: `seo-growth-system` (SEO Lead + 14 subagentes, comando `/seo`, project docs, skills). Fonte da verdade do SEO. Os modules **não guardam templates de records** — usam os de `records/templates/`.
 - **agents/seo-growth-system/** e **commands/seo.md** — pontes para o Claude Code descobrir/invocar o module (a lógica vive no module).
 - **project/seo-growth-system/** e **skills/seo-growth-system/** — superseded pelo module (mantidos por compatibilidade, com README a apontar para o module).
+- **records/** — registos reais + `templates/` (templates reutilizáveis) + `architecture/` (decisões estruturais). Ver `records/README.md`.
 
 ## Significado de cada parte
 - **departments/** — responsabilidade. commercial, operations, communications, web, compliance, health_safety, training. (`web` inclui SEO/WordPress como capacidade.)

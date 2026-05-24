@@ -54,5 +54,5 @@ Search Console, URL Inspection, Lighthouse/PageSpeed, Playwright, Rich Results T
 ## Critérios de qualidade
 URLs estáveis preservadas; mudanças sensíveis com plano+rollback+validação; sem schema sem conteúdo visível; validação declarada honestamente.
 
-## Notas de migração
-Fusão de `.claude/project/seo-growth-system/TECHNICAL_SEO_RULES.md` (ativo) + `_archive/.../_system/playbooks/TECHNICAL_AUDIT.md` (framework de auditoria) + checklist do agente técnico ativo.
+## Notas de consolidação
+Fusão das regras técnicas SEO do conteúdo ativo com o framework de auditoria da versão anterior do pacote SEO + checklist do agente técnico.

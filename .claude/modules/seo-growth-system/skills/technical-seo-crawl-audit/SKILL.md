@@ -38,5 +38,5 @@ Assumir Lighthouse = SEO completo; confiar cegamente no plugin SEO; recomendar a
 ## Ferramentas/MCPs possíveis
 Search Console, URL Inspection, Lighthouse/PageSpeed, Playwright, Rich Results, sitemap/crawl leve. Read-only.
 
-## Notas de migração
-Migrado de `.claude/skills/...`? não existia ativo; vem de `_archive/.../skills/organic-growth/technical-seo-crawl-audit/` + playbook `TECHNICAL_AUDIT`.
+## Notas de consolidação
+Consolidado da versão anterior do pacote SEO (skill de crawl audit + framework de auditoria técnica).

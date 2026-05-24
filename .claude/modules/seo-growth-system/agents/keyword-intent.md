@@ -35,5 +35,5 @@ Alimenta content-brief (briefs), serp-competitor-analyst (validação na SERP) e
 ## Critérios de qualidade
 Cada keyword tem intenção e página alvo; clusters não canibalizam; prioridade explica o porquê; dados estimados marcados como hipótese.
 
-## Notas de migração
-Migrado de `_archive/.../agents/organic-growth/keyword-intent.md`. Detalhe de processo no skill `keyword-cluster-map` e em `STRATEGY_RULES`. Sem equivalente ativo direto (capacidade que faltava no ativo).
+## Notas de consolidação
+Consolidado da versão anterior do pacote SEO. Detalhe de processo no skill `keyword-cluster-map` e em `STRATEGY_RULES`.

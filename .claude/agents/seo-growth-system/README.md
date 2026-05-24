@@ -17,4 +17,4 @@ O Claude Code descobre agentes em `.claude/agents/`, mas não dentro de `.claude
 Os restantes 11 agentes da equipa vivem **só** no module (não precisam de ponte por agora; o SEO Lead chama-os). Se for preciso que o Claude Code os descubra individualmente, criar pontes curtas aqui no mesmo formato.
 
 ## Estado
-Conteúdo canónico migrado para o module. Ver [`../../modules/seo-growth-system/MIGRATION_MAP.md`](../../modules/seo-growth-system/MIGRATION_MAP.md).
+Conteúdo canónico consolidado no module (estes ficheiros são apenas pontes).

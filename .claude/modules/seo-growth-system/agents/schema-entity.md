@@ -37,5 +37,5 @@ Colabora com technical-seo (duplicação/validação técnica), content-growth (
 ## Critérios de qualidade
 Schema corresponde a conteúdo visível; propriedades obrigatórias presentes; sem duplicação; validado quando possível.
 
-## Notas de migração
-Fusão de `_archive/.../agents/organic-growth/schema-entity.md` + playbook `_system/playbooks/SCHEMA_ENTITY_MODEL.md`. Modelo detalhado em `SCHEMA_ENTITY_MODEL`.
+## Notas de consolidação
+Consolidado da versão anterior do pacote SEO. Modelo detalhado em `SCHEMA_ENTITY_MODEL`.

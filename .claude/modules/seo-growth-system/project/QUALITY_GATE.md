@@ -61,5 +61,5 @@ Playwright, Lighthouse, Rich Results, URL Inspection (validação). Read-only.
 ## Critérios de qualidade
 Veredito claro com evidência e correções; valida só o que foi realmente testado (validation honesty).
 
-## Notas de migração
-Fusão de `.claude/project/seo-growth-system/GROWTH_QUALITY_GATE.md` (ativo) + skill ativa `seo-quality-gate` + `_archive/.../_system/QUALITY_BAR.md`. Articula com o System Safety geral do supervisor para risco/produção/dados.
+## Notas de consolidação
+Fusão do quality gate do conteúdo SEO ativo (gate + skill) com a quality bar da versão anterior do pacote SEO. Articula com o System Safety geral do supervisor para risco/produção/dados.

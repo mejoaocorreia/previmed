@@ -33,5 +33,5 @@ Keyword stuffing; headings só por estilo; meta genérica; títulos duplicados; 
 ## Ferramentas/MCPs possíveis
 Browser (preview/SERP), Search Console (CTR). Read-only.
 
-## Notas de migração
-Migrado de `_archive/.../skills/organic-growth/onpage-optimization-pass/` + agente `onpage-seo`.
+## Notas de consolidação
+Consolidado da versão anterior do pacote SEO (skill on-page + capacidade de onpage-seo).

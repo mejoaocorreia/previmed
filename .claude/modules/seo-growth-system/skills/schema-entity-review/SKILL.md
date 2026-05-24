@@ -33,5 +33,5 @@ Marcar conteúdo inexistente; reviews/ratings falsos; duplicar schema do plugin;
 ## Ferramentas/MCPs possíveis
 Rich Results Test, Schema.org validator, Browser. Read-only.
 
-## Notas de migração
-Migrado de `_archive/.../skills/organic-growth/schema-entity-review/` + (archive antigo) `skills/schema-review/`.
+## Notas de consolidação
+Consolidado da versão anterior do pacote SEO (skills de schema/entity review).

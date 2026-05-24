@@ -38,5 +38,5 @@ Recebe de content-brief/content-growth; coordena links com internal-linking; ent
 ## Critérios de qualidade
 Title/meta dentro de limites e orientados a CTR; hierarquia de headings correta; texto legível e específico; links úteis ao utilizador.
 
-## Notas de migração
-Migrado de `_archive/.../agents/organic-growth/onpage-seo.md`. Processo no skill `onpage-optimization-pass`. Capacidade on-page dedicada que faltava no ativo.
+## Notas de consolidação
+Consolidado da versão anterior do pacote SEO. Processo no skill `onpage-optimization-pass`.

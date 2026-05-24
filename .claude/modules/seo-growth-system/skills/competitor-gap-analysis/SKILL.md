@@ -33,5 +33,5 @@ Copiar texto/estrutura; tratar concorrente comercial como orgânico; inventar ba
 ## Ferramentas/MCPs possíveis
 Browser/Search (SERP real), Rich Results. Pagas só com autorização.
 
-## Notas de migração
-Fusão da skill ativa `.claude/skills/seo-growth-system/competitor-scan/SKILL.md` + `_archive/.../skills/organic-growth/competitor-gap-analysis/`.
+## Notas de consolidação
+Fusão da skill `competitor-scan` do conteúdo SEO ativo com a skill de competitor gap analysis da versão anterior do pacote SEO.

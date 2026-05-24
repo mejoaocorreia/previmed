@@ -46,5 +46,5 @@ Alimenta keyword-intent (validação de intenção), content-brief (padrão a su
 ## Critérios de qualidade
 Concorrentes orgânicos reais (não só comerciais); data registada; recomendação para superar, não imitar; dados pagos só se existirem.
 
-## Notas de migração
-Fusão de `.claude/agents/seo-growth-system/competitor-research.md` (ativo — tipos, processo, regras, output datado) + `_archive/.../agents/organic-growth/serp-competitor-analyst.md` (SERP features, tipos de página) + playbook `_system/playbooks/COMPETITOR_RESEARCH.md` + protocolo ativo. Playbook detalhado em `COMPETITOR_RESEARCH_PLAYBOOK`.
+## Notas de consolidação
+Fusão do `competitor-research` do conteúdo SEO ativo (tipos, processo, regras, output datado) com a versão anterior do pacote SEO (SERP features, tipos de página, playbook de concorrência). Playbook detalhado em `COMPETITOR_RESEARCH_PLAYBOOK`.

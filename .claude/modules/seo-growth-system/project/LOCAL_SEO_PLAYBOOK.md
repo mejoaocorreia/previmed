@@ -36,5 +36,5 @@ Google Business Profile API (autorizado), Browser (SERP local), mapas. Read-only
 ## Critérios de qualidade
 Páginas locais úteis e justificadas; NAP consistente; sem doorways; GBP só com autorização.
 
-## Notas de migração
-Fusão de `_archive/.../_system/playbooks/LOCAL_PLAYBOOK.md` + agente `local-seo` do archive + comando `local-seo`. Playbook dedicado (justificado pelo archive); a vertente schema liga a `SCHEMA_ENTITY_MODEL`.
+## Notas de consolidação
+Consolidado da versão anterior do pacote SEO (playbook local + capacidade de local-seo). Playbook dedicado; a vertente schema liga a `SCHEMA_ENTITY_MODEL`.

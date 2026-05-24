@@ -38,5 +38,5 @@ Rich Results Test, Schema.org validator, Browser. Read-only.
 ## Critérios de qualidade
 Schema = conteúdo visível; propriedades obrigatórias presentes; sem duplicação; sameAs só oficiais; validado.
 
-## Notas de migração
-Fusão de `_archive/.../_system/playbooks/SCHEMA_ENTITY_MODEL.md` + agente `schema-entity` do archive. Criado como playbook dedicado (o archive justifica) — sem duplicar `TECHNICAL_RULES` (que trata a vertente técnica/duplicação).
+## Notas de consolidação
+Consolidado da versão anterior do pacote SEO (playbook de schema/entity + capacidade de schema-entity). Playbook dedicado — sem duplicar `TECHNICAL_RULES` (que trata a vertente técnica/duplicação).

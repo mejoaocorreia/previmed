@@ -33,5 +33,5 @@ Confundir lab com field; otimizar desktop e ignorar mobile; adicionar scripts pe
 ## Ferramentas/MCPs possíveis
 PageSpeed Insights API, Lighthouse, Chrome DevTools, CrUX. Read-only.
 
-## Notas de migração
-Migrado de `_archive/.../skills/organic-growth/cwv-performance-seo-review/` + agente `cwv-performance-seo`.
+## Notas de consolidação
+Consolidado da versão anterior do pacote SEO (skill de CWV/performance review).

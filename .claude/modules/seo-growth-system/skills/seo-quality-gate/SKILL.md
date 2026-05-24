@@ -40,5 +40,5 @@ Aprovar slug/redirect/indexação sem plano; aprovar schema enganador; aprovar c
 ## Ferramentas/MCPs possíveis
 Playwright, Lighthouse, Rich Results, URL Inspection. Read-only.
 
-## Notas de migração
-Fusão da skill ativa `.claude/skills/seo-growth-system/seo-quality-gate/SKILL.md` + project doc ativo `GROWTH_QUALITY_GATE` + agente `seo-qa` do archive.
+## Notas de consolidação
+Fusão da skill de quality gate do conteúdo SEO ativo (skill + project doc) com a capacidade de QA da versão anterior do pacote SEO.
