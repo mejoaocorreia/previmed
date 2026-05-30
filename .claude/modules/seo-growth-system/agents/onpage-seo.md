@@ -43,5 +43,3 @@ Recebe de content-brief/content-growth; coordena links com internal-linking; ent
 ## Critérios de qualidade
 Title/meta dentro de limites e orientados a CTR; hierarquia de headings correta; texto legível e específico; links úteis ao utilizador.
 
-## Notas de consolidação
-Consolidado da versão anterior do pacote SEO. Processo no skill `onpage-optimization-pass`.

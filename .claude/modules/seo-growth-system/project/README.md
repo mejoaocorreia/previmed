@@ -21,4 +21,4 @@ Regras, operating system e playbooks do module. É a **fonte de detalhe operacio
 - Dados/decisões específicas de um workspace ficam no workspace e em records reais (`.claude/records/`), não aqui.
 
 ## Estado atual
-Consolidado a partir do conteúdo SEO ativo e da versão anterior do pacote SEO. Estrutura final.
+Estrutura final.

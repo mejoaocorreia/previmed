@@ -51,5 +51,3 @@ Principalmente [`seo-data-analyst`](../agents/seo-data-analyst.md), [`technical-
 ## Critérios de qualidade
 Nunca assumir ferramenta instalada; propor alternativa se faltar; declarar fonte e limitações; nada de tokens no repo.
 
-## Notas de consolidação
-Consolidado do tooling/MCP stack da versão anterior do pacote SEO. **Generalizado:** decisões específicas de orçamento e estados de ligação de ferramentas são dados de projeto — vão para records reais do workspace. Aqui fica o modelo reutilizável.

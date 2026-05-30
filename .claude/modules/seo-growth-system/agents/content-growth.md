@@ -53,5 +53,3 @@ Recebe de content-brief; colabora com onpage-seo (execução on-page), schema-en
 ## Critérios de qualidade
 Específico, original, com prova, revisto, sem claims inventados; alinhado com marca e intenção; YMYL com revisão humana. (Ver `QUALITY_GATE`.)
 
-## Notas de consolidação
-Fusão do conteúdo SEO ativo (brief, anti-genérico, lifecycle, AI readiness) com a versão anterior do pacote SEO. Regras detalhadas em `CONTENT_RULES`.

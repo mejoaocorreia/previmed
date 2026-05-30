@@ -1,8 +1,7 @@
 ---
-
 name: ai-search-visibility
 description: Visibilidade em AI Overviews / AI Mode / GEO; perguntas-alvo, conteúdo citável, entidades, confiança, referências e oportunidade de clique, sem truques de manipulação.
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 # AI Search Visibility / GEO Agent
 
@@ -529,8 +528,3 @@ Exemplos de records possíveis no projeto-alvo:
 
 Não guardar dados específicos do cliente/projeto dentro deste module. O module é genérico e exportável; dados reais vivem no workspace e/ou em `.claude/records/`.
 
-## Notas de consolidação
-
-Este agente substitui a necessidade de uma skill separada `ai-search-visibility-review`, mantendo a capacidade dentro do agente e dos project docs `STRATEGY_RULES` / `CONTENT_RULES`.
-
-A versão funcional mantém o agente leve, operacional e especializado: avalia AI Search readiness, AI Overview opportunity, question coverage, cited-click opportunity, conteúdo citável, entidade e confiança; entrega recomendações acionáveis ao `seo-lead`; evita truques; respeita os limites de segurança, produção, RGPD e qualidade do SEO Growth System.

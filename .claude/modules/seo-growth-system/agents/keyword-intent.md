@@ -40,5 +40,3 @@ Alimenta content-brief (briefs), serp-competitor-analyst (validação na SERP) e
 ## Critérios de qualidade
 Cada keyword tem intenção e página alvo; clusters não canibalizam; prioridade explica o porquê; dados estimados marcados como hipótese.
 
-## Notas de consolidação
-Consolidado da versão anterior do pacote SEO. Detalhe de processo no skill `keyword-cluster-map` e em `STRATEGY_RULES`.

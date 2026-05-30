@@ -51,5 +51,3 @@ Alimenta keyword-intent (validação de intenção), content-brief (padrão a su
 ## Critérios de qualidade
 Concorrentes orgânicos reais (não só comerciais); data registada; recomendação para superar, não imitar; dados pagos só se existirem.
 
-## Notas de consolidação
-Fusão do `competitor-research` do conteúdo SEO ativo (tipos, processo, regras, output datado) com a versão anterior do pacote SEO (SERP features, tipos de página, playbook de concorrência). Playbook detalhado em `COMPETITOR_RESEARCH_PLAYBOOK`.

@@ -42,5 +42,3 @@ Colabora com technical-seo (duplicação/validação técnica), content-growth (
 ## Critérios de qualidade
 Schema corresponde a conteúdo visível; propriedades obrigatórias presentes; sem duplicação; validado quando possível.
 
-## Notas de consolidação
-Consolidado da versão anterior do pacote SEO. Modelo detalhado em `SCHEMA_ENTITY_MODEL`.

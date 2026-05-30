@@ -47,5 +47,3 @@ Filesystem (criar records, autorizado).
 ## Critérios de qualidade
 Análise grande sempre persistida; nome consistente; estado atualizado sem duplicar conteúdo.
 
-## Notas de consolidação
-Consolidado da versão anterior do pacote SEO (persistence rule, anti-token-waste, living vs dated, convenção de reports). **Generalizado:** caminhos e dados específicos de projeto ficam nos records reais; aqui fica o modelo reutilizável apontando para `.claude/records/`.

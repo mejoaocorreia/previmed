@@ -42,5 +42,3 @@ Trabalha com keyword-intent (clusters), onpage-seo (aplicação), technical-seo 
 ## Critérios de qualidade
 Reduz orphan pages reais; anchors naturais; links com motivo e prioridade; sem inflação artificial.
 
-## Notas de consolidação
-Consolidado da versão anterior do pacote SEO. Skill própria deferida (coberta por este agente + `onpage-optimization-pass`).

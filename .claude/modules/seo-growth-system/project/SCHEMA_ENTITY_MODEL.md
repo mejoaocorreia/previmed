@@ -38,5 +38,3 @@ Rich Results Test, Schema.org validator, Browser. Read-only.
 ## Critérios de qualidade
 Schema = conteúdo visível; propriedades obrigatórias presentes; sem duplicação; sameAs só oficiais; validado.
 
-## Notas de consolidação
-Consolidado da versão anterior do pacote SEO (playbook de schema/entity + capacidade de schema-entity). Playbook dedicado — sem duplicar `TECHNICAL_RULES` (que trata a vertente técnica/duplicação).

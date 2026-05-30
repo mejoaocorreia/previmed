@@ -42,5 +42,3 @@ Colabora com technical-seo (render/CWV técnico), wordpress-seo-implementation (
 ## Critérios de qualidade
 Diagnóstico com evidência (lab vs field); recomendações que não degradam design; teste de validação definido.
 
-## Notas de consolidação
-Consolidado da versão anterior do pacote SEO. Alvos e regras em `TECHNICAL_RULES`; processo no skill `cwv-performance-seo-review`.

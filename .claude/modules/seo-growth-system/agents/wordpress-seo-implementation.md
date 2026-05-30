@@ -42,5 +42,3 @@ Recebe de technical-seo/onpage-seo/schema-entity; valida com seo-qa; escala risc
 ## Critérios de qualidade
 Sem duplicação de metadados/schema; mudanças com plano+rollback+preview; URLs estáveis; nada em produção sem autorização.
 
-## Notas de consolidação
-Consolidado da versão anterior do pacote SEO. Regras técnicas em `TECHNICAL_RULES`. Skill própria deferida (coberta por este agente + `TECHNICAL_RULES`). Articula com a área `wordpress-engineering` do `.claude/project`.

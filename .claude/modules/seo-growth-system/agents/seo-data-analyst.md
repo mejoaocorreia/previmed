@@ -42,5 +42,3 @@ Alimenta o SEO Lead (priorização), content-growth (refresh por dados), technic
 ## Critérios de qualidade
 Conclusões assentes em dados e períodos comparáveis; limitações explícitas; sem dados → hipótese; brand vs non-brand separados.
 
-## Notas de consolidação
-Consolidado da versão anterior do pacote SEO. Métricas em `KPI_MODEL`; processo no skill `gsc-ga4-analysis`.

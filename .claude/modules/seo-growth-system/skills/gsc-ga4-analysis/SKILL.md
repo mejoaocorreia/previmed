@@ -38,5 +38,3 @@ Somar métricas incorretamente; confundir posição média com ranking fixo; ign
 ## Ferramentas/MCPs possíveis
 Search Console API, GA4 Data API, PageSpeed/CrUX. Read-only; cuidado com quotas/amostragem.
 
-## Notas de consolidação
-Consolidado da versão anterior do pacote SEO (skill de análise GSC/GA4 + capacidade de seo-data-analyst).
