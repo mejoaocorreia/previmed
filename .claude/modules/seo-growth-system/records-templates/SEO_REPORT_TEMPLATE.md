@@ -1,69 +1,128 @@
-# [Report Title] — YYYY-MM-DD
+# SEO Report — [Titulo] — YYYY-MM-DD
 
-> **Template.** Copiar para `.claude/records/audits/seo/YYYY-MM-DD__report-type.md` e preencher. Não editar este ficheiro com análise real.
+> **Template.** Copiar para `.claude/records/reports/seo/` do projeto consumidor e preencher. Nao editar este ficheiro com analise real.
 
-## Purpose
-Para que serve este relatório e em que situações deve ser consultado no futuro.
+## Proposito
 
-## Scope
-O que esta análise cobre e o que **não** cobre.
+Para que serve este relatorio e em que situacoes deve ser consultado no futuro.
 
-## Data Sources Used
-| Fonte | Estado |
-|---|---|
-| Codebase / templates | completed / pending |
-| Live site crawl (Playwright/crawler) | completed / pending |
-| Google Search Console | not connected / pending / completed |
-| GA4 | not connected / pending / completed |
-| PageSpeed / Lighthouse | completed / pending |
-| SERP research | completed / pending |
-| Sitemap.xml / robots.txt | reviewed / — |
-| Manual review | completed |
+## Periodo
 
-## Confidence Level
-High / Medium / Low — explicar limitações: que dados faltam, o que é hipótese vs facto, que ferramentas estavam offline.
+- Inicio:
+- Fim:
+- Comparacao usada:
 
-## Executive Summary
-3–5 parágrafos: estado geral, 3 achados mais importantes, 1 decisão pendente que bloqueia, direção recomendada.
+## Escopo
 
-## Priority Findings
-### Critical
-### High
-### Medium
-### Low
+- Inclui:
+- Fora do escopo:
+- Modo `/seo` relacionado:
+- Agentes/skills usados:
 
-## Current SEO State
-### Strengths
-### Weaknesses
-### Opportunities
-### Risks
+## Fontes De Dados
 
-## Detailed Analysis
-> Incluir apenas as secções aplicáveis; apagar as restantes.
-- Site Structure · Technical SEO · Content & Search Intent · Competitor/SERP · Keyword & Cluster · Internal Linking · Schema/Entity · Local SEO · Performance/CWV · AI Search/GEO · WordPress Implementation Notes (só observar).
+| Fonte | Estado | Observacoes |
+|---|---|---|
+| Codebase / templates | concluido / pendente / n/a | |
+| Site live / Playwright / crawl | concluido / pendente / n/a | |
+| Google Search Console | autorizado / nao autorizado / n/a | |
+| GA4 | autorizado / nao autorizado / n/a | |
+| PageSpeed / Lighthouse / CrUX | concluido / pendente / n/a | |
+| SERP research | concluido / pendente / n/a | |
+| Sitemap / robots.txt | revisto / pendente / n/a | |
+| Revisao manual | concluido / pendente | |
 
-## Recommended Action Plan
-- Fase 1 — Foundation
-- Fase 2 — Content & Structure
-- Fase 3 — Technical SEO
-- Fase 4 — Authority & Internal Linking
-- Fase 5 — Measurement & Iteration
+## Nivel De Confianca
 
-## Backlog Items To Add
-- `[Quick win]` …
-- `[Technical blocker]` …
-- `[Content opportunity]` …
+High / Medium / Low — explicar limitacoes, dados em falta, o que e evidencia e o que e hipotese.
 
-## Decisions Needed
-Cada decisão: contexto · opções A/B/C · recomendação.
+## Resumo Executivo
 
-## Open Questions
+3-5 paragrafos: estado geral, principais insights, decisoes pendentes, riscos e direcao recomendada.
 
-## Next Steps
-3–5 passos concretos, ordenados.
+## KPIs
+
+| KPI | Valor atual | Comparacao | Interpretacao | Limitacoes |
+|---|---|---|---|---|
+| | | | | |
+
+## Insights Principais
+
+| Insight | Evidencia | Hipotese / interpretacao | Acao recomendada |
+|---|---|---|---|
+| | | | |
+
+## Achados Por Prioridade
+
+### Critico
+
+### Alto
+
+### Medio
+
+### Baixo
+
+## Estado SEO Atual
+
+### Pontos Fortes
+
+### Fraquezas
+
+### Oportunidades
+
+### Riscos
+
+## Analise Detalhada
+
+Incluir apenas as secoes aplicaveis:
+
+- arquitetura;
+- SEO tecnico;
+- conteudo e intencao;
+- concorrencia/SERP;
+- keywords e clusters;
+- internal linking;
+- schema/entidades;
+- local SEO;
+- performance/CWV;
+- AI Search/GEO;
+- WordPress implementation notes (observar, nao executar).
+
+## Plano De Acao Recomendado
+
+- Fase 1 — fundamentos:
+- Fase 2 — conteudo/estrutura:
+- Fase 3 — tecnico:
+- Fase 4 — autoridade/internal linking:
+- Fase 5 — medicao/iteracao:
+
+## Decisoes Necessarias
+
+Cada decisao: contexto, opcoes, recomendacao, risco, owner.
+
+## Tasks / Backlog A Criar
+
+- `[Quick win]`
+- `[Technical blocker]`
+- `[Content opportunity]`
+- `[Strategic decision]`
+
+## Quality Gate
+
+Estado: [Aprovado / Aprovado com notas / Bloqueado / Precisa de dados / Precisa de autorizacao]
+
+- Bloqueios:
+- Risco residual:
+- Nao validado / a confirmar:
+
+## Proximos Passos
+
+3-5 passos concretos, ordenados.
 
 ## Last Updated
+
 YYYY-MM-DD por [autor/agente].
 
 ---
-> Após gravar: atualizar status (resumo+link), mover tarefas para backlog, oportunidades para opportunities, decisões duradouras para decisions. **Não duplicar** o relatório inteiro. Ver `../project/REPORTING_MODEL.md`.
+
+Apos gravar: atualizar status/backlog/opportunities/decisions do projeto consumidor sem duplicar o relatorio inteiro. Ver [`REPORTING_MODEL.md`](../project/REPORTING_MODEL.md).

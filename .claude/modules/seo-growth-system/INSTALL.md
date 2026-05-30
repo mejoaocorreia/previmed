@@ -1,67 +1,116 @@
 # Instalar o plugin `seo-growth-system`
 
-Este module é um **plugin Claude Code**. Os agentes, o comando `/seo` e as skills só passam a ser **descobertos nativamente depois de o plugin ser instalado** (não basta os ficheiros existirem).
+Este module e um **plugin Claude Code**. Os agentes, o comando oficial `/seo` e as skills so passam a ser descobertos nativamente depois de o plugin ser instalado.
 
-## Estrutura do plugin
-```
+## Estrutura Do Plugin
+
+```text
 seo-growth-system/
-├── .claude-plugin/plugin.json   # manifesto (obrigatório)
-├── agents/                      # 15 subagentes (com frontmatter)
-├── commands/seo.md              # comando /seo (orquestrador)
-├── skills/<nome>/SKILL.md       # 11 skills (com frontmatter)
-├── project/                     # regras/playbooks (referência, lida pelos agentes)
+├── .claude-plugin/plugin.json   # manifesto obrigatorio
+├── agents/                      # 15 subagentes com frontmatter
+├── commands/seo.md              # comando oficial /seo
+├── skills/<nome>/SKILL.md       # 11 skills com frontmatter
+├── project/                     # regras/playbooks lidos pelos agentes
+├── records-templates/           # templates exportaveis
 ├── manifest.md · README.md · INSTALL.md
 ```
 
-## Instalar NESTE repo (Previmed) — marketplace local
-O repo já tem `.claude-plugin/marketplace.json` na raiz a apontar para este module.
+## Instalar Neste Repo
 
-```
+O repo tem `.claude-plugin/marketplace.json` na raiz a apontar para este module.
+
+```text
 /plugin marketplace add .
 /plugin install seo-growth-system@previmed-marketplace
 ```
-(ou usar o menu interativo: `/plugin`)
 
-> **Recomendado (mais robusto para o `source` relativo):** adicionar o marketplace via **Git**, já que este repo está no GitHub. Os caminhos relativos do `source` resolvem de forma fiável quando o marketplace é adicionado por git:
-> ```
-> /plugin marketplace add https://github.com/mejoaocorreia/previmed
-> /plugin install seo-growth-system@previmed-marketplace
-> ```
+Opcao via Git:
 
-Depois recarrega (`/reload-plugins`) e confirma:
-```
-/agents   → devem aparecer os agentes do plugin (com namespace, ex.: seo-growth-system:seo-lead)
+```text
+/plugin marketplace add https://github.com/mejoaocorreia/previmed
+/plugin install seo-growth-system@previmed-marketplace
 ```
 
-> **Namespace (já tratado nos ficheiros):** componentes de plugin ficam com namespace `seo-growth-system:`.
-> - Comando: **`/seo-growth-system:seo`** (não `/seo` puro).
-> - Subagentes: **`seo-growth-system:technical-seo`**, etc. O comando `/seo` já instrui o uso do prefixo no `subagent_type`.
-> - **Após instalar, confirma com `/agents`** os nomes exatos. Se diferirem, ajusta a nota de "Execução paralela" em `commands/seo.md`.
+Depois recarregar:
 
-### Ordem correta: instalar → reiniciar
-1. `/plugin marketplace add …` + `/plugin install …` (acima).
-2. **Depois** `/reload-plugins` (ou reiniciar o Claude Code) para os componentes ficarem ativos.
-3. (Reiniciar **antes** de instalar não faz nada — não há nada para carregar ainda.)
-4. Confirmar: `/agents` mostra os agentes `seo-growth-system:*` e `/seo-growth-system:seo` corre.
-
-> **Nota — paralelismo (confirmado na doc):** um subagente **não** pode lançar outros subagentes. O fan-out paralelo parte do **agente principal** quando invocas o comando `/seo` (várias `Task()` no mesmo turno; opcionalmente `background: true` para correrem concorrentes). Ou seja, o paralelismo acontece em runtime ao usar `/seo`, não automaticamente.
-
-## Instalar NOUTRO repo (exportar)
-Opção A — apontar para este repo como marketplace (git):
+```text
+/reload-plugins
 ```
+
+Confirmar:
+
+```text
+/agents
+/seo
+```
+
+## Comando Oficial
+
+O comando principal visivel ao utilizador e:
+
+```text
+/seo
+```
+
+O ficheiro que define o comando e:
+
+```text
+commands/seo.md
+```
+
+Nao usar nomes alternativos ou comandos namespaced como comando principal. Se alguma instalacao do Claude Code mostrar comandos com namespace por configuracao local, confirmar no runtime, mas a documentacao deste module assume `/seo` como comando oficial.
+
+## Namespaces De Subagentes
+
+O module continua a chamar-se `seo-growth-system`.
+
+Subagentes de plugin usam namespace:
+
+```text
+seo-growth-system:<agent-name>
+```
+
+Exemplos:
+
+```text
+seo-growth-system:seo-lead
+seo-growth-system:technical-seo
+seo-growth-system:seo-qa
+```
+
+O comando `/seo` instrui o uso do prefixo no `subagent_type`.
+
+## Ordem Correta
+
+1. Adicionar marketplace.
+2. Instalar plugin.
+3. Recarregar plugins ou reiniciar Claude Code.
+4. Confirmar `/agents`.
+5. Confirmar `/seo`.
+
+Reiniciar antes de instalar nao carrega nada.
+
+## Orquestracao Paralela
+
+O comando `/seo` corre no topo, ao nivel do agente principal. E ele que faz fan-out de `Task()` em paralelo para subagentes quando necessario.
+
+Um subagente folha nao deve lancar outros subagentes. Por isso, `seo-lead` continua a ser coordenador/planner/consolidador, mas o fan-out operacional vive no comando `/seo`.
+
+## Exportar Para Outro Repo
+
+Opcao A — apontar para este repo como marketplace Git:
+
+```text
 /plugin marketplace add <git-url-deste-repo>
 /plugin install seo-growth-system@previmed-marketplace
 ```
-Opção B — copiar a pasta `seo-growth-system/` para um marketplace próprio e instalar a partir daí.
 
-**Zero cópias manuais de agentes/skills, zero duplicação** — o plugin é a fonte única.
+Opcao B — copiar a pasta `seo-growth-system/` para um marketplace proprio e instalar a partir dai.
 
-## Orquestração paralela (importante)
-- O comando **`/seo` corre no topo** (agente principal). É ele que faz o **fan-out de `Task()` em paralelo** para os subagentes (technical-seo, content-growth, etc.).
-- **Não** se conta com o `seo-lead` (subagente folha) para spawnar outros subagentes — um subagente normalmente não lança subagentes. Por isso a coordenação multi-agente paralela vive no `/seo`, não dentro do `seo-lead`.
-- O `seo-lead` continua útil quando invocado diretamente para planear/consolidar.
+O module e fonte unica: nao copiar agentes/skills/comandos manualmente para outras pastas.
 
 ## Notas
-- `project/` não é um "componente" de plugin; vai junto como referência e é lido pelos agentes por caminho relativo.
-- Templates de records SEO vivem **dentro do plugin** em `records-templates/` (vêm junto ao instalar). Os **records reais** ficam no projeto-alvo em `.claude/records/`.
-- Confirmar na doc oficial do Claude Code os campos exatos de `plugin.json`/`marketplace.json` se algum comando `/plugin` devolver erro de schema.
+
+- `project/` nao e componente executavel de plugin; vai junto como referencia lida pelos agentes.
+- `records-templates/` contem templates; records reais ficam no projeto consumidor em `.claude/records/`.
+- Se comandos `/plugin` devolverem erro de schema, confirmar a documentacao oficial do Claude Code para o formato atual de `plugin.json`/`marketplace.json`.

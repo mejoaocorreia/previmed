@@ -1,52 +1,99 @@
-# SEO Go-Live Checklist — [Página/Site] — YYYY-MM-DD
+# SEO Go-Live Checklist — [Pagina/Site] — YYYY-MM-DD
 
-> **Template.** Copiar para o sítio de records do projeto e preencher. Operado pelo `seo-qa` + `technical-seo` + `wordpress-seo-implementation`.
+> **Template.** Copiar para o sitio de records do projeto consumidor e preencher. Operado por `seo-qa` + `technical-seo` + `wordpress-seo-implementation`.
 
-## Pré-requisitos
+## Contexto
+
+- Modo: [`/seo go-live`](../commands/seo.md)
+- Ambiente: [local / staging / preview / producao]
+- Paginas/URLs afetadas:
+- Owner:
+- Data prevista:
+
+## Pre-Requisitos
+
 - [ ] Preview/staging validado
 - [ ] Rollback definido e testado
-- [ ] Autorização explícita para go-live
-- [ ] Ambiente confirmado (não assumir produção sem evidência)
+- [ ] Autorizacao explicita para go-live
+- [ ] Ambiente confirmado (nao assumir producao sem evidencia)
+- [ ] Sem credenciais/tokens/dados sensiveis no record
 
 ## Crawl / Index
-- [ ] Páginas importantes em status 200
-- [ ] robots.txt não bloqueia o que deve indexar
+
+- [ ] Paginas importantes em status 200
+- [ ] robots.txt nao bloqueia o que deve indexar
 - [ ] Sem noindex indevido
 - [ ] Canonical correto
-- [ ] Sitemap inclui as páginas certas e foi submetido
-- [ ] Redirects 301 mapeados (sem cadeias/loops)
-- [ ] Internal links rastreáveis; sem novas orphan pages
+- [ ] Sitemap inclui as paginas certas
+- [ ] Sitemap submetido/validado quando aplicavel
+- [ ] Redirects 301 mapeados
+- [ ] Sem cadeias/loops de redirects
+- [ ] Internal links rastreaveis
+- [ ] Sem novas orphan pages
 
 ## On-page
-- [ ] Titles únicos e dentro do limite
+
+- [ ] Titles unicos e adequados
 - [ ] Meta descriptions presentes
-- [ ] H1 único + hierarquia correta
-- [ ] Conteúdo visível/indexável (não escondido por JS)
+- [ ] H1 unico + hierarquia correta
+- [ ] Conteudo visivel/indexavel
+- [ ] CTAs e formularios testados
+- [ ] Claims sensiveis revistos por humano quando aplicavel
 
 ## Schema
-- [ ] Schema representa conteúdo visível
-- [ ] Sem duplicação por plugin/tema
+
+- [ ] Schema representa conteudo visivel
+- [ ] Sem duplicacao por plugin/tema
 - [ ] Validado (Rich Results / Schema.org)
+- [ ] sameAs/NAP conferidos quando aplicavel
 
 ## Performance / Mobile / A11y
-- [ ] LCP ≤ 2.5s / INP < 200ms / CLS estável (mobile)
+
+- [ ] LCP, INP e CLS revistos em mobile
+- [ ] Lab vs field data distinguidos
 - [ ] Mobile renderiza corretamente
-- [ ] Acessibilidade básica ok
+- [ ] Acessibilidade basica ok
+- [ ] Mudancas de performance nao degradam UX/design
 
-## URL changes (se aplicável)
-- [ ] Motivo confirmado · tráfego/indexação verificados
-- [ ] 301 + internal links + sitemap + canonical testados
-- [ ] Validação no Search Console planeada
+## URL Changes (Se Aplicavel)
 
-## Pós-go-live
-- [ ] Verificar indexação/cobertura (URL Inspection)
-- [ ] Monitorizar GSC/GA4 (período comparável)
-- [ ] Registar record + atualizar estado
+- [ ] Motivo confirmado
+- [ ] Trafego/indexacao/backlinks internos verificados
+- [ ] 301 testado
+- [ ] Internal links atualizados
+- [ ] Sitemap atualizado
+- [ ] Canonical testado
+- [ ] Validacao no Search Console planeada
+
+## Dados / Tracking
+
+- [ ] GA4 validado quando aplicavel
+- [ ] GSC/URL Inspection planeado quando aplicavel
+- [ ] Eventos/conversoes essenciais testados
+- [ ] Limites de dados registados
+
+## Pos-Go-Live
+
+- [ ] Verificar indexacao/cobertura (URL Inspection)
+- [ ] Monitorizar GSC/GA4 em periodo comparavel
+- [ ] Monitorizar erros 404/redirects
+- [ ] Registar record final
+- [ ] Atualizar status/backlog/decisions
+
+## Handoff
+
+- WordPress Engineering:
+- Visual Experience:
+- System Safety:
+- SEO QA:
 
 ## Veredito
 
-Estado: [Aprovado / Aprovado com notas / Bloqueado / Precisa de dados / Precisa de autorização]
+Estado: [Aprovado / Aprovado com notas / Bloqueado / Precisa de dados / Precisa de autorizacao]
 
-Riscos residuais:
-
-Próximo passo:
+- Validacao feita:
+- Nao validado / a confirmar:
+- Bloqueios:
+- Risco residual:
+- Autorizacao necessaria:
+- Proximo passo:

@@ -106,6 +106,35 @@ Sem autorização explícita:
 
 ---
 
+## Mapeamento Por Area / Agente
+
+Este mapa ajuda o `seo-lead` e o comando [`/seo`](../commands/seo.md) a escolher ferramentas sem assumir disponibilidade.
+
+| Area | Ferramentas possiveis | Usos | Requer autorizacao? | Riscos |
+|---|---|---|---|---|
+| Technical SEO | Playwright, Chrome DevTools, Lighthouse, PageSpeed Insights, CrUX, GSC, URL Inspection, filesystem read-only | crawl leve, render, indexacao, canonical, robots, sitemap, CWV, templates | GSC/URL Inspection e filesystem fora do repo exigem autorizacao; escrita sempre exige autorizacao | alterar URLs/indexacao/producao sem plano; confundir lab data com field data |
+| Content | Browser/Search, GSC, filesystem read-only | SERP, intencao, pagina existente, gaps, queries reais | GSC e leitura de repos privados exigem autorizacao | inventar claims, copiar concorrentes, publicar sem revisao |
+| Keywords/SERP | Browser/Search, GSC, Keyword Planner, Ahrefs/Semrush/DataForSEO/SerpAPI | clusters, intencao, concorrentes, volumes, SERP features | ferramentas pagas e contas autenticadas exigem autorizacao explicita | inventar volumes/rankings; scraping agressivo |
+| Schema | Rich Results Test, Schema.org validator, Browser/Playwright, filesystem read-only | validar JSON-LD, entidades, duplicacao, conteudo visivel | leitura externa normalmente read-only; implementar exige autorizacao | schema enganador, dados nao visiveis, duplicacao por plugin/tema |
+| Local SEO | Google Business Profile, Browser/Search, NAP/citation checks, Schema.org validator | GBP, NAP, reviews, paginas locais, LocalBusiness | GBP sempre requer autorizacao; escrita nunca sem Supervisor | doorway pages, moradas falsas, NAP inconsistente |
+| Performance | PageSpeed Insights, CrUX, Lighthouse, Chrome DevTools, Playwright | LCP, INP, CLS, mobile, render, network | ferramentas publicas read-only; alteracoes exigem autorizacao | otimizar destruindo UX/design; assumir field data inexistente |
+| Data | GSC, GA4, CrUX, PageSpeed, exports agregados | insights, KPIs, brand/non-brand, landing pages, conversoes | sempre confirmar autorizacao e propriedade | dados pessoais, conclusoes sem periodo/comparacao, exports excessivos |
+| AI Search / GEO | Browser/Search, Playwright, SERP observation, schema validators | observar AI Overviews/AI Mode quando disponivel, entidades, conteudo citavel | browser read-only; ferramentas pagas/autenticadas exigem autorizacao | prometer presenca em AI Overviews; criar conteudo para bots |
+| WordPress | filesystem read-only, Git/GitHub, Playwright, WordPress admin, GSC | descobrir plugin/tema, planear implementacao, PR, validar staging | WordPress admin, escrita, Git/GitHub write e producao exigem autorizacao | quebrar producao, expor credenciais, instalar plugin sem aprovacao |
+| Records/reporting | filesystem, Git/GitHub, templates de records | criar records, ligar reports/tasks/decisions | escrita em repo exige autorizacao conforme contexto | guardar dados sensiveis, tokens ou exports desnecessarios |
+
+Regras deste mapa:
+
+- nunca assumir ferramenta autenticada;
+- nunca assumir dados reais;
+- dados reais so em read-only e com autorizacao;
+- ferramentas pagas so com autorizacao explicita;
+- WordPress admin so com autorizacao explicita;
+- sem credenciais em records;
+- sem inventar dados quando a ferramenta nao existe.
+
+---
+
 ## Ferramentas pagas — apenas com autorização
 
 Exemplos de ferramentas pagas que requerem autorização explícita:

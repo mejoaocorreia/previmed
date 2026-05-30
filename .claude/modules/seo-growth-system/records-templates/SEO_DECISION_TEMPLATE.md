@@ -1,32 +1,87 @@
-# SEO Decision — [Título] — YYYY-MM-DD
+# SEO Decision — [Titulo] — YYYY-MM-DD
 
-> **Template.** Copiar para o decision log SEO do projeto e preencher. Registar **apenas decisões reais e duradouras**.
+> **Template.** Copiar para o decision log SEO do projeto consumidor e preencher. Registar apenas decisoes reais e duradouras.
 
-## Decisão
-Frase única e clara do que foi decidido.
+## Decisao
 
-## Data
-YYYY-MM-DD · Decidido por: [pessoa/agente]
+Frase unica e clara do que foi decidido.
+
+## Owner / Data
+
+- Decidido por:
+- Owner:
+- Data:
+- Revisao prevista:
 
 ## Contexto
-Porque foi preciso decidir; o que estava em jogo.
 
-## Opções consideradas
-- **A** — … (prós/contras)
-- **B** — … (prós/contras)
-- **C** — … (prós/contras)
+Porque foi preciso decidir; que paginas, clusters, URLs, entidades ou riscos estavam em causa.
 
-## Razão da escolha
-Porque esta opção; que evidência a suporta.
+## Evidencia
+
+- Dados usados:
+- Fontes:
+- Links/records relacionados:
+- Validacao feita:
+
+## Hipoteses E Limitacoes
+
+- Hipoteses:
+- Dados em falta:
+- Nao validado / a confirmar:
+
+## Alternativas Consideradas
+
+| Opcao | Descricao | Pros | Contras | Risco |
+|---|---|---|---|---|
+| A | | | | |
+| B | | | | |
+| C | | | | |
+
+## Razao Da Escolha
+
+Porque esta opcao foi escolhida e que trade-offs foram aceites.
 
 ## Impacto
-Páginas/áreas afetadas; impacto em SEO/UX/conversão/risco.
 
-## Trade-offs aceites
-O que se perde/aceita com esta decisão.
+- SEO:
+- UX/conversao:
+- Tecnico/WordPress:
+- Conteudo:
+- Schema/entidades:
+- Local SEO:
+- Performance:
 
-## Reavaliação
-Em que condições esta decisão deve ser reaberta.
+## Risco E Autorizacao
 
-## Ligações
-Relatórios/records relacionados.
+- Severidade: [baixo / medio / alto / critico]
+- Risco residual:
+- Precisa de autorizacao? [sim/nao + quem]
+- Producao/WordPress envolvido?
+- RGPD/dados/credenciais envolvidos?
+- Ferramentas pagas envolvidas?
+
+## Quality Gate
+
+Estado: [Aprovado / Aprovado com notas / Bloqueado / Precisa de dados / Precisa de autorizacao]
+
+- Bloqueios:
+- Correcoes obrigatorias:
+- Condicoes para avancar:
+
+## Rollback / Reversao
+
+Como reverter se a decisao falhar ou deixar de fazer sentido.
+
+## Proximos Passos
+
+1. 
+2. 
+3. 
+
+## Ligacoes
+
+- Auditoria:
+- Report:
+- Task:
+- PR/issue:

@@ -1,43 +1,69 @@
 # SEO Growth System (Module)
 
-Equipa SEO / crescimento orgânico como **module reutilizável e exportável**.
+Equipa SEO / crescimento organico como **module reutilizavel e exportavel**.
 
-## O que é
-O SEO Growth System é a capacidade de crescimento orgânico, visibilidade, autoridade, conteúdo estratégico, SEO técnico, schema/entidades, local SEO, performance/Core Web Vitals, AI Search e medição — organizada como **um module único**, com SEO Lead e subagentes bem definidos.
+## O Que E
 
-**A fonte da verdade é este module/plugin.** Todas as antigas pastas/pontes SEO fora do module foram **removidas** — `.claude/project/seo-growth-system/`, `.claude/skills/seo-growth-system/`, `.claude/commands/seo-growth-system/`, `.claude/agents/seo-growth-system/` e a ponte `.claude/commands/seo.md`. **Não há duplicação:** cada agente/skill/comando existe **uma única vez**, aqui. A descoberta nativa faz-se **instalando o plugin** (ver [`INSTALL.md`](INSTALL.md)).
+O SEO Growth System e a capacidade de crescimento organico, visibilidade, autoridade, conteudo estrategico, SEO tecnico, schema/entidades, local SEO, performance/Core Web Vitals, AI Search e medicao — organizada como **um module unico**, com SEO Lead, subagentes, skills, project docs, records templates e comando oficial `/seo`.
+
+**A fonte da verdade e este module/plugin.** Antigas pastas e pontes SEO fora do module foram removidas. Nao ha duplicacao: cada agente, skill e comando existe uma unica vez aqui.
+
+Este module nao contem automacoes externas proprias, nao contem dados especificos da Previmed e nao guarda dados reais do projeto consumidor. Dados reais, decisoes e records ficam no workspace/projeto que usa o module.
 
 ## Plugin Claude Code
-Este module é agora um **plugin Claude Code** propriamente formado: tem `.claude-plugin/plugin.json`, e os `agents/`, `commands/seo.md` e `skills/<n>/SKILL.md` têm **frontmatter** (`name`/`description`). Depois de **instalado** (ver [`INSTALL.md`](INSTALL.md)), os 15 agentes/subagentes, o comando `/seo` e as 11 skills passam a ser **descobertos nativamente** pelo Claude Code.
 
-- Instalar neste repo: `/plugin marketplace add .` → `/plugin install seo-growth-system@previmed-marketplace`.
-- Exportar para outro repo: `/plugin marketplace add <git-url>` → `/plugin install ...` (zero cópias manuais).
-- Os agentes/skills só são descobertos **após instalação** — não basta os ficheiros existirem.
+Este module e um plugin Claude Code com:
+
+- `.claude-plugin/plugin.json`;
+- `agents/` com 15 subagentes;
+- `commands/seo.md` com o comando oficial `/seo`;
+- `skills/<nome>/SKILL.md` com 11 skills;
+- `project/` com regras e playbooks;
+- `records-templates/` com templates exportaveis.
+
+Depois de instalado (ver [`INSTALL.md`](INSTALL.md)), os componentes passam a ser descobertos pelo Claude Code.
+
+## Arquitetura Operacional
+
+- **`/seo`** — comando principal por modos; orquestra o fluxo no topo.
+- **`seo-lead`** — coordena estrategia, routing e consolidacao.
+- **Especialistas** — technical, content, keyword, schema, local, data, performance, AI Search, WordPress SEO.
+- **`seo-qa`** — gate final antes de entrega/go-live.
+- **`seo-quality-gate`** — skill operacional para aplicar o quality gate.
+- **`QUALITY_GATE.md`** — fonte de verdade do standard de aprovacao.
+- **Records templates** — modelos para auditorias, reports, decisions, tasks e go-live.
 
 ## Fasquia
-Alta. O objetivo é trabalho SEO profissional, não básico — mesmo que gaste mais tokens quando a tarefa o justificar. SEO excelente alinha intenção, qualidade, técnica, autoridade, velocidade, experiência e negócio. Se uma proposta melhora ranking mas piora confiança, UX ou performance, **não está pronta**.
 
-## Como está organizado
-- [`manifest.md`](manifest.md) — identidade do module, quando usar, o que inclui, como exportar/ligar a um workspace.
+Alta. O objetivo e trabalho SEO profissional, nao basico. SEO excelente alinha intencao, qualidade, tecnica, autoridade, velocidade, experiencia, negocio, governanca e medicao.
+
+Se uma proposta melhora ranking teorico mas piora confianca, UX, performance, seguranca ou manutencao, ainda nao esta pronta.
+
+## Como Esta Organizado
+
+- [`manifest.md`](manifest.md) — identidade do module, contrato, quando usar, o que inclui.
+- [`INSTALL.md`](INSTALL.md) — instalacao e comando oficial.
 - [`agents/`](agents/) — SEO Lead + 14 subagentes especializados.
-- [`commands/seo.md`](commands/seo.md) — comando único `/seo` com modos (fica disponível como `/seo` depois de instalar o plugin).
-- [`project/`](project/) — operating system, regras, quality gate e playbooks (fonte de detalhe operacional).
-- [`skills/`](skills/) — procedimentos reutilizáveis.
+- [`commands/seo.md`](commands/seo.md) — comando oficial `/seo` com modos.
+- [`project/`](project/) — operating system, strategy, technical/content rules, quality gate, tooling, KPIs, reporting e playbooks.
+- [`skills/`](skills/) — procedimentos reutilizaveis.
+- [`records-templates/`](records-templates/README.md) — templates de records SEO.
 
-- [`records-templates/`](records-templates/README.md) — templates de records SEO (auditorias, reports, decisões, tasks, go-live). Vivem **dentro do plugin** para virem junto ao exportar. Os **records reais** ficam no projeto-alvo em `.claude/records/`.
+## Como E Chamado
 
-## Como é chamado
-1. O **supervisor** identifica que o pedido toca web/search/content/WordPress SEO.
-2. Encaminha para o **SEO Lead** ([`agents/seo-lead.md`](agents/seo-lead.md)) — o supervisor não faz SEO diretamente.
-3. O SEO Lead decide que subagentes/skills/project docs usar (ver "Routing interno SEO" no seu ficheiro).
-4. Em trabalhos importantes, passa por **SEO QA** antes da entrega.
-5. Análises grandes são persistidas como records (ver `project/REPORTING_MODEL.md`; templates em `records-templates/`).
+1. O Supervisor identifica que o pedido toca SEO, web/search/content, AI Search, performance SEO ou WordPress SEO.
+2. Encaminha para `/seo` ou para `seo-lead`.
+3. O comando `/seo` atua no topo, escolhe modo, faz fan-out para subagentes quando necessario e consolida.
+4. Trabalhos relevantes passam por `seo-qa`.
+5. Analises, decisoes e tarefas duradouras recomendam records no projeto consumidor.
 
-## Limites (governação vence sempre)
-Segurança, RGPD/dados pessoais, produção, WordPress safety, rollback e escopo são do **supervisor / system-safety**. O SEO recomenda; não passa por cima destes limites. SEO não deve contaminar workspaces que não são web/search/content.
+## Limites
 
-## Referências externas base (fonte única)
-Para evitar repetição, as referências oficiais ficam **só aqui**. Os agentes e project docs apontam para esta secção em vez de repetir a lista.
+Seguranca, RGPD/dados pessoais, producao, WordPress safety, credenciais, ferramentas pagas, rollback e escopo pertencem ao Supervisor/System Safety.
+
+O SEO recomenda; nao passa por cima destes limites.
+
+## Referencias Externas Base
 
 - Google Search Essentials — https://developers.google.com/search/docs/essentials
 - Google SEO Starter Guide — https://developers.google.com/search/docs/fundamentals/seo-starter-guide
@@ -52,8 +78,10 @@ Para evitar repetição, as referências oficiais ficam **só aqui**. Os agentes
 - Google Business Profile local ranking — https://support.google.com/business/answer/7091
 - Schema.org — https://schema.org
 
-## Generalidade / exportabilidade
-Este module é **genérico**. Não contém dados específicos da Previmed (serviços, leis, entidades, clusters). Esses dados vivem no workspace que usa o module e/ou em records reais. Assim, o module pode ser exportado para outros projetos (ver `manifest.md` → "Como exportar/reutilizar").
+## Exportabilidade
 
-## Estado atual
-Module operacional — 15 agentes, 11 skills, comando `/seo` com 14 modos, 12 project docs, 5 records templates. Pronto para uso com Claude Code após instalação do plugin.
+O module e generico. Dados especificos de marca, servicos, leis, entidades, clusters, ferramentas autenticadas e records reais ficam no projeto consumidor.
+
+## Estado Atual
+
+Module operacional v1.1 — 15 agentes, 11 skills, comando `/seo` com 14 modos, 12 project docs e 5 records templates. Pronto para uso com Claude Code apos instalacao do plugin.
