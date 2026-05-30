@@ -44,4 +44,9 @@
 - [ ] Registar record + atualizar estado
 
 ## Veredito
-[Aprovado / Bloqueado] — riscos residuais:
+
+Estado: [Aprovado / Aprovado com notas / Bloqueado / Precisa de dados / Precisa de autorização]
+
+Riscos residuais:
+
+Próximo passo:

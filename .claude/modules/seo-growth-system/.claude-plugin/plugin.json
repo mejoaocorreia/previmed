@@ -1,7 +1,7 @@
 {
   "name": "seo-growth-system",
-  "version": "1.0.0",
-  "description": "Equipa SEO completa (SEO Lead + 14 subagentes), comando /seo, skills e project docs. Reutilizavel e exportavel.",
+  "version": "1.1.0",
+  "description": "Equipa SEO completa (SEO Lead + 14 subagentes), comando /seo, 11 skills e project docs operacionais. Reutilizavel e exportavel.",
   "author": { "name": "Joao Correia" },
   "keywords": ["seo", "organic-growth", "wordpress", "content", "schema", "core-web-vitals", "ai-search"]
 }

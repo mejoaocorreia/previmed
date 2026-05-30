@@ -528,3 +528,17 @@ Exemplos de records possíveis no projeto-alvo:
 
 Não guardar dados específicos do cliente/projeto dentro deste module. O module é genérico e exportável; dados reais vivem no workspace e/ou em `.claude/records/`.
 
+---
+
+## Regra final
+
+AI Search readiness não é uma táctica separada de SEO.
+
+É conteúdo que responde melhor. Entidades que são claras. Estrutura que permite ser compreendida e resumida. Prova que justifica confiança.
+
+Nunca prometer presença em AI Overviews.  
+Nunca criar conteúdo massificado para bots.  
+Nunca usar schema ou markup que não reflecte conteúdo real.
+
+O objectivo é ser genuinamente útil para pessoas — isso é o que motores e IA valorizam.
+

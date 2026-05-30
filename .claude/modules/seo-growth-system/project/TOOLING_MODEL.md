@@ -1,53 +1,191 @@
 # SEO Tooling Model
 
+Fonte de verdade para ferramentas e MCPs do **SEO Growth System**.
+
+Este ficheiro define que ferramentas o module pode usar, com que cuidados, a política de orçamento e o que nunca assumir sobre disponibilidade ou autorização de ferramentas.
+
+Este ficheiro não é um agente.  
+Este ficheiro não acede a ferramentas.  
+Este ficheiro não substitui o `seo-data-analyst`, o `technical-seo` nem o Supervisor/System Safety.
+
+---
+
 ## Objetivo
-Definir que ferramentas/MCPs o module pode usar, com que cuidados, e a política de orçamento.
 
-## Quando usar
-Sempre que um agente precisa de dados/validação externos.
+Garantir que qualquer agente do module usa ferramentas de forma responsável — sem assumir que estão instaladas, sem assumir autenticação, sem inventar dados quando a ferramenta não está disponível, e com autorização explícita para ferramentas pagas ou com acesso a dados reais.
 
-## Regras principais
+---
 
-### Política de orçamento (padrão: zero)
-Por defeito, o module opera com **ferramentas gratuitas**. Ferramentas pagas (Ahrefs, Semrush, DataForSEO, SerpAPI, Screaming Frog paid) **requerem autorização explícita** — se não houver, não inventar os dados que elas dariam (volumes finos, backlinks profundos, rank tracking automatizado).
+## Âmbito
 
-> Nota de exportação: a decisão de orçamento é por-projeto. Cada repo/destino define a sua. Este module assume zero até autorização em contrário.
+Este documento cobre:
 
-### Segurança (transversal)
-Read-only por defeito; não guardar tokens no repo (usar `.env`); não alterar Search Console/GBP sem aprovação; não fazer deploy; não instalar plugins/dependências sem autorização; preferir staging/preview.
+- política de orçamento;
+- ferramentas gratuitas disponíveis;
+- ferramentas pagas e quando usar;
+- regras de segurança transversais;
+- o que nunca assumir sobre ferramentas;
+- o que fazer quando uma ferramenta não está disponível.
 
-## Stack de referência (gratuita)
-| Ferramenta | Função |
-|---|---|
-| Google Search Console | Queries reais (cliques/impressões) — fonte de verdade |
-| GA4 | Comportamento pós-clique |
-| Google Site Kit (WP) | Bridge GSC/GA4 no admin WordPress |
-| Keyword Planner | Volumes em buckets (requer conta Ads) |
-| Playwright MCP | SERPs ad-hoc, AI Mode, auditoria competitiva, render/mobile |
-| Chrome DevTools MCP | Performance, network, debug |
-| PageSpeed Insights API | Lighthouse, Core Web Vitals, CrUX |
-| Rich Results Test / Schema validator | Validação de schema (UI Google) |
-| URL Inspection API | Estado de indexação (via GSC) |
-| Bing Webmaster Tools | Cobertura Bing/assistentes (avaliar) |
+---
 
-## Uso por ferramenta (resumo)
-- **Search Console:** queries, páginas, CTR, impressões, posição, indexação. Read-only; cuidado com amostragem; posição média ≠ ranking fixo.
-- **URL Inspection:** indexação, canonical escolhido, cobertura. Só em propriedades geridas; respeitar quotas.
-- **GA4:** sessões orgânicas, conversões, engagement, landing pages. Dados agregados; evitar somas incorretas.
-- **PageSpeed/Lighthouse:** performance, CWV/CrUX, SEO checks.
-- **Chrome DevTools:** tracing, network, rendering, DOM, debug.
-- **Playwright:** screenshots, mobile/desktop, navegação, validação visual, crawling leve. Sem scraping agressivo.
-- **Google Business Profile API:** local SEO; não alterar sem autorização.
+## Fora de âmbito
 
-## Inputs / Outputs
-Input: necessidade de dados + autorização. Output: dados com fonte e limitações declaradas.
+- procedimento de análise passo a passo — ver skills individuais;
+- KPIs e métricas — ver `KPI_MODEL.md`;
+- persistência de resultados — ver `REPORTING_MODEL.md`.
 
-## Agentes relacionados
-Principalmente [`seo-data-analyst`](../agents/seo-data-analyst.md), [`technical-seo`](../agents/technical-seo.md), [`cwv-performance-seo`](../agents/cwv-performance-seo.md), [`serp-competitor-analyst`](../agents/serp-competitor-analyst.md).
+---
 
-## Skills relacionadas
-[`gsc-ga4-analysis`](../skills/gsc-ga4-analysis/SKILL.md), [`technical-seo-crawl-audit`](../skills/technical-seo-crawl-audit/SKILL.md).
+## Política de orçamento
 
-## Critérios de qualidade
-Nunca assumir ferramenta instalada; propor alternativa se faltar; declarar fonte e limitações; nada de tokens no repo.
+**Padrão: ferramentas gratuitas.**
 
+Este module opera por defeito com ferramentas gratuitas.
+
+Ferramentas pagas (Ahrefs, Semrush, DataForSEO, SerpAPI, Screaming Frog paid, etc.) **requerem autorização explícita** antes de ser usadas.
+
+Sem autorização explícita:
+
+- não usar ferramentas pagas;
+- não inventar os dados que essas ferramentas dariam (volumes finos, backlinks, rank tracking, site audit automático);
+- declarar claramente "dados indisponíveis sem ferramenta autorizada".
+
+**Nota de exportabilidade:** a decisão de orçamento é por-projecto. Cada repo que usa este module define a sua política. Este module assume zero até autorização em contrário.
+
+---
+
+## Regras de segurança transversais
+
+**Válidas para todas as ferramentas:**
+
+- **Read-only por defeito.** Nenhuma ferramenta deve ser usada para alterar dados externos sem autorização.
+- **Sem tokens no repo.** Nunca guardar API keys, tokens ou credenciais em ficheiros do repo. Usar `.env` ou sistema de secrets do ambiente.
+- **Sem alteração de GSC/GBP sem aprovação.** Search Console e Google Business Profile só em leitura. Qualquer alteração exige Supervisor.
+- **Sem deploy.** Nenhuma ferramenta executa deploy ou publicação automática.
+- **Sem instalar plugins/dependências sem autorização.** Qualquer adição a WordPress ou ambiente requer aprovação.
+- **Preferir staging/preview.** Validar em ambiente seguro antes de produção.
+
+---
+
+## Stack de ferramentas gratuitas
+
+### Análise e dados
+
+| Ferramenta | Função | Cuidados |
+|---|---|---|
+| Google Search Console | Queries, clicks, impressões, CTR, posição, indexação, cobertura, CWV field | Read-only; amostragem em propriedades grandes; posição média ≠ ranking fixo |
+| GA4 | Sessões orgânicas, conversões, engagement, landing pages | Read-only; dados agregados; verificar modelo de atribuição activo |
+| URL Inspection Tool/API | Estado de indexação, canonical escolhido, cobertura | Só em propriedades geridas; respeitar quotas da API |
+| PageSpeed Insights API | Lighthouse (lab data), CWV/CrUX, SEO checks | Read-only; distinguir lab de field; CrUX indisponível para URLs de baixo tráfego |
+| CrUX API | Field data de CWV por origem ou URL | Indisponível para URLs de baixo tráfego |
+| Keyword Planner | Volumes em buckets | Requer conta Google Ads; valores são em bucket, não exactos |
+
+### SERP e pesquisa
+
+| Ferramenta | Função | Cuidados |
+|---|---|---|
+| Browser/Search (Playwright MCP) | SERPs ad-hoc, AI Mode/AI Overview, auditoria competitiva, render mobile/desktop, crawling leve | Read-only; sem scraping agressivo; registar data, localização e dispositivo |
+| Rich Results Test | Validação de schema (UI Google) | Read-only; URL deve ser acessível |
+| Schema.org validator | Validação de markup schema | Read-only; apenas valida estrutura, não semântica business |
+
+### WordPress e técnico
+
+| Ferramenta | Função | Cuidados |
+|---|---|---|
+| Chrome DevTools MCP | Performance, network, rendering, DOM, debug | Read-only; não alterar nada |
+| Filesystem MCP | Ler ficheiros de tema/plugin; criar records | Read-only para tema/plugin; escrita para records autorizada |
+| Git/GitHub | Criar branch, PR, verificar histórico | Alterações de código requerem autorização |
+| Bing Webmaster Tools | Cobertura Bing/assistentes | Avaliar por projecto; similar ao GSC |
+
+### Local SEO
+
+| Ferramenta | Função | Cuidados |
+|---|---|---|
+| Google Business Profile API | Local SEO, verificação de perfil | Read-only; qualquer alteração exige autorização do Supervisor |
+
+---
+
+## Ferramentas pagas — apenas com autorização
+
+Exemplos de ferramentas pagas que requerem autorização explícita:
+
+- **Ahrefs:** backlinks, site audit, rank tracking, keywords.
+- **Semrush:** keywords, SERP, site audit, backlinks, position tracking.
+- **DataForSEO:** keywords, SERP, rank tracking programático.
+- **SerpAPI / ValueSERP:** SERP automático em escala.
+- **Screaming Frog (paid):** crawl avançado.
+- **Moz:** DA, backlinks, keywords.
+
+Se não há autorização:
+
+- declarar claramente que estes dados não estão disponíveis;
+- não estimar valores que dependeriam destas ferramentas;
+- trabalhar com as fontes gratuitas disponíveis.
+
+---
+
+## Comportamento quando ferramenta não está disponível
+
+Para cada ferramenta indisponível:
+
+1. **Declarar a indisponibilidade** explicitamente na análise.
+2. **Propor alternativa gratuita** quando existir.
+3. **Marcar como hipótese** qualquer conclusão que dependeria dessa ferramenta.
+4. **Não inventar** dados que a ferramenta daria.
+
+Exemplo:
+
+> "Volumes de pesquisa não estão disponíveis sem ferramenta paga autorizada. Priorizando clusters por intenção comercial estimada e dados de GSC."
+
+---
+
+## Autenticação e acesso
+
+**Quando uma ferramenta requer autenticação:**
+
+- Confirmar que há autorização antes de aceder.
+- Usar as credenciais do ambiente (não hardcoded no repo).
+- Confirmar que é a propriedade/conta correcta.
+- Usar apenas em leitura salvo autorização explícita para escrita.
+
+**Nunca:**
+
+- guardar API keys ou tokens em ficheiros do repo;
+- usar credenciais pessoais sem autorização do dono da conta;
+- aceder a propriedades GSC/GA4 sem confirmar que pertencem ao projecto.
+
+---
+
+## Gates
+
+**Bloquear ou declarar limitação** quando:
+
+- ferramenta paga necessária sem autorização;
+- autenticação necessária sem confirmação;
+- acesso a dados de produção sem autorização;
+- ferramenta não disponível e análise depende dela.
+
+---
+
+## Relação com agentes, skills e comandos
+
+- Todos os agentes consultam este ficheiro quando precisam de dados externos.
+- [`seo-data-analyst`](../agents/seo-data-analyst.md) — principal utilizador de GSC/GA4/CrUX.
+- [`technical-seo`](../agents/technical-seo.md) — GSC, URL Inspection, Playwright, PageSpeed.
+- [`cwv-performance-seo`](../agents/cwv-performance-seo.md) — PageSpeed, CrUX, DevTools.
+- [`serp-competitor-analyst`](../agents/serp-competitor-analyst.md) — Browser/Playwright, Rich Results.
+- [`schema-entity`](../agents/schema-entity.md) — Rich Results Test, Schema.org validator.
+- [`local-seo`](../agents/local-seo.md) — GBP API (read-only).
+
+---
+
+## Regra final
+
+Nunca assumir que uma ferramenta está disponível.
+
+Nunca assumir que há autenticação activa.
+
+Nunca inventar dados que dependem de ferramenta não autorizada.
+
+Declarar sempre fonte, limitações e o que ficou por confirmar.

@@ -56,4 +56,4 @@ Para evitar repetição, as referências oficiais ficam **só aqui**. Os agentes
 Este module é **genérico**. Não contém dados específicos da Previmed (serviços, leis, entidades, clusters). Esses dados vivem no workspace que usa o module e/ou em records reais. Assim, o module pode ser exportado para outros projetos (ver `manifest.md` → "Como exportar/reutilizar").
 
 ## Estado atual
-Module estruturado e consolidado (estrutura final). Sem código funcional, sem comandos automáticos.
+Module operacional — 15 agentes, 11 skills, comando `/seo` com 14 modos, 12 project docs, 5 records templates. Pronto para uso com Claude Code após instalação do plugin.
