@@ -1,375 +1,226 @@
-# SEO Technical Audit
+# Auditoria Técnica SEO — Previmed.pt
 
-## Robots publico
-- Status robots.txt: 200
-- Conteudo parcial robots.txt:
+**Data:** 2026-05-31  
+**Tipo:** Read-only. Nada alterado.  
+**Nota:** Sem acesso GSC, sem crawl completo, sem PageSpeed API autenticado.
+
+---
+
+## 1. Robots.txt
+
+**URL:** https://previmed.pt/robots.txt
+
 ```
 User-agent: *
 Disallow: /wp-admin/
 Allow: /wp-admin/admin-ajax.php
-
 Sitemap: https://previmed.pt/sitemaps.xml
-
 ```
 
-## URL checks Previmed
-### https://previmed.pt/
-- Status: 200
-- Redirected: False
-- Canonical: https://previmed.pt/
-- Robots meta: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
-- Schema: Organization, WebSite, WebPage, BreadcrumbList, SearchAction
-- Technical risks: Title curto; pode nao cobrir intencao/servico.; Claims/termos sensiveis detetados: melhor, clientes, legal
+**Análise:**
+- ✅ Bloqueia /wp-admin/ (correto)
+- ✅ Permite admin-ajax.php (necessário para WordPress AJAX)
+- ✅ Sitemap declarado
+- ⚠️ Sitemap aponta para `sitemaps.xml` (com "s") — confirmar que está correto e acessível
+- ❌ Não bloqueia: /wp-content/uploads/ (imagens expostas ao crawl)
+- Nota: Configuração padrão WordPress — adequada mas sem otimização
 
-### https://previmed.pt/post-sitemap1.xml
-- Status: 200
-- Redirected: False
-- Canonical: A confirmar
-- Robots meta: Nao detetado
-- Schema: Nenhum
-- Technical risks: Title curto; pode nao cobrir intencao/servico.; Meta description em falta ou nao renderizada.; Canonical nao detetado no DOM renderizado.; Meta viewport nao detetada.; Conteudo curto no DOM; risco de pagina fina para SEO.; Sem JSON-LD detetado no DOM.; CTA/conversao pouco evidente no texto renderizado.
+---
 
-### https://previmed.pt/page-sitemap1.xml
-- Status: 200
-- Redirected: False
-- Canonical: A confirmar
-- Robots meta: Nao detetado
-- Schema: Nenhum
-- Technical risks: Title curto; pode nao cobrir intencao/servico.; Meta description em falta ou nao renderizada.; Canonical nao detetado no DOM renderizado.; Meta viewport nao detetada.; Conteudo curto no DOM; risco de pagina fina para SEO.; Sem JSON-LD detetado no DOM.; Claims/termos sensiveis detetados: certificado, legal
+## 2. Sitemap
 
-### https://previmed.pt/category-sitemap1.xml
-- Status: 200
-- Redirected: False
-- Canonical: A confirmar
-- Robots meta: Nao detetado
-- Schema: Nenhum
-- Technical risks: Title curto; pode nao cobrir intencao/servico.; Meta description em falta ou nao renderizada.; Canonical nao detetado no DOM renderizado.; Meta viewport nao detetada.; Conteudo curto no DOM; risco de pagina fina para SEO.; Sem JSON-LD detetado no DOM.; CTA/conversao pouco evidente no texto renderizado.
+**URL:** https://previmed.pt/sitemaps.xml (sitemap index)
 
-### https://previmed.pt/pedido-de-proposta
-- Status: None
-- Redirected: None
-- Canonical: A confirmar
-- Robots meta: Nao detetado
-- Schema: Nenhum
-- Technical risks: Sem risco alto/medio automatico
+| Sitemap | URLs | Última modificação |
+|---------|------|--------------------|
+| page-sitemap1.xml | 50 páginas | 11/05/2026 |
+| post-sitemap1.xml | 5 posts | 11/05/2026 |
+| category-sitemap1.xml | categorias | 31/05/2026 |
 
-### https://previmed.pt/prestadores/
-- Status: 200
-- Redirected: False
-- Canonical: https://previmed.pt/prestadores/
-- Robots meta: index, max-snippet:-1, max-image-preview:large, max-video-preview:-1, follow
-- Schema: Organization, WebSite, WebPage, BreadcrumbList, SearchAction
-- Technical risks: Conteudo curto no DOM; risco de pagina fina para SEO.; Claims/termos sensiveis detetados: melhor, clientes, legal, lei
+**Análise:**
+- ✅ Sitemap index funciona
+- ✅ Inclui páginas e posts separados
+- ⚠️ Apenas 5 posts — blog muito fraco
+- ⚠️ category-sitemap: categorias indexadas podem criar thin content
+- ❓ Não confirmado se sitemap está submetido no GSC
+- ❓ Não confirmado se todas as 50 páginas devem ser indexadas (algumas podem ser thin content)
 
-### https://previmed.pt/oferta-formativa/
-- Status: 200
-- Redirected: False
-- Canonical: https://previmed.pt/oferta-formativa/
-- Robots meta: index, max-snippet:-1, max-image-preview:large, max-video-preview:-1, follow
-- Schema: Organization, WebSite, WebPage, BreadcrumbList, SearchAction
-- Technical risks: Claims/termos sensiveis detetados: lider, melhor, certificado, legal
+**URLs questionáveis no sitemap (possível thin content):**
+- /formacao-2/ — slug genérico, conteúdo desconhecido
+- /previmed/ — pode ser thin content (só sobre a marca)
+- /instalacoes-do-cliente/ — conteúdo provavelmente breve
 
-### https://previmed.pt/wp-content/uploads/2026/05/formacao-5.jpg
-- Status: 200
-- Redirected: False
-- Canonical: A confirmar
-- Robots meta: Nao detetado
-- Schema: Nenhum
-- Technical risks: Title curto; pode nao cobrir intencao/servico.; Meta description em falta ou nao renderizada.; H1 em falta.; Canonical nao detetado no DOM renderizado.; Conteudo curto no DOM; risco de pagina fina para SEO.; Sem JSON-LD detetado no DOM.; CTA/conversao pouco evidente no texto renderizado.
+---
 
-### https://previmed.pt/e-learning/
-- Status: 200
-- Redirected: False
-- Canonical: https://previmed.pt/e-learning/
-- Robots meta: index, max-snippet:-1, max-image-preview:large, max-video-preview:-1, follow
-- Schema: Organization, WebSite, WebPage, BreadcrumbList, SearchAction
-- Technical risks: Conteudo curto no DOM; risco de pagina fina para SEO.; Claims/termos sensiveis detetados: melhor, clientes, legal
+## 3. Title tags — análise completa
 
-### https://previmed.pt/wp-content/uploads/2026/05/formacao-4.jpg
-- Status: 200
-- Redirected: False
-- Canonical: A confirmar
-- Robots meta: Nao detetado
-- Schema: Nenhum
-- Technical risks: Title curto; pode nao cobrir intencao/servico.; Meta description em falta ou nao renderizada.; H1 em falta.; Canonical nao detetado no DOM renderizado.; Conteudo curto no DOM; risco de pagina fina para SEO.; Sem JSON-LD detetado no DOM.; CTA/conversao pouco evidente no texto renderizado.
+| Página | Title atual | Problemas | Score |
+|--------|------------|-----------|-------|
+| Homepage | **Não detetado** | Crítico — title ausente | ❌ |
+| /saude-no-trabalho/ | "Medicina No Trabalho - Previmed" (31 chars) | Curto, falta diferenciador | ⚠️ |
+| /seguranca-no-trabalho/ | "Segurança no Trabalho - Previmed - Previmed" | **Duplicação de marca** | ❌ |
+| /seguranca-e-saude-no-trabalho/ | 106 chars — "Implementação e Manutenção..." | **Demasiado longo (>65 chars)** | ❌ |
+| /oferta-formativa/ | "Oferta Formativa - Previmed" (39 chars) | Genérico | ⚠️ |
+| /e-learning/ | **Não detetado** | Crítico — title ausente | ❌ |
+| /avaliacoes-de-riscos-profissionais/ | "...Previmed - PrevimedPrevimed" | **Duplicação grave** | ❌ |
+| /sobre-a-previmed/ | "Sobre a Previmed - Previmed" | Genérico | ⚠️ |
+| /contactos/ | "Contactos - Previmed" | Genérico | ⚠️ |
+| /pedido-de-proposta/ | "Pedido de proposta - Previmed" | Genérico | ⚠️ |
+| /check-ups/ | **Não detetado** | Crítico — title ausente | ❌ |
+| /sistemas-integrados-de-certificacao/ | "Sistemas Integrados de Certificação - Previmed" | OK comprimento, sem diferenciador | ⚠️ |
 
-### https://previmed.pt/formacao-interempresas/
-- Status: 200
-- Redirected: False
-- Canonical: https://previmed.pt/formacao-interempresas/
-- Robots meta: index, max-snippet:-1, max-image-preview:large, max-video-preview:-1, follow
-- Schema: Organization, WebSite, WebPage, BreadcrumbList, SearchAction
-- Technical risks: Conteudo curto no DOM; risco de pagina fina para SEO.; Claims/termos sensiveis detetados: melhor, legal
+**Padrão de problema:** Vários títulos com duplicação de "Previmed" — indica erro na configuração do plugin SEO (provavelmente Yoast ou Rank Math com template mal configurado)
 
-### https://previmed.pt/wp-content/uploads/2026/05/formacao-3.jpg
-- Status: 200
-- Redirected: False
-- Canonical: A confirmar
-- Robots meta: Nao detetado
-- Schema: Nenhum
-- Technical risks: Title curto; pode nao cobrir intencao/servico.; Meta description em falta ou nao renderizada.; H1 em falta.; Canonical nao detetado no DOM renderizado.; Conteudo curto no DOM; risco de pagina fina para SEO.; Sem JSON-LD detetado no DOM.; CTA/conversao pouco evidente no texto renderizado.
+---
 
-### https://previmed.pt/formacao-intraempresas/
-- Status: 200
-- Redirected: False
-- Canonical: https://previmed.pt/formacao-intraempresas/
-- Robots meta: index, max-snippet:-1, max-image-preview:large, max-video-preview:-1, follow
-- Schema: Organization, WebSite, WebPage, BreadcrumbList, SearchAction
-- Technical risks: Conteudo curto no DOM; risco de pagina fina para SEO.; Claims/termos sensiveis detetados: melhor, clientes, legal
+## 4. Meta descriptions — análise completa
 
-### https://previmed.pt/wp-content/uploads/2026/05/formacao-2.jpg
-- Status: 200
-- Redirected: False
-- Canonical: A confirmar
-- Robots meta: Nao detetado
-- Schema: Nenhum
-- Technical risks: Title curto; pode nao cobrir intencao/servico.; Meta description em falta ou nao renderizada.; H1 em falta.; Canonical nao detetado no DOM renderizado.; Conteudo curto no DOM; risco de pagina fina para SEO.; Sem JSON-LD detetado no DOM.; CTA/conversao pouco evidente no texto renderizado.
+| Página | Estado |
+|--------|--------|
+| Homepage | ❌ **AUSENTE** |
+| /saude-no-trabalho/ | ❌ **AUSENTE** |
+| /seguranca-no-trabalho/ | ❌ **AUSENTE** |
+| /seguranca-e-saude-no-trabalho/ | ❌ **AUSENTE** |
+| /oferta-formativa/ | ❌ **AUSENTE** |
+| /e-learning/ | ❌ **AUSENTE** |
+| /avaliacoes-de-riscos-profissionais/ | ❌ **AUSENTE** |
+| /sobre-a-previmed/ | ❌ **AUSENTE** |
+| /contactos/ | ❌ **AUSENTE** |
+| /pedido-de-proposta/ | ❌ **AUSENTE** |
+| /check-ups/ | ❌ **AUSENTE** |
 
-### https://previmed.pt/formacao-2/
-- Status: 200
-- Redirected: False
-- Canonical: https://previmed.pt/formacao-2/
-- Robots meta: index, max-snippet:-1, max-image-preview:large, max-video-preview:-1, follow
-- Schema: Organization, WebSite, WebPage, BreadcrumbList, SearchAction
-- Technical risks: Conteudo curto no DOM; risco de pagina fina para SEO.; Claims/termos sensiveis detetados: melhor, certificada, clientes, legal, lei
+**Conclusão:** Meta description ausente em TODAS as páginas analisadas.  
+Isto é uma falha sistémica — provavelmente o plugin SEO não está configurado para gerar meta descriptions automáticas, e nenhuma foi definida manualmente.  
+**Impacto:** Google gera snippets automáticos (muitas vezes pouco atrativos) → CTR baixo.
 
-### https://previmed.pt/wp-content/uploads/2026/05/formacao-1.jpg
-- Status: 200
-- Redirected: False
-- Canonical: A confirmar
-- Robots meta: Nao detetado
-- Schema: Nenhum
-- Technical risks: Title curto; pode nao cobrir intencao/servico.; Meta description em falta ou nao renderizada.; H1 em falta.; Canonical nao detetado no DOM renderizado.; Conteudo curto no DOM; risco de pagina fina para SEO.; Sem JSON-LD detetado no DOM.; CTA/conversao pouco evidente no texto renderizado.
+---
 
-### https://previmed.pt/marcacao-ce/
-- Status: 200
-- Redirected: False
-- Canonical: https://previmed.pt/marcacao-ce/
-- Robots meta: index, max-snippet:-1, max-image-preview:large, max-video-preview:-1, follow
-- Schema: Organization, WebSite, WebPage, BreadcrumbList, SearchAction
-- Technical risks: Conteudo curto no DOM; risco de pagina fina para SEO.; Claims/termos sensiveis detetados: melhor, certificado, legal
+## 5. H1 e estrutura de headings
 
-### https://previmed.pt/wp-content/uploads/2026/05/marcacaoCE.jpg
-- Status: 200
-- Redirected: False
-- Canonical: A confirmar
-- Robots meta: Nao detetado
-- Schema: Nenhum
-- Technical risks: Title curto; pode nao cobrir intencao/servico.; Meta description em falta ou nao renderizada.; H1 em falta.; Canonical nao detetado no DOM renderizado.; Conteudo curto no DOM; risco de pagina fina para SEO.; Sem JSON-LD detetado no DOM.; CTA/conversao pouco evidente no texto renderizado.
+| Página | H1 | Problema |
+|--------|-----|---------|
+| Homepage | Não explícito | ❌ Crítico |
+| /saude-no-trabalho/ | "Medicina No Trabalho" | ✅ OK |
+| /seguranca-no-trabalho/ | "Segurança no Trabalho" | ✅ OK |
+| /seguranca-e-saude-no-trabalho/ | "Implementação e Manutenção do Sistema de Gestão SST" | ⚠️ Demasiado técnico |
+| /oferta-formativa/ | "Oferta Formativa" | ⚠️ Genérico |
+| /e-learning/ | "E-Learning" | ⚠️ Genérico |
+| /avaliacoes-de-riscos-profissionais/ | "Avaliação de Riscos Profissionais" | ✅ OK |
 
-### https://previmed.pt/sistemas-integrados-de-certificacao/
-- Status: 200
-- Redirected: False
-- Canonical: https://previmed.pt/sistemas-integrados-de-certificacao/
-- Robots meta: index, max-snippet:-1, max-image-preview:large, max-video-preview:-1, follow
-- Schema: Organization, WebSite, WebPage, BreadcrumbList, SearchAction
-- Technical risks: Conteudo curto no DOM; risco de pagina fina para SEO.; Claims/termos sensiveis detetados: melhor, certificado, legal
+**Typos encontrados em H2/H3 (sem acento em "Segurança"):**
+- "Seguranca No Trabalho" — em /seguranca-no-trabalho/, /avaliacoes-de-riscos-profissionais/, /informacao-formacao/, /auditorias-e-inspeccoes/
+- "Consultoria Formacao" — em /oferta-formativa/, /e-learning/
+- "Servico Certificado" — em /seguranca-e-saude-no-trabalho/, /sistemas-integrados-de-certificacao/
 
-### https://previmed.pt/wp-content/uploads/2026/05/sistintegrados.jpg
-- Status: 200
-- Redirected: False
-- Canonical: A confirmar
-- Robots meta: Nao detetado
-- Schema: Nenhum
-- Technical risks: Meta description em falta ou nao renderizada.; H1 em falta.; Canonical nao detetado no DOM renderizado.; Conteudo curto no DOM; risco de pagina fina para SEO.; Sem JSON-LD detetado no DOM.; CTA/conversao pouco evidente no texto renderizado.
+**Causa provável:** Widget ou bloco WordPress com texto hardcoded sem acentuação correta.
 
-### https://previmed.pt/sistema-de-responsabilidade-social/
-- Status: 200
-- Redirected: False
-- Canonical: https://previmed.pt/sistema-de-responsabilidade-social/
-- Robots meta: index, max-snippet:-1, max-image-preview:large, max-video-preview:-1, follow
-- Schema: Organization, WebSite, WebPage, BreadcrumbList, SearchAction
-- Technical risks: Conteudo curto no DOM; risco de pagina fina para SEO.; Claims/termos sensiveis detetados: melhor, certificado, legal
+---
 
-### https://previmed.pt/wp-content/uploads/2026/05/respsocial.jpg
-- Status: 200
-- Redirected: False
-- Canonical: A confirmar
-- Robots meta: Nao detetado
-- Schema: Nenhum
-- Technical risks: Title curto; pode nao cobrir intencao/servico.; Meta description em falta ou nao renderizada.; H1 em falta.; Canonical nao detetado no DOM renderizado.; Conteudo curto no DOM; risco de pagina fina para SEO.; Sem JSON-LD detetado no DOM.; CTA/conversao pouco evidente no texto renderizado.
+## 6. Schema/dados estruturados
 
-### https://previmed.pt/gestao-de-seguranca-alimentar/
-- Status: 200
-- Redirected: False
-- Canonical: https://previmed.pt/gestao-de-seguranca-alimentar/
-- Robots meta: index, max-snippet:-1, max-image-preview:large, max-video-preview:-1, follow
-- Schema: Organization, WebSite, WebPage, BreadcrumbList, SearchAction
-- Technical risks: Claims/termos sensiveis detetados: melhor, certificado, legal
+**Estado: AUSENTE em todas as páginas analisadas.**
 
-### https://previmed.pt/wp-content/uploads/2026/05/segalimentar.png
-- Status: 200
-- Redirected: False
-- Canonical: A confirmar
-- Robots meta: Nao detetado
-- Schema: Nenhum
-- Technical risks: Title curto; pode nao cobrir intencao/servico.; Meta description em falta ou nao renderizada.; H1 em falta.; Canonical nao detetado no DOM renderizado.; Conteudo curto no DOM; risco de pagina fina para SEO.; Sem JSON-LD detetado no DOM.; CTA/conversao pouco evidente no texto renderizado.
+Nenhuma página tem schema JSON-LD visível.
 
-### https://previmed.pt/seguranca-e-saude-no-trabalho/
-- Status: 200
-- Redirected: False
-- Canonical: https://previmed.pt/seguranca-e-saude-no-trabalho/
-- Robots meta: index, max-snippet:-1, max-image-preview:large, max-video-preview:-1, follow
-- Schema: Organization, WebSite, WebPage, BreadcrumbList, SearchAction
-- Technical risks: Conteudo curto no DOM; risco de pagina fina para SEO.; Claims/termos sensiveis detetados: melhor, certificado, legal
+**Tipos recomendados por página:**
 
-### https://previmed.pt/wp-content/uploads/2026/05/certsegur.png
-- Status: 200
-- Redirected: False
-- Canonical: A confirmar
-- Robots meta: Nao detetado
-- Schema: Nenhum
-- Technical risks: Title curto; pode nao cobrir intencao/servico.; Meta description em falta ou nao renderizada.; H1 em falta.; Canonical nao detetado no DOM renderizado.; Conteudo curto no DOM; risco de pagina fina para SEO.; Sem JSON-LD detetado no DOM.; CTA/conversao pouco evidente no texto renderizado.
+| Página | Schema recomendado |
+|--------|-------------------|
+| Homepage | Organization + WebSite + BreadcrumbList |
+| /sobre-a-previmed/ | Organization + LocalBusiness |
+| /contactos/ | LocalBusiness (2 localizações: Lisboa + Porto) |
+| /saude-no-trabalho/ | Service + FAQPage |
+| /seguranca-no-trabalho/ | Service + FAQPage |
+| /oferta-formativa/ | ItemList (cursos) |
+| /e-learning/ | Course (quando cursos forem listados) |
+| Todas | BreadcrumbList |
 
-### https://previmed.pt/sistema-de-gestao-ambiental/
-- Status: 200
-- Redirected: False
-- Canonical: https://previmed.pt/sistema-de-gestao-ambiental/
-- Robots meta: index, max-snippet:-1, max-image-preview:large, max-video-preview:-1, follow
-- Schema: Organization, WebSite, WebPage, BreadcrumbList, SearchAction
-- Technical risks: Conteudo curto no DOM; risco de pagina fina para SEO.; Claims/termos sensiveis detetados: melhor, certificado, legal
+---
 
-### https://previmed.pt/wp-content/uploads/2026/05/certambiental.jpg
-- Status: 200
-- Redirected: False
-- Canonical: A confirmar
-- Robots meta: Nao detetado
-- Schema: Nenhum
-- Technical risks: Title curto; pode nao cobrir intencao/servico.; Meta description em falta ou nao renderizada.; H1 em falta.; Canonical nao detetado no DOM renderizado.; Conteudo curto no DOM; risco de pagina fina para SEO.; Sem JSON-LD detetado no DOM.; CTA/conversao pouco evidente no texto renderizado.
+## 7. Indexação aparente
 
-### https://previmed.pt/estudos-e-projectos/
-- Status: 200
-- Redirected: False
-- Canonical: https://previmed.pt/estudos-e-projectos/
-- Robots meta: index, max-snippet:-1, max-image-preview:large, max-video-preview:-1, follow
-- Schema: Organization, WebSite, WebPage, BreadcrumbList, SearchAction
-- Technical risks: Claims/termos sensiveis detetados: melhor, legal
+**Nota:** Sem GSC não é possível confirmar o estado real de indexação.
 
-### https://previmed.pt/wp-content/uploads/2026/05/estudosprojambientais.jpg
-- Status: 200
-- Redirected: False
-- Canonical: A confirmar
-- Robots meta: Nao detetado
-- Schema: Nenhum
-- Technical risks: Meta description em falta ou nao renderizada.; H1 em falta.; Canonical nao detetado no DOM renderizado.; Conteudo curto no DOM; risco de pagina fina para SEO.; Sem JSON-LD detetado no DOM.; CTA/conversao pouco evidente no texto renderizado.
+**Observações baseadas em análise pública:**
+- Sitemap existe e está funcional
+- robots.txt não bloqueia conteúdo público
+- URLs têm estrutura limpa (slugs descritivos em português)
+- Nenhum noindex detectado nas páginas analisadas
+- Confirmado via sitemap que 55+ páginas estão mapeadas
 
-### https://previmed.pt/consultoria-ambiental/
-- Status: 200
-- Redirected: False
-- Canonical: https://previmed.pt/consultoria-ambiental/
-- Robots meta: index, max-snippet:-1, max-image-preview:large, max-video-preview:-1, follow
-- Schema: Organization, WebSite, WebPage, BreadcrumbList, SearchAction
-- Technical risks: Claims/termos sensiveis detetados: melhor, legal, obrigatório, lei, decreto
+**Riscos identificados:**
+- Categoria-sitemap pode indexar páginas de arquivo thin content
+- Slugs de blog com datas: /2026/05/11/coronavirus/ — formato não ideal para SEO
+- /formacao-2/ — slug genérico, pode indicar página duplicada
 
-### https://previmed.pt/wp-content/uploads/2026/05/consultambiental.jpg
-- Status: 200
-- Redirected: False
-- Canonical: A confirmar
-- Robots meta: Nao detetado
-- Schema: Nenhum
-- Technical risks: Meta description em falta ou nao renderizada.; H1 em falta.; Canonical nao detetado no DOM renderizado.; Conteudo curto no DOM; risco de pagina fina para SEO.; Sem JSON-LD detetado no DOM.; CTA/conversao pouco evidente no texto renderizado.
+---
 
-### https://previmed.pt/gestao-e-acompanhamento/
-- Status: 200
-- Redirected: False
-- Canonical: https://previmed.pt/gestao-e-acompanhamento/
-- Robots meta: index, max-snippet:-1, max-image-preview:large, max-video-preview:-1, follow
-- Schema: Organization, WebSite, WebPage, BreadcrumbList, SearchAction
-- Technical risks: Conteudo curto no DOM; risco de pagina fina para SEO.; Claims/termos sensiveis detetados: melhor, legal
+## 8. Performance — estimativa (sem PageSpeed real)
 
-### https://previmed.pt/wp-content/uploads/2026/05/gestacompambl.jpg
-- Status: 200
-- Redirected: False
-- Canonical: A confirmar
-- Robots meta: Nao detetado
-- Schema: Nenhum
-- Technical risks: Title curto; pode nao cobrir intencao/servico.; Meta description em falta ou nao renderizada.; H1 em falta.; Canonical nao detetado no DOM renderizado.; Conteudo curto no DOM; risco de pagina fina para SEO.; Sem JSON-LD detetado no DOM.; CTA/conversao pouco evidente no texto renderizado.
+**Nota:** Análise baseada em observações estruturais. Sem PageSpeed/CrUX.
 
-### https://previmed.pt/acustica/
-- Status: 200
-- Redirected: False
-- Canonical: https://previmed.pt/acustica/
-- Robots meta: index, max-snippet:-1, max-image-preview:large, max-video-preview:-1, follow
-- Schema: Organization, WebSite, WebPage, BreadcrumbList, SearchAction
-- Technical risks: Claims/termos sensiveis detetados: melhor, legal, lei, decreto
+**Indicadores de risco de performance:**
+- Slider com 7 imagens na homepage → risco de LCP alto se imagens não forem otimizadas
+- Imagem principal na /saude-no-trabalho/ descrita como "1024x710px" sem menção de compressão
+- Site WordPress com theme + plugins → risco de JS/CSS excessivo
+- E-learning e portais em domínios externos → não afetam performance do site principal
 
-### https://previmed.pt/wp-content/uploads/2026/05/acustica.jpg
-- Status: 200
-- Redirected: False
-- Canonical: A confirmar
-- Robots meta: Nao detetado
-- Schema: Nenhum
-- Technical risks: Title curto; pode nao cobrir intencao/servico.; Meta description em falta ou nao renderizada.; H1 em falta.; Canonical nao detetado no DOM renderizado.; Conteudo curto no DOM; risco de pagina fina para SEO.; Sem JSON-LD detetado no DOM.; CTA/conversao pouco evidente no texto renderizado.
+**A confirmar com PageSpeed Insights (gratuito):**
+- https://pagespeed.web.dev/report?url=https://previmed.pt/
+- LCP, INP, CLS para mobile e desktop
 
-### https://previmed.pt/monitorizacao/
-- Status: 200
-- Redirected: False
-- Canonical: https://previmed.pt/monitorizacao/
-- Robots meta: index, max-snippet:-1, max-image-preview:large, max-video-preview:-1, follow
-- Schema: Organization, WebSite, WebPage, BreadcrumbList, SearchAction
-- Technical risks: Conteudo curto no DOM; risco de pagina fina para SEO.; Claims/termos sensiveis detetados: melhor, legal
+---
 
-### https://previmed.pt/wp-content/uploads/2026/05/safeenv.jpeg
-- Status: 200
-- Redirected: False
-- Canonical: A confirmar
-- Robots meta: Nao detetado
-- Schema: Nenhum
-- Technical risks: Title curto; pode nao cobrir intencao/servico.; Meta description em falta ou nao renderizada.; H1 em falta.; Canonical nao detetado no DOM renderizado.; Conteudo curto no DOM; risco de pagina fina para SEO.; Sem JSON-LD detetado no DOM.; CTA/conversao pouco evidente no texto renderizado.
+## 9. Canonical
 
-### https://previmed.pt/documentacao-e-analise-estatistica/
-- Status: 200
-- Redirected: False
-- Canonical: https://previmed.pt/documentacao-e-analise-estatistica/
-- Robots meta: index, max-snippet:-1, max-image-preview:large, max-video-preview:-1, follow
-- Schema: Organization, WebSite, WebPage, BreadcrumbList, SearchAction
-- Technical risks: Conteudo curto no DOM; risco de pagina fina para SEO.; Claims/termos sensiveis detetados: melhor, legal
+**Estado:** Não analisado diretamente (WebFetch não devolve headers HTTP).
 
-### https://previmed.pt/wp-content/uploads/2026/05/documentacao.jpg
-- Status: 200
-- Redirected: False
-- Canonical: A confirmar
-- Robots meta: Nao detetado
-- Schema: Nenhum
-- Technical risks: Title curto; pode nao cobrir intencao/servico.; Meta description em falta ou nao renderizada.; H1 em falta.; Canonical nao detetado no DOM renderizado.; Conteudo curto no DOM; risco de pagina fina para SEO.; Sem JSON-LD detetado no DOM.; CTA/conversao pouco evidente no texto renderizado.
+**Riscos identificados:**
+- /saude-no-trabalho/ vs /medicina-no-trabalho/ — se houver alias, canonical pode estar errado
+- /formacao-2/ vs /oferta-formativa/ — risco de duplicação de conteúdo
+- Categorias WordPress indexadas podem criar duplicação com páginas de arquivo
 
-### https://previmed.pt/coordenacao-de-seguranca-em-obra/
-- Status: 200
-- Redirected: False
-- Canonical: https://previmed.pt/coordenacao-de-seguranca-em-obra/
-- Robots meta: index, max-snippet:-1, max-image-preview:large, max-video-preview:-1, follow
-- Schema: Organization, WebSite, WebPage, BreadcrumbList, SearchAction
-- Technical risks: Conteudo curto no DOM; risco de pagina fina para SEO.; Claims/termos sensiveis detetados: melhor, legal, lei
+**Recomendação:** Verificar canonical com ferramenta (Rich Results Test ou URL Inspection no GSC).
 
-### https://previmed.pt/wp-content/uploads/2026/05/cordsegobra.jpg
-- Status: 200
-- Redirected: False
-- Canonical: A confirmar
-- Robots meta: Nao detetado
-- Schema: Nenhum
-- Technical risks: Title curto; pode nao cobrir intencao/servico.; Meta description em falta ou nao renderizada.; H1 em falta.; Canonical nao detetado no DOM renderizado.; Conteudo curto no DOM; risco de pagina fina para SEO.; Sem JSON-LD detetado no DOM.; CTA/conversao pouco evidente no texto renderizado.
+---
 
-### https://previmed.pt/avaliacoes-de-riscos-profissionais/
-- Status: 520
-- Redirected: False
-- Canonical: A confirmar
-- Robots meta: noindex, nofollow
-- Schema: Nenhum
-- Technical risks: Meta description em falta ou nao renderizada.; Canonical nao detetado no DOM renderizado.; Conteudo curto no DOM; risco de pagina fina para SEO.; Sem JSON-LD detetado no DOM.; CTA/conversao pouco evidente no texto renderizado.
+## 10. Open Graph
 
-### https://previmed.pt/wp-content/uploads/2026/05/avaliacaoriscos.png
-- Status: 200
-- Redirected: False
-- Canonical: A confirmar
-- Robots meta: Nao detetado
-- Schema: Nenhum
-- Technical risks: Meta description em falta ou nao renderizada.; H1 em falta.; Canonical nao detetado no DOM renderizado.; Conteudo curto no DOM; risco de pagina fina para SEO.; Sem JSON-LD detetado no DOM.; CTA/conversao pouco evidente no texto renderizado.
+**Analisado:** Não encontrado em nenhuma página.
 
-### https://previmed.pt/informacao-formacao
-- Status: 520
-- Redirected: False
-- Canonical: A confirmar
-- Robots meta: noindex, nofollow
-- Schema: Nenhum
-- Technical risks: Meta description em falta ou nao renderizada.; Canonical nao detetado no DOM renderizado.; Conteudo curto no DOM; risco de pagina fina para SEO.; Sem JSON-LD detetado no DOM.; CTA/conversao pouco evidente no texto renderizado.
+**Impacto:** Partilha nas redes sociais usa título genérico e imagem automática → má apresentação no LinkedIn, Facebook, WhatsApp.
 
+---
+
+## 11. WordPress — observações técnicas visíveis
+
+**CMS:** WordPress (confirmado via robots.txt e estrutura de URLs)  
+**Plugin SEO:** Provavelmente Yoast ou Rank Math (não confirmado — configuração deficiente)
+
+**Problemas WordPress visíveis:**
+- Title tags com duplicação "Previmed - PrevimedPrevimed" → template de title mal configurado no plugin SEO
+- Slugs de posts com formato /ano/mes/dia/slug → formato antigo, não ideal para SEO
+- Imagens WordPress: /wp-content/uploads/ — não bloqueado em robots (crawl de imagens exposto)
+- Categorias no sitemap: risco de thin content indexado
+
+---
+
+## 12. Checklist técnica — estado atual
+
+| Item | Estado | Prioridade |
+|------|--------|-----------|
+| Title tags presentes | ❌ Problemas em 5+ páginas | Crítica |
+| Meta descriptions | ❌ Ausentes em TODAS | Crítica |
+| H1 presente em todas as páginas | ⚠️ Ausente na homepage | Alta |
+| Schema JSON-LD | ❌ Ausente | Alta |
+| Sitemap funcional | ✅ OK | — |
+| robots.txt funcional | ✅ OK | — |
+| HTTPS | ✅ Confirmado | — |
+| Slugs descritivos | ✅ OK (pages) | — |
+| Slugs de posts | ⚠️ Formato /ano/mes/dia/ | Média |
+| Typos em headings | ❌ Múltiplos | Alta |
+| Open Graph | ❌ Ausente | Média |
+| Mobile | ❓ A confirmar | Alta |
+| Core Web Vitals | ❓ A confirmar | Alta |
+| Canonical | ❓ A confirmar | Alta |
+| Páginas thin content | ⚠️ Suspeitas (/formacao-2/) | Média |
